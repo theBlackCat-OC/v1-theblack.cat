@@ -1,0 +1,75 @@
+.cascadia{
+    font-family: 'cascadia', Consolas, monospaced;
+}
+
+.chirp{
+    font-family: 'chirp', sans-serif;
+}
+
+.finalf{
+    font-family: 'finalf', serif;
+}
+
+.latex-regular{
+    font-family: 'latex-regular', serif;
+}
+
+.latex-italic{
+    font-family: 'latex-italic', serif;
+}
+
+.latex-italic-bold{
+    font-family: 'latex-italic-bold', serif;
+}
+
+.latex-italic-slim{
+    font-family: 'latex-italic-slim', serif;
+}
+
+.notosans{
+    font-family: 'notosans', sans-serif;
+}
+
+.productsans-bold{
+    font-family: 'productsans-bold', sans-serif;
+}
+
+.productsans-bold-italic{
+    font-family: 'productsans-bold-italic', sans-serif;
+}
+
+.productsans-italic{
+    font-family: 'productsans-italic', sans-serif;
+}
+
+.productsans-regular{
+    font-family: 'productsans-regular', sans-serif;
+}
+
+.productsans-light{
+    font-family: 'productsans-light', sans-serif;
+}
+
+.sanfrancisco{
+    font-family: 'sanfrancisco', sans-serif;
+}
+
+.one-em{
+    font-size: 1em;
+}
+
+.onepointfive-em{
+    font-size: 1.5em;
+}
+
+.two-em{
+    font-size: 2em;
+}
+
+.twopointfive-em{
+    font-size: 2.5em;
+}
+
+.three-em{
+    font-size: 3em;
+}
