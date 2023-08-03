@@ -8,7 +8,7 @@ window.addEventListener('scroll', function() {
     header.classList.remove('glassbox-50');
     header.classList.add('glassbox-10');
     header.style.height = '5vh';
-    headerContent.style.fontSize = '74%';
+    headerContent.style.fontSize = '80%';
   } else {
     header.classList.remove('glassbox-10');
     header.classList.add('glassbox-50');

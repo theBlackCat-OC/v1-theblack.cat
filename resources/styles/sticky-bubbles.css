@@ -1,0 +1,47 @@
+.bubble-trigger {
+  position: fixed;
+  top: 0.4vh;
+  right: 0.6vw;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.1px);
+  -webkit-backdrop-filter: blur(3.1px);
+  z-index: 3;
+  border: 1px solid black;
+  cursor: pointer;
+  border-radius: 16px;
+  user-select: none;
+}
+
+.bubble {
+  position: fixed;
+  top: 1.2vh;
+  right: 1.2vw;
+  display: none;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.1px);
+  -webkit-backdrop-filter: blur(3.1px);
+  z-index: 4;
+  border-radius: 15px;
+  font-family: 'productsanslight', 'sans-serif';
+  border: 1px solid black;
+  cursor: default;
+  user-select: none;
+}
+
+.bubble a {
+  color: rgb(24, 124, 255);
+}
+
+.bubble a:hover {
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.bubble-trigger:hover + .bubble,
+.bubble:hover {
+  display: block;
+}

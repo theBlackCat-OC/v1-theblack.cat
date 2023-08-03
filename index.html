@@ -1,69 +1,130 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- ~~~~ -->
+    <!-- ~~~~ Meta ~~~~ -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- ~~~~ -->
+    <!-- ~~~~ Favicon ~~~~ -->
     <link rel="icon" type="image/png" href="https://cdn.theblack.cat/resources/thank-you-flaticons/favicon.png">
-    <!-- ~~~~ -->
-    <link rel="stylesheet" type="text/css" href="resources/styles/body.css">
-    <link rel="stylesheet" type="text/css" href="resources/styles/footer.css">   
+    <!-- ~~~~ Root CSS ~~~~ -->
+    <link rel="stylesheet" type="text/css" href="resources/styles/body.css"> 
     <link rel="stylesheet" type="text/css" href="resources/styles/fonts.css">
     <link rel="stylesheet" type="text/css" href="resources/styles/text.css">
     <link rel="stylesheet" type="text/css" href="resources/styles/spacing.css">
     <link rel="stylesheet" type="text/css" href="resources/styles/border-radius.css">
-    <!-- ~~~~ -->
+    <link rel="stylesheet" type="text/css" href="resources/styles/cursor.css">
+    <!-- ~~~~ Embellishment CSS ~~~~ -->
     <link rel="stylesheet" type="text/css" href="resources/styles/polkadot-background.css">
     <link rel="stylesheet" type="text/css" href="resources/styles/glassbox.css">
-    <!-- ~~~~ -->
+    <!-- ~~~~ Specific CSS ~~~~ -->
     <link rel="stylesheet" type="text/css" href="resources/styles/sticky-topbar.css">
+    <link rel="stylesheet" type="text/css" href="resources/styles/sticky-bubbles.css">
+    <link rel="stylesheet" type="text/css" href="resources/styles/linktree.css">
+    <link rel="stylesheet" type="text/css" href="resources/styles/back-button.css">
     <link rel="stylesheet" type="text/css" href="resources/styles/section-title.css">
     <link rel="stylesheet" type="text/css" href="resources/styles/tbc-buttons.css">
     <link rel="stylesheet" type="text/css" href="resources/styles/author-buttons.css">
-    <!-- ~~~~ -->
+    <link rel="stylesheet" type="text/css" href="resources/styles/gallery-buttons.css">
+    <link rel="stylesheet" type="text/css" href="resources/styles/sticky-footer.css">  
+    <!-- ~~~~ Title ~~~~ -->
     <title>Diana, the Black Cat</title>
 </head>
 <body class="loading-animation">
-    <!-- ~~~~ -->
-    <header class="sticky-top-bar glassbox-50 three-em" id="topBar">
-      <div class="header-content latex-regular">big title</div>
+    <!-- ~~~~ TOP BAR ~~~~ -->
+    <header class="sticky-top-bar glassbox-25 three-em" id="topBar">
+      <div class="header-content latex-regular">big title</div>    
     </header>
-    <!-- ~~~~ -->
-    <div class="section-title glassbox-25 border-radius-5px"><span class="three em productsans-bold two-em">one</span></div>
-    <!-- ~~~~ -->
-    <div class="tbc-container">
+    <!-- ~~~~ Bubble Container ~~~~ -->
+    <div class="bubble-container">
+      <div class="bubble-trigger">
+        <img src="https://cdn.theblack.cat/resources/thank-you-flaticons/bug.png" width="28" height="28">
+      </div>
+      <div class="bubble">
+        <span class="productsans-regular">Found any bugs? Have any feedback?<br>Report them in the GitHub Repository Page by <a href="https://github.com/theBlackCat-OC/theblack.cat/issues" target="_blank">Opening an issue&nbsp;<img src="https://cdn.theblack.cat/resources/thank-you-flaticons/new-window.png" width="12" height="12" style="vertical-align: 1px;"></a> and by using an appropiate label.</span>
+      </div>
+    </div>
+    <!-- ~~~~ Linktree ~~~~ -->
+    <div class="linktree-container" id="linktree-container">
+      <div class="linktree-button linktree-button-right glassbox-25 border-radius-13px cursor-pointer" onclick="toggleTBCDetails()" id="tbc">
+        cat
+      </div>
+      <div class="linktree-button linktree-button-left glassbox-25 border-radius-13px cursor-pointer" onclick="toggleAuthorDetails()" id="author">
+        author
+      </div>
+    </div>    
+    <!-- ~~~~ tBC Char Links ~~~~ -->
+    <div class="section-title section-title-long glassbox-25 border-radius-5px cursor-default" style="display:none;" id="tbc-show-title">
+      <span class="two-em productsans-bold two-em">"the Black Cat" Character Links</span>
+    </div>
+    <!-- ~~~~  ~~~~ -->
+    <div class="tbc-container" style="display:none;" id="tbc-show-container">
       <div class="tbc-row">
-        <div class="tbc-button tbc-button-left tbc-button-top glassbox-25 cascadia two-em">&nbsp;</div>
-        <div class="tbc-button tbc-button-right tbc-button-top glassbox-25 productsans-regular two-em">&nbsp;</div>
+        <div class="tbc-button tbc-button-left tbc-button-top glassbox-25 cascadia two-em border-radius-13px cursor-pointer">
+          hi
+        </div>
+        <div class="tbc-button tbc-button-right tbc-button-top glassbox-25 productsans-regular two-em border-radius-13px cursor-pointer">
+          hi
+        </div>
       </div>
       <div class="tbc-row">
-        <div class="tbc-button tbc-button-left tbc-button-bottom glassbox-25 sanfrancisco two-em">&nbsp;</div>
-        <div class="tbc-button tbc-button-right tbc-button-bottom glassbox-25 latex-regular two-em">&nbsp;</div>
+        <div class="tbc-button tbc-button-left tbc-button-bottom glassbox-25 sanfrancisco two-em border-radius-13px cursor-pointer">
+          hi
+        </div>
+        <div class="tbc-button tbc-button-right tbc-button-bottom glassbox-25 latex-regular two-em border-radius-13px cursor-pointer">
+          hi
+        </div>
       </div>
-  </div>
-    <!-- ~~~~ -->
-    <div class="section-title glassbox-25 border-radius-5px"><span class="three em productsans-bold two-em">two</span></div>
-    <!-- ~~~~ -->
-    <div class="author-container">
-      <div class="author-button author-button-right glassbox-25 border-radius-13px">&nbsp;</div>
-      <div class="author-button author-button-left glassbox-25 border-radius-13px">&nbsp;</div>
-    </div>    
-    <!-- ~~~~ -->
-    <div class="section-title glassbox-25 border-radius-5px"><span class="three em productsans-bold two-em">three</span></div>
-    <!-- ~~~~ -->
-    <div class="author-container">
-      <div class="author-button-two author-button-right glassbox-25">&nbsp;</div>
-      <div class="author-button-two glassbox-25">&nbsp;</div>
-      <div class="author-button-two author-button-left glassbox-25">&nbsp;</div>
-    </div>    
-    <!-- ~~~~ -->
-    <footer class="glassbox-50 sanfrancisco">
+    </div>
+      <!-- ~~~~ Back Button ~~~~ -->
+      <div class="back-button back-button-tbc back-button-short glassbox-25 border-radius-5px cursor-pointer" style="display:none;" id="tbc-show-back">
+        <span class="three-em productsans-regular two-em">Back</span>
+      </div>
+    <!-- ~~~~ Author Links ~~~~ -->
+    <div class="section-title section-title-short glassbox-25 border-radius-5px cursor-default" id="author-show-title" style="display:none;">
+      <span class="three-em productsans-bold two-em">Author Links</span>
+    </div>
+    <!-- ~~~~  ~~~~ -->
+    <div class="author-container" id="author-show-container" style="display:none;">
+      <div class="author-button author-button-right glassbox-25 border-radius-13px cursor-pointer">
+        hi
+      </div>
+      <div class="author-button author-button-left glassbox-25 border-radius-13px cursor-pointer">
+        hi
+      </div>
+    </div>
+      <!-- ~~~~ Back Button ~~~~ -->
+      <div class="back-button back-button-short glassbox-25 border-radius-5px cursor-pointer" id="author-show-back" style="display:none;">
+        <span class="three-em productsans-regular two-em">Back</span>
+      </div>
+    <!-- ~~~~ Galleries ~~~~ -->
+    <div class="section-title section-title-long glassbox-25 border-radius-5px cursor-default" style="display:none;" id="galleries-show-title">
+      <span class="three-em productsans-bold two-em">Body Reference Galleries</span>
+    </div>
+    <!-- ~~~~  ~~~~ -->
+    <div class="galleries-container" style="display:none;" id="galleries-show-container">
+      <div class="galleries-button galleries-button-right glassbox-25 border-radius-13px cursor-pointer">
+        hi
+      </div>
+      <div class="galleries-button glassbox-25 border-radius-13px cursor-pointer">
+        hi
+      </div>
+      <div class="galleries-button galleries-button-left glassbox-25 border-radius-13px cursor-pointer">
+        hi
+      </div>
+    </div>
+      <!-- ~~~~ Back Button ~~~~ -->
+      <div class="back-button back-button-short glassbox-25 border-radius-5px cursor-pointer" style="display:none;" id="galleries-show-back">
+        <span class="three-em productsans-regular two-em">Back</span>
+      </div>
+    <!-- ~~~~ Footer ~~~~ -->
+    <footer class="glassbox-25 sanfrancisco">
       <span class="productsans-bold two-em">Footer</span>
     </footer>
-    <!-- ~~~~ -->
+    <!-- ~~~~ Scripts ~~~~ -->
     <script src="https://cdn.theblack.cat/resources/scripts/polkadot.js"></script>
-    <script src="resources/scripts/sticky-topbar.js"></script>
-    <!-- ~~~~ -->
+    <script src="resources/scripts/resize-topbar.js"></script>
+    <script src="resources/scripts/author-selector.js"></script>
+    <script src="resources/scripts/tbc-selector.js"></script>
+    <!-- ~~~~  ~~~~ -->
 </body>
 </html>

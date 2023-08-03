@@ -1,9 +1,12 @@
 .tbc-container {
     top: 18vh;
+    width: 91%;
     height: 68vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-left: 5vw;
+    padding-right: 5vw;
   }
   
   .tbc-row {
@@ -15,14 +18,38 @@
   
   .tbc-button {
     width: 36%;
+    transition: transform 0.5s;
+    text-align: center;
   }
 
   .tbc-button-left{
-    margin-left: 13vw;
-    margin-right: 2vw;
+    margin-left: 13%;
+    margin-right: 2%;
   }
 
   .tbc-button-right{
-    margin-right: 13vw;
-    margin-left: 2vw;
+    margin-right: 13%;
+    margin-left: 2%;
+  }
+  
+  .tbc-button:hover {
+    transform: scale(1.06);
+    z-index: 1;
+  }
+  
+  .tbc-button:not(:hover) {
+    transform: scale(1);
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  @media (min-width: 1420px) {
+    .tbc-container {
+      width: 55%;
+      height: 68vh;
+      padding-left: 23vw;
+      padding-right: 23vw;
+    }
   }

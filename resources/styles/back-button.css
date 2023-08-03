@@ -1,0 +1,34 @@
+.back-button{
+    text-align: center;
+    margin-top: 3vh;
+}
+
+.back-button-long{
+    width: 66.7%;
+    margin-left: 17%;
+}
+
+.back-button-short{
+    width: 33.3333333333333333333333333333333333333333333333333333333333333333333333333333333%;
+    margin-left: 33.3333333333333333333333333333333333333333333333333333333333333333333333333333333%;
+}
+
+  .back-button {
+    transition: transform 0.5s;
+  }
+  
+  .back-button:hover {
+    transform: scale(1.06);
+    z-index: 1;
+  }
+  
+  .back-button:not(:hover) {
+    transform: scale(1);
+  }
+
+  @media (min-width: 1420px) {
+    .back-button-long{
+        width: 33.3333333333333333333333333333333333333333333333333333333333333333333333333333333%;
+        margin-left: 33.3333333333333333333333333333333333333333333333333333333333333333333333333333333%;
+    }
+  }

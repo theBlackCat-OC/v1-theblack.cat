@@ -5,12 +5,11 @@
   height: 7vh;
   margin-bottom: 7vh;
   transition: height 0.3s ease;
-  z-index: 999;
+  z-index: 1;
 }
 
 .header-content {
   height: 80%;
   display: flex;
   transition: font-size 0.3s ease;
-  padding-bottom: 0.5vh;
 }

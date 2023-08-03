@@ -1,0 +1,40 @@
+.galleries-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 91%;
+    height: 68vh;
+    display: flex;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  
+  .galleries-button-two {
+    display: inline-block;
+    padding: 10px;
+    width: 20%;
+    height: 50vh;
+    text-align: center;
+  }
+
+  .galleries-button-two {
+    transition: transform 0.5s;
+  }
+  
+  .galleries-button-two:hover {
+    transform: scale(1.06);
+    z-index: 1;
+  }
+  
+  .galleries-button-two:not(:hover) {
+    transform: scale(1);
+  }
+
+  @media (min-width: 1420px) {
+    .author-container {
+      width: 55%;
+      height: 68vh;
+      padding-left: 23vw;
+      padding-right: 23vw;
+    }
+  }
