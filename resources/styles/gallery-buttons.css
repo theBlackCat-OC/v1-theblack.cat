@@ -30,7 +30,7 @@
     transform: scale(1);
   }
 
-  @media (min-width: 1420px) {
+  @media (min-width: 1600px) {
     .galleries-container {
       width: 55%;
       height: 68vh;

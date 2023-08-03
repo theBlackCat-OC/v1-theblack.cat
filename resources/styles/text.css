@@ -54,6 +54,18 @@
     font-family: 'sanfrancisco', sans-serif;
 }
 
+.text-align-center{
+    text-align: center;
+}
+
+.text-align-left{
+    text-align: left;
+}
+
+.text-align-right{
+    text-align: right;
+}
+
 .pointseven-em{
     font-size: 0.7em;
 }
