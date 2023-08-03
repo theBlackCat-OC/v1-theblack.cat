@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="resources/styles/spacing.css">
     <link rel="stylesheet" type="text/css" href="resources/styles/border-radius.css">
     <link rel="stylesheet" type="text/css" href="resources/styles/cursor.css">
+    <link rel="stylesheet" type="text/css" href="resources/styles/user-selectable.css">
     <!-- ~~~~ Embellishment CSS ~~~~ -->
     <link rel="stylesheet" type="text/css" href="resources/styles/polkadot-background.css">
     <link rel="stylesheet" type="text/css" href="resources/styles/glassbox.css">
@@ -30,9 +31,9 @@
     <title>Diana, the Black Cat</title>
 </head>
 <body class="loading-animation">
-    <!-- ~~~~ TOP BAR ~~~~ -->
+    <!-- ~~~~ Top Bar ~~~~ -->
     <header class="sticky-top-bar glassbox-25 three-em" id="topBar">
-      <div class="header-content latex-regular">Diana, "the Black Cat"</div>    
+      <div class="header-content latex-regular user-select-none">Diana, "the Black Cat"</div>    
     </header>
     <!-- ~~~~ Bubble Container ~~~~ -->
     <div class="bubble-container">
@@ -40,85 +41,85 @@
         <img src="https://cdn.theblack.cat/resources/thank-you-flaticons/bug.png" width="28" height="28">
       </div>
       <div class="bubble">
-        <span class="productsans-regular">Found any bugs? Have any feedback?<br>Report them in the GitHub Repository Page by <a href="https://github.com/theBlackCat-OC/theblack.cat/issues" target="_blank">Opening an issue&nbsp;<img src="https://cdn.theblack.cat/resources/thank-you-flaticons/new-window.png" width="12" height="12" style="vertical-align: 1px;"></a> and by using an appropiate label.</span>
+        <span class="productsans-regular user-select-none">Found any bugs? Have any feedback?<br>Report them in the GitHub Repository Page by <a href="https://github.com/theBlackCat-OC/theblack.cat/issues" target="_blank">Opening an issue&nbsp;<img src="https://cdn.theblack.cat/resources/thank-you-flaticons/new-window.png" width="12" height="12" style="vertical-align: 1px;"></a> and by using an appropiate label.</span>
       </div>
     </div>
     <!-- ~~~~ Linktree ~~~~ -->
     <div class="linktree-container" id="linktree-container">
       <div class="linktree-button linktree-button-right glassbox-25 border-radius-13px cursor-pointer" onclick="toggleTBCDetails()" id="tbc">
-        cat
+        <span>Original Character Links</span>
       </div>
       <div class="linktree-button linktree-button-left glassbox-25 border-radius-13px cursor-pointer" onclick="toggleAuthorDetails()" id="author">
-        author
+        <span>Author Links</span>
       </div>
     </div>    
     <!-- ~~~~ tBC Char Links ~~~~ -->
     <div class="section-title section-title-long glassbox-25 border-radius-5px cursor-default" style="display:none;" id="tbc-show-title">
-      <span class="two-em productsans-bold two-em">"the Black Cat" Character Links</span>
+      <span class="two-em productsans-bold two-em user-select-none">"the Black Cat" Character Links</span>
     </div>
     <!-- ~~~~  ~~~~ -->
     <div class="tbc-container" style="display:none;" id="tbc-show-container">
       <div class="tbc-row">
-        <div class="tbc-button tbc-button-left tbc-button-top glassbox-25 cascadia two-em border-radius-13px cursor-pointer" onclick="toggleGalleryDetails()" id="galleries">
-          hi
+        <div class="tbc-button tbc-button-left tbc-button-top glassbox-25 border-radius-13px cursor-pointer" onclick="toggleGalleryDetails()" id="galleries">
+          <span>Body Reference Galleries</span>
         </div>
-        <div class="tbc-button tbc-button-right tbc-button-top glassbox-25 productsans-regular two-em border-radius-13px cursor-pointer">
-          hi
+        <div class="tbc-button tbc-button-right tbc-button-top glassbox-25 border-radius-13px cursor-pointer">
+          <span>Commissioned Works Gallery</span>
         </div>
       </div>
       <div class="tbc-row">
-        <div class="tbc-button tbc-button-left tbc-button-bottom glassbox-25 sanfrancisco two-em border-radius-13px cursor-pointer">
-          hi
+        <div class="tbc-button tbc-button-left tbc-button-bottom glassbox-25 border-radius-13px cursor-pointer">
+          <span>Terms of Use</span>
         </div>
-        <div class="tbc-button tbc-button-right tbc-button-bottom glassbox-25 latex-regular two-em border-radius-13px cursor-pointer">
-          hi
+        <div class="tbc-button tbc-button-right tbc-button-bottom glassbox-25 border-radius-13px cursor-pointer">
+          <span>FFXIV&copy;&nbsp;WCIF</span>
         </div>
       </div>
     </div>
-      <!-- ~~~~ Back Button ~~~~ -->
+      <!-- ~~~~ tBC Back Button ~~~~ -->
       <div class="back-button back-button-tbc back-button-short glassbox-25 border-radius-5px cursor-pointer" style="display:none;" id="tbc-show-back">
-        <span class="two-em productsans-regular two-em">Back</span>
+        <span class="two-em productsans-regular user-select-none">Back</span>
       </div>
     <!-- ~~~~ Author Links ~~~~ -->
     <div class="section-title section-title-short glassbox-25 border-radius-5px cursor-default" id="author-show-title" style="display:none;">
-      <span class="three-em productsans-bold two-em">Author Links</span>
+      <span class="productsans-bold two-em user-select-none">Author Links</span>
     </div>
     <!-- ~~~~  ~~~~ -->
     <div class="author-container" id="author-show-container" style="display:none;">
       <div class="author-button author-button-right glassbox-25 border-radius-13px cursor-pointer">
-        hi
+        <span>Contact Options</span>
       </div>
       <div class="author-button author-button-left glassbox-25 border-radius-13px cursor-pointer">
-        hi
+        <span>CuriousCat Profile</span>
       </div>
     </div>
-      <!-- ~~~~ Back Button ~~~~ -->
+      <!-- ~~~~ Author Back Button ~~~~ -->
       <div class="back-button back-button-short glassbox-25 border-radius-5px cursor-pointer" id="author-show-back" style="display:none;">
-        <span class="three-em productsans-regular two-em">Back</span>
+        <span class="three-em productsans-regular user-select-none">Back</span>
       </div>
     <!-- ~~~~ Galleries ~~~~ -->
     <div class="section-title section-title-long glassbox-25 border-radius-5px cursor-default" style="display:none;" id="galleries-show-title">
-      <span class="three-em productsans-bold two-em">Body Reference Galleries</span>
+      <span class="three-em productsans-bold onepointfive-em user-select-none">Body Reference Galleries</span>
     </div>
     <!-- ~~~~  ~~~~ -->
     <div class="galleries-container" style="display:none;" id="galleries-show-container">
       <div class="galleries-button galleries-button-right glassbox-25 border-radius-13px cursor-pointer">
-        hi
+        <span>Body Reference Gallery</span>
       </div>
       <div class="galleries-button glassbox-25 border-radius-13px cursor-pointer">
-        hi
+        <span>Body Reference Gallery for skeb.jp Artists</span>
       </div>
       <div class="galleries-button galleries-button-left glassbox-25 border-radius-13px cursor-pointer">
-        hi
+        <span>Body Reference Gallery Google Drive Folder</span>
       </div>
     </div>
-      <!-- ~~~~ Back Button ~~~~ -->
-      <div class="back-button back-button-short glassbox-25 border-radius-5px cursor-pointer" style="display:none;" id="galleries-show-back">
-        <span class="three-em productsans-regular two-em">Back</span>
+      <!-- ~~~~ Galleries Back Button ~~~~ -->
+      <div class="back-button back-button-short glassbox-25 border-radius-5px cursor-pointer back-button-font" style="display:none;" id="galleries-show-back">
+        <span class="three-em productsans-regular user-select-none">Back</span>
       </div>
     <!-- ~~~~ Footer ~~~~ -->
     <footer class="glassbox-25 sanfrancisco cursor-default">
-      <span class="productsans-bold two-em">Footer</span>
+      <span class="productsans-bold two-em user-select-none">Footer</span>
     </footer>
     <!-- ~~~~ Scripts ~~~~ -->
     <script src="https://cdn.theblack.cat/resources/scripts/polkadot.js"></script>

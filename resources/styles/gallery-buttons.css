@@ -9,29 +9,29 @@
     padding-right: 5vw;
   }
   
-  .galleries-button-two {
+  .galleries-button {
     display: inline-block;
     padding: 10px;
-    width: 20%;
+    width: 30%;
     height: 50vh;
     text-align: center;
   }
 
-  .galleries-button-two {
+  .galleries-button {
     transition: transform 0.3s;
   }
   
-  .galleries-button-two:active {
+  .galleries-button:hover {
     transform: scale(1.06);
     z-index: 1;
   }
   
-  .galleries-button-two:not(:active) {
+  .galleries-button:not(:hover) {
     transform: scale(1);
   }
 
   @media (min-width: 1420px) {
-    .author-container {
+    .galleries-container {
       width: 55%;
       height: 68vh;
       padding-left: 23vw;
