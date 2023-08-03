@@ -1,0 +1,28 @@
+.tbc-container {
+    top: 18vh;
+    height: 68vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .tbc-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3vh;
+    width: 100%;
+  }
+  
+  .tbc-button {
+    width: 36%;
+  }
+
+  .tbc-button-left{
+    margin-left: 13vw;
+    margin-right: 2vw;
+  }
+
+  .tbc-button-right{
+    margin-right: 13vw;
+    margin-left: 2vw;
+  }
