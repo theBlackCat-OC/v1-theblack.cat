@@ -39,5 +39,19 @@
   }
 
 
-  @media (max-width: 852px) {
+  @media (min-width: 1500px) {
+    .tbc-container {
+      top: 18vh;
+      width: 75%;
+      margin-left: 12.5%;
+      height: 68vh;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    
+    .tbc-button {
+      width: 50%;
+      transition: transform 0.3s;
+    }
 }
