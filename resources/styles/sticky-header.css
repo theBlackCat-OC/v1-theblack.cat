@@ -4,11 +4,11 @@ header {
   width: 100vw;
   height: 5vh;
   margin-bottom: 7vh;
-  transition: height 0.3s ease;
+  transition: 0.3s ease;
   z-index: 1;
   padding-left: 1vw;
   padding-top: 0.3vh;
-  padding-bottom: 0.3vh;
+  padding-bottom: 1vh;
 }
 
 header span{
