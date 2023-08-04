@@ -17,6 +17,10 @@
     margin-right: 2%;
 }
 
+.marginleft-dotfivepercent{
+    margin-left: 0.5%;
+}
+
 .marginleft-1percent{
     margin-left: 1%;
 }
@@ -30,4 +34,24 @@
 }
 .vertical-align-1dot1vh{
     vertical-align: 1.1vh;
+}
+
+.vertical-align-0dot1vh{
+    vertical-align: -0.1vh;
+}
+
+.vertical-align-0dot2vh{
+    vertical-align: -0.2vh;
+}
+
+.vertical-align-0dot3vh{
+    vertical-align: -0.3vh;
+}
+
+.vertical-align-0dot4vh{
+    vertical-align: -0.4vh;
+}
+
+.vertical-align-minus0dot4vh{
+    vertical-align: 0.4vh;
 }

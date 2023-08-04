@@ -107,3 +107,19 @@
     white-space: nowrap;
     overflow: hidden;
 }
+
+a {
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: rgb(24, 124, 255);
+}
+
+a:hover, .a:active {
+    color: rgb(24, 124, 255);
+}
+
+.underline{
+    border-bottom: 1px solid black;
+}

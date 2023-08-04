@@ -1,59 +1,88 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- ~~~~ Meta ~~~~ -->
     <meta charset="utf-8">
-    <!-- ~~~~ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ~~~~ Favicon ~~~~ -->
     <link rel="icon" type="image/png" href="https://cdn.theblack.cat/resources/thank-you-flaticons/favicon.png">
-    <!-- ~~~~ -->
-    <link rel="stylesheet" type="text/css" href="resources/styles/root.css">
-    <link rel="stylesheet" type="text/css" href="resources/styles/topbar.css">
-    <link rel="stylesheet" type="text/css" href="resources/styles/bottombar.css">
-    <link rel="stylesheet" type="text/css" href="resources/styles/textboxes.css">
-    <!-- ~~~~ -->
-    <link rel="stylesheet" type="text/css" href="resources/styles/bubbles-two.css">
-    <link rel="stylesheet" type="text/css" href="resources/styles/wcif.css">
-    <!-- ~~~~ -->
+    <!-- ~~~~ Root CSS ~~~~ -->
+    <link rel="stylesheet" type="text/css" href="resources/styles/body.css"> 
+    <link rel="stylesheet" type="text/css" href="resources/styles/fonts.css">
+    <link rel="stylesheet" type="text/css" href="resources/styles/text.css">
+    <link rel="stylesheet" type="text/css" href="resources/styles/spacing.css">
+    <link rel="stylesheet" type="text/css" href="resources/styles/border-radius.css">
+    <link rel="stylesheet" type="text/css" href="resources/styles/cursor.css">
+    <link rel="stylesheet" type="text/css" href="resources/styles/positions.css">
+    <link rel="stylesheet" type="text/css" href="resources/styles/text-content.css">
+    <link rel="stylesheet" type="text/css" href="resources/styles/sizing.css"> 
+    <!-- ~~~~ Embellishment CSS ~~~~ -->
+    <link rel="stylesheet" type="text/css" href="resources/styles/polkadot-background.css">
+    <link rel="stylesheet" type="text/css" href="resources/styles/glassbox.css">
+    <!-- ~~~~ Specific CSS ~~~~ -->
+    <link rel="stylesheet" type="text/css" href="resources/styles/sticky-header.css">
+    <link rel="stylesheet" type="text/css" href="resources/styles/sticky-bubbles.css">
+    <link rel="stylesheet" type="text/css" href="resources/styles/linktree.css">
+    <link rel="stylesheet" type="text/css" href="resources/styles/back-button.css">
+    <link rel="stylesheet" type="text/css" href="resources/styles/section-title.css">
+    <link rel="stylesheet" type="text/css" href="resources/styles/tbc-buttons.css">
+    <link rel="stylesheet" type="text/css" href="resources/styles/author-buttons.css">
+    <link rel="stylesheet" type="text/css" href="resources/styles/gallery-buttons.css">
+    <link rel="stylesheet" type="text/css" href="resources/styles/sticky-footer.css">  
   <title>404: Not Found - "the Black Cat"</title>
 </head>
-<body class="loading-animation">
-  <div class="topbar"><a href="https://theblack.cat"><span>&nbsp;That didn't work</span></a>
+<body>
+  <!-- ~~~~ Header ~~~~ -->
+  <header class="sticky-top-bar">
+    <div class="user-select-none hidden-and-nowrap textalign-left">
+      <span class="productsans-bold three-em description-text-black">That Didn't Work</span>
+    </div>  
+  </header>
+  <!-- ~~~~ Bubble Container ~~~~ -->
+  <div class="bubble-container">
+   <div class="bubble-trigger">
+    <img src="https://cdn.theblack.cat/resources/thank-you-flaticons/bug.png" width="28" height="28">
   </div>
-  <!-- ~~~~ -->
-  <br><br><br><br>
-  <div id="gallery-description"><img src="https://cdn.theblack.cat/resources/thank-you-flaticons/404.png" width="28" height="28" class="inline-icon-index">&nbsp;<span>404: Not found</span></div><br><br>
-  <div class="button-outer-box-contact">
-    <!-- ~~~~ -->
-    <div class="bubble-trigger-bug">
-      <img src="https://cdn.theblack.cat/resources/thank-you-flaticons/bug.png" width="28" height="28">
+   <div class="bubble">
+     <span class="productsans-regular user-select-none">Found any bugs? Have any feedback?
+     <br>
+     Report them in the GitHub Repository Page by <a href="https://github.com/theBlackCat-OC/theblack.cat/issues" target="_blank">Opening an issue&nbsp;<img src="https://cdn.theblack.cat/resources/thank-you-flaticons/new-window.png" width="12" height="12" style="vertical-align: 1px;"></a> and by using an appropiate label.
+    </span>
+  </div>
+  <!-- ~~~~ 404 ~~~~ -->
+  <div class="section-title section-title-long glassbox-25 border-radius-5px cursor-default">
+    <img src="https://cdn.theblack.cat/resources/thank-you-flaticons/404.png" width="28" height="28" class="vertical-align-0dot4vh marginright-1percent">
+    <span class="productsans-bold two-em">404: Not found</span></div><br><br>
+  <div>
+  <!-- ~~~~ 404 Content ~~~~ -->
+    <div class="glassbox-50 width-50vw margin-left-22-5vw padding-threevw border-radius-16px">
+      <span class="pointeight-em latex-regular">woops!</span>
+    <br><br>
+      <span class="productsans-regular two-em textalign-center">The page you seek no longer exists or has been moved.</span>
+    <br><br>
+    <span class="productsans-regular">You may return to the <a href="https://theblack.cat">Start Page</a>.</span>
+      <br><br>
+        <div class="glassbox-10 padding-onevw border-radius-13px">
+        <span class="two-em latex-italic-bold textalign-left underline">What is a 404 error?</span><br><br>
+          <span class="latex-regular textalign-center padding-fourpx .margin-left-25">
+            The HTTP 404 Not Found response status code indicates that the server cannot find the requested resource.<br>
+            Links that lead to a 404 page are often called broken or dead links and can be subject to link rot.<br>
+            A 404 status code only indicates that the resource is missing: not whether the absence is temporary or permanent.<br>
+          </span>
+      </div>
     </div>
-    <div class="bubble-bug">
-      <span>The page you seek should've been here but it is not?
-        <br>Please, <a href="https://theblack.cat/contact" target="_blank">contact me</a> if is critical, 
-        <br>Or report it in the GitHub Repository Page by <a href="https://github.com/theBlackCat-OC/references-gallery/issues" target="_blank">opening an issue&nbsp;<img src="https://cdn.theblack.cat/resources/thank-you-flaticons/new-window.png" width="12" height="12" style="vertical-align: 1px;"></a> and by using an bug label if it's not.</span>
-    </div> 
-  <!-- ~~~~ -->
-    <span class="footnote">woops!</span><br>
-    <span class="smollistthree">The page you seek no longer exists or has been moved.
-      <br>
-      You can to check the <a href="site-map"><img src="https://cdn.theblack.cat/resources/thank-you-flaticons/map.png" width="22" height="22" class="inline-icon-index">&nbsp;Site Map here</a>.</span><br><br>
-        <div class="notfound">
-        <span class="spantitle">What is a 404 error?</span><br>
-        <span class="spandefinition">
-          The HTTP 404 Not Found response status code indicates that the server cannot find the requested resource.<br>
-          Links that lead to a 404 page are often called broken or dead links and can be subject to link rot.<br>
-          A 404 status code only indicates that the resource is missing: not whether the absence is temporary or permanent.<br>
-        </span>
-      </div><br>
-  </div>
-
-<br><br><br><br><br><br>
-<div class="bottombar">
-  <a href="https://theblack.cat"><span>&copy;&nbsp;黒猫 - "the Black Cat", 2023&nbsp;&nbsp;</span></a>
-</div>
-<!-- ~~~~ -->
-  <script src="https://cdn.theblack.cat/resources/scripts/slides.js"></script>
-  <script src="https://cdn.theblack.cat/resources/scripts/polkadot.js"></script>
-  <script src="https://cdn.theblack.cat/resources/scripts/totop.js"></script>
-  <script src="https://cdn.theblack.cat/resources/scripts/bubble-begone.js"></script>
+    <!-- ~~~~ Footer ~~~~ -->
+    <footer class="glassbox-25 sanfrancisco cursor-default">
+      <div class="textalign-center">
+        <div class="footer-display cursor-pointer"><img class="contained-img" src="https://cdn.theblack.cat/resources/icons/orange-git.svg"></div>
+      </div>
+    </footer>  
+    <!-- ~~~~ Scripts ~~~~ -->
+    <script src="https://cdn.theblack.cat/resources/scripts/polkadot.js"></script>
+    <script src="resources/scripts/bubble-begone.js"></script>
+    <script src="resources/scripts/author-selector.js"></script>
+    <script src="resources/scripts/tbc-selector.js"></script>
+    <script src="resources/scripts/link-query.js"></script>
+    <!-- ~~~~  ~~~~ -->
 </body>
 </html>
