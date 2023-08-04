@@ -2,17 +2,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 68vh;
+    height: 72vh;
     width: 63vw;
-    margin-top: 18vh;
+    margin-top: 15vh;
     margin-left: 18.5%;
   }
   
   .linktree-button {
     display: inline-block;
     transition: transform 0.5s;
-    width: 44vw;
-    height: 50vh;
+    width: 50vw;
+    height: 60vh;
   }
 
   /* --- */
@@ -40,10 +40,35 @@
 
   /* --- */
 
-  @media (min-width: 1600px) {
+  @media (max-width: 1400px) {
     .linktree-container {
-      width: 72%;
+      width: 72vw;
       height: 68vh;
-      margin-left: 14%;
+      margin-left: 13%;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    .linktree-button-left{
+      margin-bottom: 3vh;
+    }
+
+    .linktree-button {
+      display: inline-block;
+      transition: transform 0.5s;
+      width: 50vw;
+      height: 40vh;
+      margin-left: 12vw;
+    }
+  
+  }
+
+  @media (max-width: 1400px) {
+    .linktree-container {
+      width: 72vw;
+      height: 68vh;
+      margin-left: 13%;
+      align-items: flex-start;
+      flex-direction: column;
     }
   }

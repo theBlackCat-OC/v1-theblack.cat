@@ -54,15 +54,15 @@
     font-family: 'sanfrancisco', sans-serif;
 }
 
-.text-align-center{
+.textalign-center{
     text-align: center;
 }
 
-.text-align-left{
+.textalign-left{
     text-align: left;
 }
 
-.text-align-right{
+.textalign-right{
     text-align: right;
 }
 

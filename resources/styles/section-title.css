@@ -1,12 +1,12 @@
 .section-title{
-    text-align: center;
-    margin-top: 10vh;
+    margin-top: 8vh;
     margin-bottom: 3vh;
+    margin-left: 27.5vw;
+    padding: 0.5%;
 }
 
 .section-title-long{
-    width: 66.7%;
-    margin-left: 17%;
+    width: 45vw;
 }
 
 @media (min-width: 1420px) {
@@ -17,6 +17,5 @@
   }
 
 .section-title-short{
-    width: 33.3333333333333333333333333333333333333333333333333333333333333333333333333333333%;
-    margin-left: 33.3333333333333333333333333333333333333333333333333333333333333333333333333333333%;
+    width: 45vw;
 }
