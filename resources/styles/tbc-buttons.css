@@ -15,6 +15,7 @@
   }
   
   .tbc-button {
+    overflow: hidden;
     width: 45%;
     transition: transform 0.3s;
   }

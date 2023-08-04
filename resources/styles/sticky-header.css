@@ -1,4 +1,4 @@
-.sticky-top-bar {
+header {
   position: fixed;
   top: 0;
   width: 100vw;
@@ -9,4 +9,8 @@
   padding-left: 1vw;
   padding-top: 0.3vh;
   padding-bottom: 0.3vh;
+}
+
+header span{
+  margin-top: 50%;
 }

@@ -14,11 +14,12 @@
     <link rel="stylesheet" type="text/css" href="resources/styles/border-radius.css">
     <link rel="stylesheet" type="text/css" href="resources/styles/cursor.css">
     <link rel="stylesheet" type="text/css" href="resources/styles/positions.css">
+    <link rel="stylesheet" type="text/css" href="resources/styles/button-description-backgrounds.css"> 
     <!-- ~~~~ Embellishment CSS ~~~~ -->
     <link rel="stylesheet" type="text/css" href="resources/styles/polkadot-background.css">
     <link rel="stylesheet" type="text/css" href="resources/styles/glassbox.css">
     <!-- ~~~~ Specific CSS ~~~~ -->
-    <link rel="stylesheet" type="text/css" href="resources/styles/sticky-topbar.css">
+    <link rel="stylesheet" type="text/css" href="resources/styles/sticky-header.css">
     <link rel="stylesheet" type="text/css" href="resources/styles/sticky-bubbles.css">
     <link rel="stylesheet" type="text/css" href="resources/styles/linktree.css">
     <link rel="stylesheet" type="text/css" href="resources/styles/back-button.css">
@@ -33,7 +34,7 @@
 <body class="loading-animation">
     <!-- ~~~~ Top Bar ~~~~ -->
     <header class="sticky-top-bar glassbox-25" id="topBar">
-      <div class="latex-regular user-select-none hidden-and-nowrap textalign-center">"the Black Cat"</div>    
+      <div class="latex-regular user-select-none hidden-and-nowrap textalign-center"><span>"the Black Cat"</span></div>    
     </header>
     <!-- ~~~~ Bubble Container ~~~~ -->
     <div class="bubble-container">
@@ -46,33 +47,33 @@
     </div>
     <!-- ~~~~ Linktree ~~~~ -->
     <div class="linktree-container" id="linktree-container">
-      <div class="linktree-button linktree-button-left glassbox-25 border-radius-13px cursor-pointer" onclick="toggleTBCDetails()" id="tbc">
-        <span>Original Character Links</span>
+      <div class="linktree-button linktree-button-left glassbox-25 border-radius-13px cursor-pointer pfp-chaosringen-sketch-background" onclick="toggleTBCDetails()" id="tbc">
+        <div class="description-background-black description-text-white productsans-bold onepointfive-em"><span>Original Character Links</span></div>
       </div>
       <div class="linktree-button linktree-button-right glassbox-25 border-radius-13px cursor-pointer" onclick="toggleAuthorDetails()" id="author">
-        <span>Author Links</span>
+        <div class="description-background-black description-text-white productsans-bold onepointfive-em"><span>Author Links</span></div>
       </div>
     </div>    
     <!-- ~~~~ tBC Char Links ~~~~ -->
     <div class="section-title section-title-long glassbox-25 border-radius-5px cursor-default" style="display:none;" id="tbc-show-title">
-      <span class="productsans-bold user-select-none">Original Character Links</span>
+      <span class="productsans-bold user-select-none two-em">Original Character Links</span>
     </div>
     <!-- ~~~~  ~~~~ -->
     <div class="tbc-container" style="display:none;" id="tbc-show-container">
       <div class="tbc-row">
         <div class="tbc-button tbc-button-left tbc-button-top glassbox-25 border-radius-13px cursor-pointer" onclick="toggleGalleryDetails()" id="galleries">
-          <span>Body Reference Galleries</span>
+          <div class="description-background-black description-text-white productsans-bold onepointfive-em"><span>Body Reference Galleries</span></div>
         </div>
         <div class="tbc-button tbc-button-right tbc-button-top glassbox-25 border-radius-13px cursor-pointer">
-          <span>Commissioned Works Gallery</span>
+          <div class="description-background-black description-text-white productsans-bold onepointfive-em"><span>Commissioned Works Gallery</span></div>
         </div>
       </div>
       <div class="tbc-row">
         <div class="tbc-button tbc-button-left tbc-button-bottom glassbox-25 border-radius-13px cursor-pointer">
-          <span>Terms of Use</span>
+          <div class="description-background-black description-text-white productsans-bold onepointfive-em"><span>Terms of Use</span></div>
         </div>
         <div class="tbc-button tbc-button-right tbc-button-bottom glassbox-25 border-radius-13px cursor-pointer">
-          <span>FFXIV&copy;&nbsp;WCIF</span>
+          <div class="description-background-black description-text-white productsans-bold onepointfive-em"><span>FFXIV&copy;&nbsp;WCIF</span></div>
         </div>
       </div>
     </div>
@@ -87,10 +88,10 @@
     <!-- ~~~~  ~~~~ -->
     <div class="author-container" id="author-show-container" style="display:none;">
       <div class="author-button author-button-left glassbox-25 border-radius-13px cursor-pointer">
-        <span>Contact Options</span>
+        <div class="description-background-black description-text-white productsans-bold onepointfive-em"><span>Contact Options</span></div>
       </div>
       <div class="author-button author-button-right glassbox-25 border-radius-13px cursor-pointer">
-        <span>CuriousCat Profile</span>
+        <div class="description-background-black description-text-white productsans-bold onepointfive-em"><span>CuriousCat Profile</span></div>
       </div>
     </div>
       <!-- ~~~~ Author Back Button ~~~~ -->
@@ -99,18 +100,18 @@
       </div>
     <!-- ~~~~ Galleries ~~~~ -->
     <div class="section-title section-title-long glassbox-25 border-radius-5px cursor-default" style="display:none;" id="galleries-show-title">
-      <span class="productsans-bold user-select-none">Body Reference Galleries</span>
+      <span class="productsans-bold user-select-none two-em">Body Reference Galleries</span>
     </div>
     <!-- ~~~~  ~~~~ -->
     <div class="galleries-container" style="display:none;" id="galleries-show-container">
       <div class="galleries-button galleries-button-left glassbox-25 border-radius-13px cursor-pointer">
-        <span>Body Reference Gallery</span>
+        <div class="description-background-black description-text-white productsans-bold onepointfive-em"><span>Body Reference Gallery</span></div>
       </div>
       <div class="galleries-button glassbox-25 border-radius-13px cursor-pointer">
-        <span class="textalign-center">Body Reference Gallery for skeb.jp Artists</span>
+        <div class="description-background-black description-text-white productsans-bold onepointfive-em"><span class="textalign-center">Body Reference Gallery for skeb.jp Artists</span></div>
       </div>
       <div class="galleries-button galleries-button-right glassbox-25 border-radius-13px cursor-pointer">
-        <span>Body Reference Gallery Google Drive Folder</span>
+        <div class="description-background-black description-text-white productsans-bold onepointfive-em"><span>Body Reference Galleries Google Drive Folder</span></div>
       </div>
     </div>
       <!-- ~~~~ Galleries Back Button ~~~~ -->
@@ -120,9 +121,9 @@
     <!-- ~~~~ Footer ~~~~ -->
     <footer class="glassbox-25 sanfrancisco cursor-default">
       <div class="textalign-center">
-        <div class="display-inlineblock"><img class="contained-img" src="https://cdn.theblack.cat/resources/thank-you-flaticons/site-map.png"></div>
-        <div class="display-inlineblock"><img class="contained-img" src="https://cdn.theblack.cat/resources/thank-you-flaticons/git.png"></div>
-        <div class="display-inlineblock"><img class="contained-img" src="https://cdn.theblack.cat/resources/thank-you-flaticons/favicon.png"></div>
+        <div class="footer-display"><img class="contained-img" src="https://cdn.theblack.cat/resources/thank-you-flaticons/site-map.png"></div>
+        <div class="footer-display"><img class="contained-img" src="https://cdn.theblack.cat/resources/thank-you-flaticons/git.png"></div>
+        <div class="footer-display"><img class="contained-img" src="https://cdn.theblack.cat/resources/thank-you-flaticons/favicon.png"></div>
       </div>
     </footer>
     <!-- ~~~~ Scripts ~~~~ -->

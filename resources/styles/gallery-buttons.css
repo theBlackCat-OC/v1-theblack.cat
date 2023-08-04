@@ -8,6 +8,7 @@
   }
   
   .galleries-button {
+    overflow: hidden;
     display: inline-block;
     width: 75%;
     height: 75%;
@@ -33,6 +34,7 @@
       align-items: flex-start;
       flex-direction: column;
       margin-left:0;
+      margin-bottom: 3vh;
     }
 
     .galleries-button {
