@@ -5,6 +5,7 @@
   height: 65vh;
   width: 63vw;
   margin-left: 18.5%;
+  margin-bottom: 3vh;
 }
 
 .author-button {
@@ -60,4 +61,10 @@
     margin-left: 12vw;
   }
 
+}
+
+@media (min-width: 1920px) {
+  .author-container{
+    margin-bottom: 1vh;
+  }
 }

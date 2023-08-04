@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="resources/styles/spacing.css">
     <link rel="stylesheet" type="text/css" href="resources/styles/border-radius.css">
     <link rel="stylesheet" type="text/css" href="resources/styles/cursor.css">
+    <link rel="stylesheet" type="text/css" href="resources/styles/positions.css">
     <!-- ~~~~ Embellishment CSS ~~~~ -->
     <link rel="stylesheet" type="text/css" href="resources/styles/polkadot-background.css">
     <link rel="stylesheet" type="text/css" href="resources/styles/glassbox.css">
@@ -32,7 +33,7 @@
 <body class="loading-animation">
     <!-- ~~~~ Top Bar ~~~~ -->
     <header class="sticky-top-bar glassbox-25" id="topBar">
-      <div class="header-content latex-regular user-select-none twopointfive-em text-align-center">Diana, "the Black Cat"</div>    
+      <div class="latex-regular user-select-none hidden-and-nowrap textalign-center">"the Black Cat"</div>    
     </header>
     <!-- ~~~~ Bubble Container ~~~~ -->
     <div class="bubble-container">
@@ -54,7 +55,7 @@
     </div>    
     <!-- ~~~~ tBC Char Links ~~~~ -->
     <div class="section-title section-title-long glassbox-25 border-radius-5px cursor-default" style="display:none;" id="tbc-show-title">
-      <span class="two-em productsans-bold two-em user-select-none">Original Character Links</span>
+      <span class="productsans-bold user-select-none">Original Character Links</span>
     </div>
     <!-- ~~~~  ~~~~ -->
     <div class="tbc-container" style="display:none;" id="tbc-show-container">
@@ -77,11 +78,11 @@
     </div>
       <!-- ~~~~ tBC Back Button ~~~~ -->
       <div class="back-button back-button-tbc back-button-short glassbox-25 border-radius-5px cursor-pointer" style="display:none;" id="tbc-show-back">
-        <span class="two-em productsans-bold user-select-none text-align-center">Back</span>
+        <span class="productsans-bold user-select-none">Back</span>
       </div>
     <!-- ~~~~ Author Links ~~~~ -->
     <div class="section-title section-title-short glassbox-25 border-radius-5px cursor-default" id="author-show-title" style="display:none;">
-      <span class="productsans-bold two-em user-select-none text-align-center">Author Links</span>
+      <span class="productsans-bold user-select-none">Author Links</span>
     </div>
     <!-- ~~~~  ~~~~ -->
     <div class="author-container" id="author-show-container" style="display:none;">
@@ -94,11 +95,11 @@
     </div>
       <!-- ~~~~ Author Back Button ~~~~ -->
       <div class="back-button back-button-short glassbox-25 border-radius-5px cursor-pointer" id="author-show-back" style="display:none;">
-        <span class="three-em productsans-regular user-select-none text-align-center">Back</span>
+        <span class="productsans-regular user-select-none">Back</span>
       </div>
     <!-- ~~~~ Galleries ~~~~ -->
     <div class="section-title section-title-long glassbox-25 border-radius-5px cursor-default" style="display:none;" id="galleries-show-title">
-      <span class="productsans-bold onepointfive-em user-select-none two-em">Body Reference Galleries</span>
+      <span class="productsans-bold user-select-none">Body Reference Galleries</span>
     </div>
     <!-- ~~~~  ~~~~ -->
     <div class="galleries-container" style="display:none;" id="galleries-show-container">
@@ -114,13 +115,15 @@
     </div>
       <!-- ~~~~ Galleries Back Button ~~~~ -->
       <div class="back-button back-button-short glassbox-25 border-radius-5px cursor-pointer back-button-font" style="display:none;" id="galleries-show-back">
-        <span class="two-em productsans-regular user-select-none text-align-center">Back</span>
+        <span class="productsans-regular user-select-none">Back</span>
       </div>
     <!-- ~~~~ Footer ~~~~ -->
     <footer class="glassbox-25 sanfrancisco cursor-default">
-      <span class="productsans-bold two-em user-select-none">Site Map</span>
-      <span class="productsans-bold two-em user-select-none">Git</span>
-      <span class="sanfrancisco two-em user-select-none">&copy;&nbsp;黒猫 - "the Black Cat", 2023</span>
+      <div class="textalign-center">
+        <div class="display-inlineblock"><img class="contained-img" src="https://cdn.theblack.cat/resources/thank-you-flaticons/site-map.png"></div>
+        <div class="display-inlineblock"><img class="contained-img" src="https://cdn.theblack.cat/resources/thank-you-flaticons/git.png"></div>
+        <div class="display-inlineblock"><img class="contained-img" src="https://cdn.theblack.cat/resources/thank-you-flaticons/favicon.png"></div>
+      </div>
     </footer>
     <!-- ~~~~ Scripts ~~~~ -->
     <script src="https://cdn.theblack.cat/resources/scripts/polkadot.js"></script>

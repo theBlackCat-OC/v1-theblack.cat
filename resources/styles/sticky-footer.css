@@ -1,10 +1,33 @@
 footer {
     position: fixed;
     bottom: 0;
+    left: 0;
     width: 100%;
-    height: 3vh;
-    margin-top: 12vh;
+    margin-left: 80vw;
     z-index: 1;
-    padding-left: 1%;
-    padding-bottom: 1%;
+    border-radius: 16px 0 0 0;
+    padding: 0.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    min-width: 15vw; /* Set the minimum width to 20vw */
+    max-width: 20vw; /* Set the maximum width to 20vw */
+}
+
+.contained-img {
+    max-width: 100%;
+    max-height: 5vh;
+    width: auto;
+    display: block;
+}
+
+@media (max-width: 816px) {
+    footer {
+        height: 4vh; /* Increase the height of the footer */
+    }
+
+    .contained-img {
+        max-height: 4vh; /* Increase the max-height of the images */
+    }
 }

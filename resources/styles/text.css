@@ -102,3 +102,8 @@
 .three-em{
     font-size: 3em;
 }
+
+.hidden-and-nowrap{
+    white-space: nowrap;
+    overflow: hidden;
+}

@@ -1,23 +1,11 @@
 .back-button{
     margin-bottom: 3vh;
-    margin-top: 2vh;
     padding: 0.5%;
-}
-
-.back-button-long{
-    width: 66.7%;
-    margin-left: 17%;
-}
-
-.back-button-short{
-    width: 33.3333333333333333333333333333333333333333333333333333333333333333333333333333333%;
-    margin-left: 33.3333333333333333333333333333333333333333333333333333333333333333333333333333333%;
-}
-
-  .back-button {
     transition: transform 0.5s;
+    width: 20%;
+    margin-left: 40%;
+    text-align: center;
   }
-  
   .back-button:hover {
     transform: scale(1.08);
     z-index: 1;
@@ -25,11 +13,4 @@
   
   .back-button:not(:hover) {
     transform: scale(1);
-  }
-
-  @media (min-width: 1420px) {
-    .back-button-long{
-        width: 33.3333333333333333333333333333333333333333333333333333333333333333333333333333333%;
-        margin-left: 33.3333333333333333333333333333333333333333333333333333333333333333333333333333333%;
-    }
   }

@@ -1,17 +1,12 @@
 .sticky-top-bar {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   height: 5vh;
   margin-bottom: 7vh;
   transition: height 0.3s ease;
   z-index: 1;
-  padding-left: 1%;
-  padding-top: 0.5%;
-}
-
-.header-content {
-  height: 80%;
-  display: flex;
-  transition: font-size 0.3s ease;
+  padding-left: 1vw;
+  padding-top: 0.3vh;
+  padding-bottom: 0.3vh;
 }
