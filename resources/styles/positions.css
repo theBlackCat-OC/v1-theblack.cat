@@ -44,6 +44,10 @@
     vertical-align: -0.2vh;
 }
 
+.vertical-align-minus0dot2vh{
+    vertical-align: 0.2vh;
+}
+
 .vertical-align-0dot3vh{
     vertical-align: -0.3vh;
 }
