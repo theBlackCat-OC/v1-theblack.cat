@@ -43,6 +43,14 @@
     background-image: url('https://cdn.theblack.cat/resources/background/vertical/chaosringen-color-vertical.png');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    }
+
+  .freepik-capybara {
+    background-image: url('https://cdn.theblack.cat/resources/background/vertical/freepik-capybara-vertical.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   /* --- */
@@ -70,6 +78,10 @@
     
     .pfp-chaosringen-sketch-background {
       background-image: url('https://cdn.theblack.cat/resources/background/horizontal/chaosringen-color-horizontal.png');
+    }
+
+    .freepik-capybara {
+      background-image: url('https://cdn.theblack.cat/resources/background/horizontal/freepik-capybara.jpg');
     }
   
   }

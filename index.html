@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="resources/styles/border-radius.css">
     <link rel="stylesheet" type="text/css" href="resources/styles/cursor.css">
     <link rel="stylesheet" type="text/css" href="resources/styles/positions.css">
-    <link rel="stylesheet" type="text/css" href="resources/styles/button-description-backgrounds.css"> 
+    <link rel="stylesheet" type="text/css" href="resources/styles/text-content.css"> 
     <!-- ~~~~ Embellishment CSS ~~~~ -->
     <link rel="stylesheet" type="text/css" href="resources/styles/polkadot-background.css">
     <link rel="stylesheet" type="text/css" href="resources/styles/glassbox.css">
@@ -33,8 +33,10 @@
 </head>
 <body class="loading-animation">
     <!-- ~~~~ Top Bar ~~~~ -->
-    <header class="sticky-top-bar glassbox-25" id="topBar">
-      <div class="latex-regular user-select-none hidden-and-nowrap textalign-center"><span>"the Black Cat"</span></div>    
+    <header class="sticky-top-bar" id="topBar">
+      <div class="user-select-none hidden-and-nowrap textalign-left">
+        <span class="productsans-bold three-em description-text-black">"the Black Cat"</span>
+      </div>    
     </header>
     <!-- ~~~~ Bubble Container ~~~~ -->
     <div class="bubble-container">
@@ -50,8 +52,8 @@
       <div class="linktree-button linktree-button-left glassbox-25 border-radius-13px cursor-pointer pfp-chaosringen-sketch-background" onclick="toggleTBCDetails()" id="tbc">
         <div class="description-background-black description-text-white productsans-bold onepointfive-em"><span>Original Character Links</span></div>
       </div>
-      <div class="linktree-button linktree-button-right glassbox-25 border-radius-13px cursor-pointer" onclick="toggleAuthorDetails()" id="author">
-        <div class="description-background-black description-text-white productsans-bold onepointfive-em"><span>Author Links</span></div>
+      <div class="linktree-button linktree-button-right glassbox-25 border-radius-13px cursor-pointer freepik-capybara" onclick="toggleAuthorDetails()" id="author">
+        <div class="description-background-black description-text-white productsans-bold onepointfive-em "><span>Author Links</span></div>
       </div>
     </div>    
     <!-- ~~~~ tBC Char Links ~~~~ -->
@@ -61,11 +63,13 @@
     <!-- ~~~~  ~~~~ -->
     <div class="tbc-container" style="display:none;" id="tbc-show-container">
       <div class="tbc-row">
-        <div class="tbc-button tbc-button-left tbc-button-top glassbox-25 border-radius-13px cursor-pointer" onclick="toggleGalleryDetails()" id="galleries">
-          <div class="description-background-black description-text-white productsans-bold onepointfive-em"><span>Body Reference Galleries</span></div>
+        <div class="tbc-button tbc-button-left tbc-button-top glassbox-25 border-radius-13px cursor-pointer bodyref-button" onclick="toggleGalleryDetails()" id="galleries">
+          <div class="description-background-black">
+            <span class="description-text-white productsans-bold onepointfive-em">Body Reference Galleries</span></div>
         </div>
-        <div class="tbc-button tbc-button-right tbc-button-top glassbox-25 border-radius-13px cursor-pointer">
-          <div class="description-background-black description-text-white productsans-bold onepointfive-em"><span>Commissioned Works Gallery</span></div>
+        <div class="tbc-button tbc-button-right tbc-button-top glassbox-25 border-radius-13px cursor-pointer commworks-button" id="random-commwork-image">
+          <div class="description-background-black">
+            <span class="description-text-white productsans-bold onepointfive-em">Commissioned Works Gallery</span></div>
         </div>
       </div>
       <div class="tbc-row">
@@ -79,24 +83,24 @@
     </div>
       <!-- ~~~~ tBC Back Button ~~~~ -->
       <div class="back-button back-button-tbc back-button-short glassbox-25 border-radius-5px cursor-pointer" style="display:none;" id="tbc-show-back">
-        <span class="productsans-bold user-select-none">Back</span>
+        <span class="productsans-bold user-select-none two-em">Back</span>
       </div>
     <!-- ~~~~ Author Links ~~~~ -->
     <div class="section-title section-title-short glassbox-25 border-radius-5px cursor-default" id="author-show-title" style="display:none;">
-      <span class="productsans-bold user-select-none">Author Links</span>
+      <span class="productsans-bold user-select-none two-em">Author Links</span>
     </div>
     <!-- ~~~~  ~~~~ -->
     <div class="author-container" id="author-show-container" style="display:none;">
-      <div class="author-button author-button-left glassbox-25 border-radius-13px cursor-pointer">
+      <div class="author-button author-button-left glassbox-25 border-radius-13px cursor-pointer contact-button">
         <div class="description-background-black description-text-white productsans-bold onepointfive-em"><span>Contact Options</span></div>
       </div>
-      <div class="author-button author-button-right glassbox-25 border-radius-13px cursor-pointer">
+      <div class="author-button author-button-right glassbox-25 border-radius-13px cursor-pointer ccat-button">
         <div class="description-background-black description-text-white productsans-bold onepointfive-em"><span>CuriousCat Profile</span></div>
       </div>
     </div>
       <!-- ~~~~ Author Back Button ~~~~ -->
       <div class="back-button back-button-short glassbox-25 border-radius-5px cursor-pointer" id="author-show-back" style="display:none;">
-        <span class="productsans-regular user-select-none">Back</span>
+        <span class="productsans-regular user-select-none two-em">Back</span>
       </div>
     <!-- ~~~~ Galleries ~~~~ -->
     <div class="section-title section-title-long glassbox-25 border-radius-5px cursor-default" style="display:none;" id="galleries-show-title">
@@ -111,19 +115,19 @@
         <div class="description-background-black description-text-white productsans-bold onepointfive-em"><span class="textalign-center">Body Reference Gallery for skeb.jp Artists</span></div>
       </div>
       <div class="galleries-button galleries-button-right glassbox-25 border-radius-13px cursor-pointer">
-        <div class="description-background-black description-text-white productsans-bold onepointfive-em"><span>Body Reference Galleries Google Drive Folder</span></div>
+        <div class="description-background-black description-text-white productsans-bold onepointfive-em"><span>Unabridged Galleries on Google Drive</span></div>
       </div>
     </div>
       <!-- ~~~~ Galleries Back Button ~~~~ -->
       <div class="back-button back-button-short glassbox-25 border-radius-5px cursor-pointer back-button-font" style="display:none;" id="galleries-show-back">
-        <span class="productsans-regular user-select-none">Back</span>
+        <span class="productsans-regular user-select-none two-em">Back</span>
       </div>
     <!-- ~~~~ Footer ~~~~ -->
     <footer class="glassbox-25 sanfrancisco cursor-default">
       <div class="textalign-center">
-        <div class="footer-display"><img class="contained-img" src="https://cdn.theblack.cat/resources/thank-you-flaticons/site-map.png"></div>
-        <div class="footer-display"><img class="contained-img" src="https://cdn.theblack.cat/resources/thank-you-flaticons/git.png"></div>
-        <div class="footer-display"><img class="contained-img" src="https://cdn.theblack.cat/resources/thank-you-flaticons/favicon.png"></div>
+        <div class="footer-display cursor-pointer"><img class="contained-img" src="https://cdn.theblack.cat/resources/thank-you-flaticons/site-map.png"></div>
+        <div class="footer-display cursor-pointer"><img class="contained-img" src="https://cdn.theblack.cat/resources/thank-you-flaticons/git.png"></div>
+        <div class="footer-display cursor-pointer"><img class="contained-img" src="https://cdn.theblack.cat/resources/thank-you-flaticons/favicon.png"></div>
       </div>
     </footer>
     <!-- ~~~~ Scripts ~~~~ -->
@@ -132,6 +136,8 @@
     <script src="resources/scripts/author-selector.js"></script>
     <script src="resources/scripts/tbc-selector.js"></script>
     <script src="resources/scripts/link-query.js"></script>
+    <script src="resources/scripts/random-commwork-background.js"></script>    
+    <script src="resources/scripts/random-bodyref-background.js"></script>
     <!-- ~~~~  ~~~~ -->
 </body>
 </html>

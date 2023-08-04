@@ -16,6 +16,23 @@
   height: 60vh;
 }
 
+.ccat-button {
+  background-image: url('https://http.cat/409.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contact-button {
+  background-image: url('https://cdn.theblack.cat/resources/background/horizontal/capybara-student.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+
 /* --- */
 
 .author-button-left{
