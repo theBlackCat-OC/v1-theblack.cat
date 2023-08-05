@@ -19,3 +19,12 @@
 @media (min-width: 1420px) {
   }
 
+  .section-title-two{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+    width: 50vw;
+    margin-left: 25vw;
+}
