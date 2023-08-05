@@ -2,6 +2,10 @@
 
 Repository for the webpage theblack.cat  
 
+## Wait, the [GitHub Pages](https://theblackcat-oc.github.io/theblack.cat/) has NSFW!?!? monkaTOS
+
+Not hosted on GitHub so... PepeLa
+
 ### Check the Body Reference Gallery repository [here](https://github.com/theBlackCat-OC/references-gallery).
 
 ### Check the Body Reference Gallery repository for `skeb.jp` artists [here](https://github.com/theBlackCat-OC/skeb-gallery).
