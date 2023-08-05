@@ -30,3 +30,13 @@
     padding-left: 1vw;
     padding-right: 1vw;
 }
+
+.section-title-two-short{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    text-align: center;
+    margin-right: 40vw;
+    margin-left: 40vw;
+}
