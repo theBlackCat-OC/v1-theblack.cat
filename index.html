@@ -27,30 +27,35 @@
     <link rel="stylesheet" type="text/css" href="resources/styles/tbc-buttons.css">
     <link rel="stylesheet" type="text/css" href="resources/styles/author-buttons.css">
     <link rel="stylesheet" type="text/css" href="resources/styles/gallery-buttons.css">
-    <link rel="stylesheet" type="text/css" href="resources/styles/sticky-footer.css">  
+    <link rel="stylesheet" type="text/css" href="resources/styles/sticky-footer.css"> 
+    <link rel="stylesheet" type="text/css" href="resources/styles/site-map.css">      
     <!-- ~~~~ Title ~~~~ -->
     <title>Diana, the Black Cat</title>
 </head>
 <body class="loading-animation">
     <!-- ~~~~ Top Bar ~~~~ -->
     <header class="sticky-top-bar" id="topBar">
-      <div class="user-select-none hidden-and-nowrap textalign-left">
-        <span class="productsans-bold three-em description-text-black">"the Black Cat"</span>
-      </div>  
+      <div class="user-select-none hidden-and-nowrap textalign-left" id="header-name">
+        <span class="productsans-bold three-em description-text-black cursor-pointer">"the Black Cat"</span>
+      </div>
+    <!-- ~~~~ Site Map ~~~~ -->
+      <div class="bubble-chat" id="bubble-chat" style="display: none;">
+        <div class="bubble-content">
+            <img class="display-inlineblock vertical-align-0dot4vh margin-right-1vw" src="https://cdn.theblack.cat/resources/thank-you-flaticons/site-map.png" width="32" height="32"><span class="productsans-bold two-em">Site Map</span><br>
+            <a href="?link=tbc"><span class="productsans-bold onepointfive-em underline description-text-black">Character Links</a></span><br>
+            <a href="?link=galleries"><span class="productsans-regular">● Body Reference Galleries</a></span><br>
+            <a href="https://reference.theblack.cat/"><span class="productsans-regular">●● Body Reference Gallery, English Version</a></span><br>
+            <a href="https://skeb.theblack.cat/"><span class="productsans-regular">●● Body Reference Galleries for skeb.jp Artists</a></span><br>
+            <a href="https://drive.google.com/drive/folders/1K-FQ2PfoNG9M1YeGzKJPGrv5uKqa649W?usp=drive_link" target="_blank"><span class="productsans-regular">●● Google Drive Mirror&nbsp;<img src="https://cdn.theblack.cat/resources/thank-you-flaticons/new-window.png" width="12" height="12" class="vertical-align-minus0dot4vh"></span></a><br>
+            <a href="commissioned-works"><span class="productsans-regular">● Commissioned Works Gallery</span></a><br>
+            <a href="tou"><span class="productsans-regular">● Terms of Use</span></a><br>
+            <a href="wcif"><span class="productsans-regular">● FFXIV&copy; WCIF</span></a><br><br>
+            <a href="?link=author"><span class="productsans-bold onepointfive-em underline description-text-black">Author Links</span></a><br>
+            <a href="contact"><span class="productsans-regular">● Contact Option</span></a><br>
+            <a href="https://curiouscat.live/theBlackCat_OC" target="_blank"><span class="productsans-regular">● CuriousCat Profile&nbsp;<img src="https://cdn.theblack.cat/resources/thank-you-flaticons/new-window.png" width="12" height="12" class="vertical-align-minus0dot4vh"></span></a><br>
+        </div>
+      </div> 
     </header>
-    <div class="glassbox-10 padding-onevw border-radius-13px width-15vw zindex-2">
-      <a href="?link=tbc"><span class="productsans-bold two-em description-text-black">Character Links</a></span><br>
-      <a href="?link=galleries"><span class="productsans-regular">● Body Reference Galleries</a></span><br>
-      <a href="https://reference.theblack.cat/"><span class="productsans-regular">● English Version</a></span><br>
-      <a href="https://skeb.theblack.cat/"><span class="productsans-regular">● For skeb.jp Artists</a></span><br>
-      <a href="https://drive.google.com/drive/folders/1K-FQ2PfoNG9M1YeGzKJPGrv5uKqa649W?usp=drive_link"><span class="productsans-regular">● Google Drive Mirror</span></a><br>
-      <a href="commissioned-works"><span class="productsans-regular">● Commissioned Works Gallery</span></a><br>
-      <a href="tou"><span class="productsans-regular">● Terms of Use</span></a><br>
-      <a href="wcif"><span class="productsans-regular">● FFXIV&copy; WCIF</span></a><br>
-      <a href="?link=author"><span class="productsans-bold two-em description-text-black">Author Links</span></a><br>
-      <a href="contact"><span class="productsans-regular">● Contact Option</span></a><br>
-      <a href="https://curiouscat.live/theBlackCat_OC"><span class="productsans-regular">● CuriousCat Profile</span></a><br>
-    </div>  
     <!-- ~~~~ Bubble Container ~~~~ -->
     <div class="bubble-container">
       <div class="bubble-trigger">
@@ -140,6 +145,7 @@
       <div class="textalign-center">
         <a href="https://github.com/theBlackCat-OC/" target="_blank" title="GitHub Profile"><div class="footer-display cursor-pointer"><img class="contained-img" src="https://cdn.theblack.cat/resources/icons/orange-git.svg"></div></a>
         <a href="https://theblack.cat" title="Back to the Start Page"><div class="footer-display cursor-pointer"><img class="contained-img" src="https://cdn.theblack.cat/resources/thank-you-flaticons/favicon.png"></div></a>
+        <div class="footer-display cursor-pointer" id="site-map"><img class="contained-img" src="https://cdn.theblack.cat/resources/thank-you-flaticons/site-map.png"></div>
       </div>
     </footer>  
     <!-- ~~~~ Scripts ~~~~ -->
@@ -149,6 +155,7 @@
     <script src="resources/scripts/tbc-selector.js"></script>
     <script src="resources/scripts/link-query.js"></script>
     <script src="resources/scripts/index-links.js"></script>
+    <script src="resources/scripts/site-map.js"></script>
     <script src="resources/scripts/random-commwork-background.js"></script>    
     <script src="resources/scripts/random-bodyref-background.js"></script>
     <!-- ~~~~  ~~~~ -->

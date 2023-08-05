@@ -9,6 +9,10 @@
     padding: 1vw;
 }
 
+.padding-left-onevw{
+    padding-left: 1vw;
+}
+
 .padding-twovw{
     padding:2w;
 }
@@ -71,6 +75,7 @@
     margin-left: 33vw;
 }
 
+
 .margin-left-50vw{
     margin-left: 50vw;
 }
@@ -79,8 +84,20 @@
     margin-right: 50vw;
 }
 
+.margin-right-1vw{
+    margin-right: 1vw;
+}
+
 .margin-top-10vh{
     margin-top: 10vh;
+}
+
+.margin-top-2vh{
+    margin-top: 2vh;
+}
+
+.margin-bottom-dot8vh{
+    margin-bottom: 0.8vh;
 }
 
 .margin-bottom-2vh{

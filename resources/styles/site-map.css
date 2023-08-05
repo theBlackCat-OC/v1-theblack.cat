@@ -1,47 +1,35 @@
-.bubble-trigger {
-  position: fixed;
-  top: 0.4vh;
-  right: 0.6vw;
+/* Style for the bubble chat container */
+.bubble-chat {
+  position: relative;
+  width: 25vw; /* Adjust the width as needed */
   padding: 10px;
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.3);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(3.1px);
-  -webkit-backdrop-filter: blur(3.1px);
-  z-index: 3;
-  border: 1px solid black;
-  cursor: pointer;
-  border-radius: 16px;
-  user-select: none;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 1);
+  border-radius: 10px;
 }
 
-.bubble {
-  position: fixed;
-  top: 1.2vh;
-  right: 1.2vw;
-  display: none;
-  padding: 10px;
-  background: rgba(255, 255, 255, 0.6);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(3.1px);
-  -webkit-backdrop-filter: blur(3.1px);
-  z-index: 4;
-  border-radius: 15px;
-  font-family: 'productsanslight', 'sans-serif';
-  border: 1px solid black;
-  cursor: default;
-  user-select: none;
+/* Style for the triangle tail */
+.bubble-chat::before {
+  content: "";
+  position: absolute;
+  top: -20px; /* Distance of the tail from the top border */
+  left: 50%; /* Position the tail in the middle */
+  margin-left: -10px; /* Half of the tail's width */
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #E0E0E0 transparent;
 }
 
-.bubble a {
-  color: rgb(24, 124, 255);
+/* Style for the content inside the bubble */
+.bubble-content {
+  padding: 5px;
 }
 
-.bubble a:hover {
-  color: rgb(0, 0, 0);
-  cursor: pointer;
-}
-
-.bubble-trigger:hover + .bubble,
-.bubble:hover {
-  display: block;
+/* Optional: Add some styling to the text inside the bubble */
+.bubble-content p {
+  margin: 0;
+  font-size: 16px;
 }

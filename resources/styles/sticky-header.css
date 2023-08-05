@@ -14,3 +14,17 @@ header {
 header span{
   margin-top: 50%;
 }
+
+#header-name span {
+  transition: filter 0.5s;
+  z-index: 0; /* Setting the initial z-index to 0 */
+}
+
+#header-name span:hover {
+  filter: invert(100%);
+  z-index: 1;
+}
+
+#header-name span:not(:hover) {
+  filter: invert(0%);
+}
