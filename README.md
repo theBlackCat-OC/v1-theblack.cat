@@ -2,7 +2,7 @@
 
 Repository for the webpage theblack.cat  
 
-## Check the old `theblack.cat`repository [here](https://github.com/theBlackCat-OC/old-theblack.cat).
+## Check the old `theblack.cat` repository [here](https://github.com/theBlackCat-OC/old-theblack.cat).
 
 ## Check the Body Reference Gallery repository [here](https://github.com/theBlackCat-OC/references-gallery).
 
