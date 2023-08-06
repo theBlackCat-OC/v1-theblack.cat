@@ -4,7 +4,6 @@ header {
   width: 100vw;
   height: 5vh;
   margin-bottom: 7vh;
-  transition: 0.3s ease;
   z-index: 1;
   padding-left: 1vw;
   padding-top: 0.3vh;
@@ -15,16 +14,15 @@ header span{
   margin-top: 50%;
 }
 
-#header-name span {
-  transition: filter 0.5s;
-  z-index: 0; /* Setting the initial z-index to 0 */
+.header-title{
+  transition: 0.3s ease;
 }
 
-#header-name span:hover {
-  filter: invert(100%);
+.header-title:hover {
+  transform: scale(1.02) translateX(30px);
   z-index: 1;
 }
 
-#header-name span:not(:hover) {
-  filter: invert(0%);
+.header-title:not(:hover) {
+  transform: scale(1) translateX(0px);
 }

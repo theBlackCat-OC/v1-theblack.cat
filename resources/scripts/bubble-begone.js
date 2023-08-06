@@ -10,7 +10,6 @@ bubbleTrigger.addEventListener('click', () => {
   }
 });
 
-
 document.addEventListener('click', (event) => {
   if (bubbleVisible && !bubble.contains(event.target) && !bubbleTrigger.contains(event.target)) {
     hideBubble();
@@ -39,10 +38,9 @@ bubbleGalleryTrigger.addEventListener('click', () => {
   }
 });
 
-
 document.addEventListener('click', (event) => {
   if (bubbleGalleryVisible && !bubbleGallery.contains(event.target) && !bubbleGalleryTrigger.contains(event.target)) {
-    hideBubble();
+    hideBubbleGallery();
   }
 });
 

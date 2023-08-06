@@ -146,9 +146,18 @@ a:link, a:visited {
 }
 
 a:hover, .a:active {
-    color: rgb(24, 124, 255);
+    color: rgb(45, 216, 165);
 }
 
-.underline{
-    border-bottom: 1px solid black;
-}
+
+
+@media (prefers-color-scheme: light) {
+    .underline{
+        border-bottom: 1px solid black;
+    }
+  }
+  @media (prefers-color-scheme: dark) {
+    .underline{
+        border-bottom: 1px solid rgb(255, 255, 255);
+    }
+  }
