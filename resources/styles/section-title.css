@@ -7,13 +7,23 @@
 }
 
 .section-title-long{
-    width: 30vw;
     margin-left: 35vw;
+    margin-right: 35vw;
 }
 
 .section-title-short{
     width: 20vw;
     margin-left: 40vw;
+}
+
+@media (max-width: 600px) {
+    .section-title{
+            margin-top: 7vh;
+    }
+    .section-title-long{
+        margin-right: 20%;
+        margin-left: 20%;
+}
 }
 
   .section-title-two{

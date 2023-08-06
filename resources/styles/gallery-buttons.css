@@ -68,3 +68,27 @@
   .galleries-button:not(:hover) {
     transform: scale(1);
   }
+
+/* --- */
+
+  .brg-button {
+    background-image: url('https://cdn.theblack.cat/resources/thank-you-flaticons/fullbody.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .brgskeb-button {
+    background-image: url('https://cdn.theblack.cat/resources/thank-you-flaticons/jpn.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .gdrive-button {
+    background-image: url('https://cdn.theblack.cat/resources/thank-you-flaticons/colordrive.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  

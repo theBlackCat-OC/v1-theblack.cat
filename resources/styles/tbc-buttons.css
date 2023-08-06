@@ -51,6 +51,20 @@
     transform: scale(1);
   }
 
+  .tou-button {
+    background-image: url('https://cdn.theblack.cat/resources/thank-you-flaticons/woman.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .wcif-button {
+    background-image: url('https://cdn.theblack.cat/resources/thank-you-flaticons/wcif.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
 
   @media (min-width: 1500px) {
     .tbc-container {

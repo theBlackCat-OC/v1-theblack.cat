@@ -73,6 +73,10 @@
     padding: 5px;
 }
 
+.padding-left-1vw{
+    padding-left: 1vw;
+}
+
 .margin-left-3vw{
     margin-left: 3vw;
 }
@@ -123,6 +127,10 @@
 
 .margin-left-1vw{
     margin-left: 1vw;
+}
+
+.margin-left-1percent{
+    margin-left: 1%;
 }
 
 .margin-left-33vw{

@@ -17,14 +17,14 @@
 }
 
 .ccat-button {
-  background-image: url('https://http.cat/409.jpg');
+  background-image: url('https://cdn.theblack.cat/resources/icons/ccat.svg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .contact-button {
-  background-image: url('https://cdn.theblack.cat/resources/background/horizontal/capybara-student.jpg');
+  background-image: url('https://cdn.theblack.cat/resources/thank-you-flaticons/mail.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
