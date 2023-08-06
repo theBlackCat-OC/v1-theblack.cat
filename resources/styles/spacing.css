@@ -89,8 +89,20 @@
     margin-left: 22.5vw;
 }
 
+@media (max-width: 600px) {
+    .margin-left-22-5vw{
+        margin-left: 5%;
+    }
+}
+
 .margin-right-22-5vw{
     margin-right: 22.5vw;
+}
+
+@media (max-width: 600px) {
+    .margin-right-22-5vw{
+        margin-right: 5%;
+    }
 }
 
 .margin-right-dot8vw{
@@ -147,6 +159,10 @@
 
 .margin-bottom-2vh{
     margin-bottom: 2vh;
+}
+
+.margin-bottom-5vh{
+    margin-bottom: 5vh;
 }
 .margin-bottom-10vh{
     margin-bottom: 10vh;
