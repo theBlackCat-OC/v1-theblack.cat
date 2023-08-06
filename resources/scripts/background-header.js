@@ -1,6 +1,6 @@
 window.addEventListener('scroll', function () {
-    // Calculate 10vh in pixels based on the current window height
-    const tenVhInPixels = window.innerHeight * 0.1;
+    // Calculate 5vh in pixels based on the current window height
+    const tenVhInPixels = window.innerHeight * 0.05;
 
     // Get the topBar element by its ID
     const topBar = document.getElementById('topBar');
