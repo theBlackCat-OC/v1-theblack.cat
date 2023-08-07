@@ -50,7 +50,7 @@
   <!-- ~~~~ 404 ~~~~ -->
   <div class="section-title-two-short glassbox-25 border-radius-5px cursor-default user-select-none">
     <img src="https://cdn.theblack.cat/resources/thank-you-flaticons/site-map.png" width="28" height="28" class="vertical-align-0dot4vh marginright-1percent img-inverter">
-    <a href="https://theblack.cat/" title="Back to the Start Page"><span class="productsans-bold two-em description-text-black">Site Map</span></a></div><br><br>
+    <span class="productsans-bold two-em cursor-pointer description-text-black" id="sitemap-topBar">Site Map</span></div>
   <div>
   <!-- ~~~~ 404 Content ~~~~ -->
     <div class="glassbox-50 margin-left-22-5vw margin-right-22-5vw margin-bottom-5vh padding-threevw border-radius-16px user-select-none">
@@ -82,6 +82,9 @@
     <script src="resources/scripts/tbc-selector.js"></script>
     <script src="resources/scripts/link-query.js"></script>
     <script src="resources/scripts/hideGoToTopBTN.js"></script>
+    <script>
+      document.getElementById('sitemap-topBar').onclick = function() {    window.location.href = 'https://theblack.cat';};
+    </script>
     <!-- ~~~~  ~~~~ -->
 </body>
 </html>

@@ -40,7 +40,7 @@
   <!-- ~~~~ Header ~~~~ -->
   <header class="sticky-top-bar">
     <div class="user-select-none hidden-and-nowrap textalign-left">
-      <span class="productsans-bold three-em description-text-black">That Didn't Work</span>
+      <span class="productsans-bold three-em description-text-black cursor-pointer" id="404-topBar">That Didn't Work</span>
     </div>  
   </header>
   <!-- ~~~~ Bubble Container ~~~~ -->
@@ -87,6 +87,9 @@
     <script src="resources/scripts/author-selector.js"></script>
     <script src="resources/scripts/tbc-selector.js"></script>
     <script src="resources/scripts/link-query.js"></script>
+    <script>
+      document.getElementById('404-topBar').onclick = function() {    window.location.href = 'https://theblack.cat';};
+    </script>
     <!-- ~~~~  ~~~~ -->
 </body>
 </html>

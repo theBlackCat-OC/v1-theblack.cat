@@ -39,10 +39,8 @@
     <!-- ~~~~ Top Bar ~~~~ -->
     <header class="sticky-top-bar" id="topBar">
       <div class="user-select-none hidden-and-nowrap textalign-left">
-        <div class=" header-title">
-          <a href="https://theblack.cat" title="Back to the Start Page"><span class="productsans-bold three-em description-text-black" id="header-name">"the Black Cat" FFXIV&copy; WCIF</span></a>
-        </div>
-      </div>    
+          <span class="productsans-bold three-em cursor-pointer description-text-black" id="wcif-topBar">"the Black Cat" FFXIV&copy; WCIF</span>
+      </div>  
     </header>
     <!-- ~~~~ WCIF Content ~~~~ -->
   <div class="glassbox-50 padding-threevw border-radius-16px margin-top-10vh margin-bottom-2vh margin-left-22-5vw margin-right-22-5vw padding-threevw description-text-black">
@@ -131,12 +129,15 @@ H4sIAAAAAAAACs2Yz2/bIBSAD/tHKq5NrAf+kcTHpjt2nbZoWntBJMYJtYMlsLVWVf73GUOiRGqzXWzs
         <a href="https://theblack.cat/site-map" title="Site Map"><div class="footer-display cursor-pointer"><img class="contained-img img-inverter" src="https://cdn.theblack.cat/resources/thank-you-flaticons/site-map.png"></div></a>
       </div>
     </footer>  
-<!-- ~~~~ -->
-<script src="resources/scripts/new-polkadot.js"></script>
-<script src="https://cdn.theblack.cat/resources/scripts/totop.js"></script>
-<script src="https://cdn.theblack.cat/resources/scripts/copycode.js"></script>
-<script src="resources/scripts/bubble-begone.js"></script>
-<script src="resources/scripts/background-header.js"></script>
-<script src="resources/scripts/hideGoToTopBTN.js"></script>
+  <!-- ~~~~ Scripts ~~~~ -->
+    <script src="resources/scripts/new-polkadot.js"></script>
+    <script src="https://cdn.theblack.cat/resources/scripts/totop.js"></script>
+    <script src="https://cdn.theblack.cat/resources/scripts/copycode.js"></script>
+    <script src="resources/scripts/bubble-begone.js"></script>
+    <script src="resources/scripts/background-header.js"></script>
+    <script src="resources/scripts/hideGoToTopBTN.js"></script>
+    <script>document.getElementById('wcif-topBar').onclick = function() {  window.location.href = 'https://theblack.cat';};
+    </script>
+  <!-- ~~~~ -->
 </body>
 </html>

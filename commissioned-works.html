@@ -49,9 +49,9 @@
     <span class="sanfrancisco description-text-black">Found any bugs? Have any feedback?<br>Report them in the GitHub Repository Page by <a href="https://github.com/theBlackCat-OC/theblack.cat/issues" target="_blank">Opening an issue<img src="https://cdn.theblack.cat/resources/thank-you-flaticons/new-window.png" width="12" height="12" class="vertical-align-minus0dot4vh padding-left-point25percent img-inverter"></a> and by using an appropiate label.</span>
   </div>
     <!-- ~~~~ Comm Works Title ~~~~ -->
-    <div class="section-title-two glassbox-25 border-radius-5px cursor-default">
+    <div class="section-title-two glassbox-25 border-radius-5px cursor-default user-select-none">
       <img src="https://cdn.theblack.cat/resources/thank-you-flaticons/art-gallery.png" width="28" height="28" class="vertical-align-0dot4vh marginright-1percent img-inverter">
-      <span class="latex-regular two-em description-text-black">"the Black Cat"</span><span class="productsans-bold two-em description-text-black"> Commissioned Works Gallery</span></div>
+      <span class="latex-regular two-em description-text-black cursor-pointer" id="commworks-topBar">"the Black Cat"</span><span class="productsans-bold two-em description-text-black"> Commissioned Works Gallery</span></div>
     <div>
   <!-- ~~~~ Commissioned Works Gallery ~~~~ -->
       <div class="gallery-container">
@@ -87,6 +87,9 @@
         <script src="resources/scripts/bubble-begone.js"></script>
         <script src="https://cdn.theblack.cat/resources/scripts/commissioned-works.js"></script>
         <script src="resources/scripts/hideGoToTopBTN.js"></script>
+        <script>
+          document.getElementById('commworks-topBar').onclick = function() {    window.location.href = 'https://theblack.cat';};
+        </script>
       <!-- ~~~~ --> 
 </body>
 </html>

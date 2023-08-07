@@ -45,11 +45,8 @@
     <!-- ~~~~ Top Bar ~~~~ -->
     <header class="sticky-top-bar" id="topBar">
       <div class="user-select-none hidden-and-nowrap textalign-left">
-        <a href="https://theblack.cat" title="Back to the Start Page">
-          <div class=" header-title">
-            <span class="productsans-bold two-em description-text-black" id="header-name">"the Black Cat" Original Character Terms of Use</a></span>
-          </div>
-      </div>    
+          <span class="productsans-bold three-em cursor-pointer description-text-black" id="tou-topBar">"the Black Cat" Terms of Use</span>
+      </div>  
     </header>
     <!-- ~~~~ ToU Content ~~~~ -->
   <div class="glassbox-50 padding-threevw border-radius-16px margin-top-10vh margin-bottom-2vh margin-left-22-5vw margin-right-22-5vw padding-threevw description-text-black">
@@ -129,10 +126,14 @@
     </footer>  
     <!-- ~~~~ Scripts ~~~~ -->
     <script src="resources/scripts/new-polkadot.js"></script>
+    <script src="resources/scripts/page-links.js"></script>
     <script src="https://cdn.theblack.cat/resources/scripts/totop.js"></script>
     <script src="resources/scripts/bubble-begone.js"></script>
     <script src="resources/scripts/background-header.js"></script>
     <script src="resources/scripts/hideGoToTopBTN.js"></script>
+    <script>
+      document.getElementById('tou-topBar').onclick = function() {    window.location.href = 'https://theblack.cat';};
+    </script>
     <!-- ~~~~  ~~~~ -->
 </body>
 </html>

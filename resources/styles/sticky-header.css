@@ -8,10 +8,14 @@ header {
   padding-left: 1vw;
   padding-top: 0.3vh;
   padding-bottom: 1.3vh;
-  transition: 0.3s ease;
 }
 
-header a:hover{
-  text-decoration: none;
+header span {
+  text-decoration: none !important;
+  transition: color 0.3s ease;
+}
+
+header span:hover {
   color: rgb(24, 124, 255);
+  text-decoration: none !important;
 }
