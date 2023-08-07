@@ -1,6 +1,14 @@
 function toggleElementVisibility(elementId) {
   var element = document.getElementById(elementId);
   element.style.visibility = element.style.visibility === "hidden" ? "visible" : "hidden";
+  
+  // Toggle the 'hovered' class on the header-name element
+  var headerNameButton = document.getElementById("header-name");
+  if (element.style.visibility === "visible") {
+    headerNameButton.classList.add("hovered");
+  } else {
+    headerNameButton.classList.remove("hovered");
+  }
 }
 
 document.getElementById("header-name").addEventListener("click", function(event) {
@@ -27,4 +35,8 @@ document.addEventListener("click", function(event) {
 function hideElement(elementId) {
   var element = document.getElementById(elementId);
   element.style.visibility = "hidden";
+  
+  // Remove the 'hovered' class from the header-name element
+  var headerNameButton = document.getElementById("header-name");
+  headerNameButton.classList.remove("hovered");
 }
