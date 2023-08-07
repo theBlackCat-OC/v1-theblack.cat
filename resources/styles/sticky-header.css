@@ -8,6 +8,7 @@ header {
   padding-left: 1vw;
   padding-top: 0.3vh;
   padding-bottom: 1.3vh;
+  transition: 0.3s ease;
 }
 
 header span {
