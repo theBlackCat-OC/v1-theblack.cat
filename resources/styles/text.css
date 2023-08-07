@@ -146,7 +146,8 @@ a:link, a:visited {
 }
 
 a:hover, .a:active {
-    color: rgb(18, 99, 204);
+    color: rgb(24, 124, 255);
+    text-decoration: underline;
 }
 
 

@@ -7,19 +7,11 @@ header {
   z-index: 1;
   padding-left: 1vw;
   padding-top: 0.3vh;
-  padding-bottom: 1vh;
+  padding-bottom: 1.3vh;
   transition: 0.3s ease;
 }
 
-#header-name{
-  transition: 0.3s ease;
-}
-
-#header-name:hover {
-  transform: scale(1.02) translateX(30px);
-  z-index: 1;
-}
-
-#header-name:not(:hover) {
-  transform: scale(1) translateX(0px);
+header a:hover{
+  text-decoration: none;
+  color: rgb(24, 124, 255);
 }

@@ -79,6 +79,10 @@
     vertical-align: 0.2vh;
 }
 
+.vertical-align-0dot6vh{
+    vertical-align: 0.6vh;
+}
+
 .vertical-align-0dot3vh{
     vertical-align: -0.3vh;
 }
@@ -89,4 +93,16 @@
 
 .vertical-align-minus0dot4vh{
     vertical-align: 0.4vh;
+}
+
+.vertical-align-0dot6vh{
+    vertical-align: -0.6vh;
+}
+
+.vertical-align-0dot7vh{
+    vertical-align: -0.7vh;
+}
+
+.vertical-align-0dot8vh{
+    vertical-align: -0.8vh;
 }

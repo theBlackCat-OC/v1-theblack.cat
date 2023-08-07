@@ -11,9 +11,9 @@ window.addEventListener('scroll', function () {
     // Check if the scroll position is greater than or equal to 10vh in pixels
     if (scrollPosition >= tenVhInPixels) {
       // Add the "glassbox-10" class to the topBar element
-      topBar.classList.add('glassbox-10');
+      topBar.classList.add('header-glassbox-10');
     } else {
       // Remove the "glassbox-10" class if the scroll position is less than 10vh
-      topBar.classList.remove('glassbox-10');
+      topBar.classList.remove('header-glassbox-10');
     }
   });

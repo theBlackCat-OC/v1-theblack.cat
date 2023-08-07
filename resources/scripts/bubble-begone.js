@@ -10,6 +10,7 @@ bubbleTrigger.addEventListener('click', () => {
   }
 });
 
+
 document.addEventListener('click', (event) => {
   if (bubbleVisible && !bubble.contains(event.target) && !bubbleTrigger.contains(event.target)) {
     hideBubble();
@@ -26,30 +27,32 @@ function hideBubble() {
   bubbleVisible = false;
 }
 
-const bubbleGalleryTrigger = document.querySelector('.bubble-trigger-gallery');
+
+const bubbleTriggerGallery = document.querySelector('.bubble-trigger-gallery');
 const bubbleGallery = document.querySelector('.bubble-gallery');
 let bubbleGalleryVisible = false;
 
-bubbleGalleryTrigger.addEventListener('click', () => {
+bubbleTriggerGallery.addEventListener('click', () => {
   if (bubbleGalleryVisible) {
-    hideBubbleGallery();
+    hideGalleryBubble();
   } else {
-    showBubbleGallery();
+    showGalleryBubble();
   }
 });
+
 
 document.addEventListener('click', (event) => {
-  if (bubbleGalleryVisible && !bubbleGallery.contains(event.target) && !bubbleGalleryTrigger.contains(event.target)) {
-    hideBubbleGallery();
+  if (bubbleGalleryVisible && !bubbleGallery.contains(event.target) && !bubbleTriggerGallery.contains(event.target)) {
+    hideGalleryBubble();
   }
 });
 
-function showBubbleGallery() {
+function showGalleryBubble() {
   bubbleGallery.style.display = 'block';
   bubbleGalleryVisible = true;
 }
 
-function hideBubbleGallery() {
+function hideGalleryBubble() {
   bubbleGallery.style.display = 'none';
   bubbleGalleryVisible = false;
 }

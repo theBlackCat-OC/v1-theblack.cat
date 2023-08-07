@@ -1,52 +1,4 @@
-.bubble-trigger-bug {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    padding: 10px;
-    background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(3.1px);
-    -webkit-backdrop-filter: blur(3.1px);
-    z-index: 3;
-    border: 1px solid black;
-    font-size: 1em;
-      cursor: pointer;
-      border-radius: 16px;
-  }
-  
-  .bubble-bug {
-    position: absolute;
-    top: 20px;
-    right: 10px;
-    display: none;
-    padding: 10px;
-    background: rgba(255, 255, 255, 0.6);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(3.1px);
-    -webkit-backdrop-filter: blur(3.1px);
-    z-index: 4;
-    border-radius: 15px;
-    font-family: 'productsanslight', 'sans-serif';
-    border: 1px solid black;
-    cursor: default;
-    font-size: 1em;
-  }
-  
-  .bubble-bug a {
-    color: rgb(24, 124, 255);
-  }
-  
-  .bubble-bug a:hover{
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-  }
-  
-  .bubble-trigger-bug:hover + .bubble-bug,
-  .bubble-bug:hover {
-    display: block;
-  }
-
-  .gallery-container {
+ .gallery-container {
     margin-left: 15%;
     margin-right: 15%;
     background: rgba(255, 255, 255, 0.25);
@@ -275,9 +227,7 @@
   -webkit-backdrop-filter: blur(3.1px);
   z-index: 3;
   border: 1px solid black;
-  cursor: pointer;
   border-radius: 16px;
-  user-select: none;
   }
   
   .bubble-gallery {
@@ -294,8 +244,6 @@
     border-radius: 15px;
     font-family: 'productsanslight', 'sans-serif';
     border: 1px solid black;
-    cursor: default;
-    user-select: none;
   }
   
   .bubble-gallery a {
@@ -310,4 +258,39 @@
   .bubble-trigger-gallery:hover + .bubble-gallery,
   .bubble-gallery:hover {
     display: block;
+  }
+
+  @media (prefers-color-scheme: light) {
+    .bubble-trigger-gallery {
+      background: rgba(255, 255, 255, 0.25);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(3.1px);
+      -webkit-backdrop-filter: blur(3.1px);
+    }
+
+    .bubble-gallery {
+      background: rgba(255, 255, 255, 0.6);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(3.1px);
+      -webkit-backdrop-filter: blur(3.1px);
+    }
+
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .bubble-trigger-gallery {
+      background: rgba(0, 0, 0, 0.25);
+      box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(4.9px);
+      -webkit-backdrop-filter: blur(4.9px);
+      border: 1px solid rgba(255, 255, 255, 0.5)
+    }
+
+    .bubble-gallery {
+      background: rgba(0, 0, 0, 0.6);
+      box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgb(255, 255, 255);
+    }
   }
