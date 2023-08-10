@@ -162,9 +162,24 @@
     border: 1px solid rgba(0, 0, 0, 0.3);
     padding: 8px;
     border-radius: 8px;
-    font-family: 'latex-regular';
+    font-family: 'productsans-regular';
     font-size: 1.3em;
 }
+
+@media (prefers-color-scheme: light) {
+  .image-info {
+    color:black
+  }
+
+}
+
+@media (prefers-color-scheme: dark) {
+  .image-info {
+    color:white
+  }
+
+}
+
 
 @media (max-width: 600px) {
   .image-info {
