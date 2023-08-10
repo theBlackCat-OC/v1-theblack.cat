@@ -1,23 +1,12 @@
   .author-container {
     top: 18vh;
     width: 100%;
-    height: 68vh;
+    height: 85vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   } 
 
-  @media (max-width: 1200px) {
-    .galleries-container {
-      width: 100%;
-      height: 68vh;
-      align-items: flex-start;
-      flex-direction: column;
-      margin-left:0;
-      margin-bottom: 3vh;
-    }
-  }
-  
   .author-row-1 {
     display: flex;
     justify-content: space-between;
@@ -31,7 +20,6 @@
     margin-bottom: 3vh;
     width: 100%;
   }
-
 
   .author-button {
     overflow: hidden;
@@ -59,38 +47,75 @@
     margin-left: 3vw;
   }
 
-  
-  @media (max-width: 1200px) {
-    .galleries-button {
-      display: inline-block;
-      transition: transform 0.5s;
-      width:55%;
+
+  @media (max-width: 1389px) {
+    .author-row-1 {
+      width: 100%;
+      height: 65vh;
+      align-items: flex-start;
+      flex-direction: column;
+      margin-bottom: 1%;
+    }
+
+    .author-row-2 {
+      width: 100%;
       height: 40vh;
-      margin-left: 22%;
-    }
-
-    .galleries-button-left{
-      margin-bottom: 3vh;
-    }
-
-    .galleries-button-right{
-      margin-top: 3vh;
+      align-items: flex-start;
+      flex-direction: column;
+      margin-bottom: 1%;
     }
   }
-    
-  @media (min-width: 1500px) {
-    .author-container {
-      top: 18vh;
-      width: 75%;
-      margin-left: 12.5%;
-      height: 68vh;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-    
+
+  @media (max-width: 1389px) {
     .author-button {
-      width: 50%;
-      transition: transform 0.3s;
+      display: inline-block;
+      transition: transform 0.5s;
+      width:100%;
+      height: 40vh;
+      margin-bottom: 1%;
     }
+  }
+  
+  @media (max-width: 1389px) {
+    .author-button-left{
+      margin-bottom: 3vh;
+      width: 55%;
+      margin-left: 22.5%;
+    }
+
+    .author-button-right{
+      margin-bottom: 3vh;
+      width: 55%;
+      margin-left: 22.5%;
+    }
+
+    .author-button-middle{
+      margin-bottom: 3vh;
+      width: 55%;
+      margin-left: 22.5%;
+    }
+  }
+  /* Special Back Button */
+.author-back-button{
+  margin-bottom: 3vh;
+  padding: 0.5%;
+  transition: transform 0.5s;
+  width: 20%;
+  margin-left: 40%;
+  text-align: center;
+}
+.author-back-button:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+.author-back-button:not(:hover) {
+  transform: scale(1);
+}
+
+
+@media (max-width: 1389px) {
+  .author-back-button{
+    margin-top: 20vh;
+  }
 }
