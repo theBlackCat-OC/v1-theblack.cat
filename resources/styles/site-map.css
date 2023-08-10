@@ -16,7 +16,7 @@
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .bubble-chat {
     position: relative;
     width: 80vw;

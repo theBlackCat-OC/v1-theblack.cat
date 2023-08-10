@@ -103,7 +103,7 @@
     justify-content: center; 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .tag-container{
     margin-left: 1%;
     margin-right: 1%;

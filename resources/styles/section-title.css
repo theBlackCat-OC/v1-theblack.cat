@@ -16,7 +16,7 @@
     margin-left: 40vw;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .section-title{
             margin-top: 7vh;
     }
@@ -48,7 +48,7 @@
     margin-left: 40vw;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .section-title-two-short{
         margin-top: 3vh;
         margin-bottom: 2%;

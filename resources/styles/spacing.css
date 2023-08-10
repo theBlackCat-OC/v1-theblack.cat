@@ -97,7 +97,7 @@
     margin-left: 22.5vw;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .margin-left-22-5vw{
         margin-left: 5%;
     }
@@ -107,7 +107,7 @@
     margin-right: 22.5vw;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .margin-right-22-5vw{
         margin-right: 5%;
     }
