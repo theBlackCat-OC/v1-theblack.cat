@@ -2,6 +2,7 @@ const imageUrls = [
     'https://cdn.theblack.cat/resources/background/horizontal/juurikun-horizontal.png',
     'https://cdn.theblack.cat/resources/background/horizontal/chaosringen-sketch-horizontal.jpg',
     'https://cdn.theblack.cat/resources/background/horizontal/chaosringen-color-horizontal.png',
+    'https://cdn.theblack.cat/resources/background/horizontal/korodrawsaug2023-horizontal.jpeg',
     // Add more image URLs as needed
   ];
 

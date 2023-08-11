@@ -1,5 +1,20 @@
-.position-absolute{
-    position: absolute;
+.display-flex{
+    display: flex;
+}
+.flex-direction-column{
+  flex-direction: column;
+}
+
+.justify-content-flexend{
+  justify-content: flex-end;
+}
+
+.justify-content-spacebetween{
+    justify-content: space-between;
+}
+
+.bottom-0{
+    bottom:0;
 }
 
 .top-0{
