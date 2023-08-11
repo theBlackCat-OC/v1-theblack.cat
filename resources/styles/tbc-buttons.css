@@ -25,13 +25,13 @@
     margin-right: 3vw;
   }
 
-  .commworks-button{
+  #random-commwork-image{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
   }
 
-  .bodyref-button{
+  #galleries{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -51,27 +51,20 @@
     transform: scale(1);
   }
 
-  .tou-button {
+  #tou {
     background-image: url('https://cdn.theblack.cat/resources/thank-you-flaticons/woman.png');
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
   }
 
-    .wcif-button {
-      background-image: url('https://cdn.theblack.cat/resources/thank-you-flaticons/wcif.png');
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
+  #wcif {
+    background-image: url('https://cdn.theblack.cat/resources/thank-you-flaticons/wcif.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 
-    .tou-button {
-      background-image: url('https://cdn.theblack.cat/resources/thank-you-flaticons/woman.png');
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
-  
   @media (min-width: 1500px) {
     .tbc-container {
       top: 18vh;
@@ -83,7 +76,7 @@
       justify-content: space-between;
     }
     
-    .tbc-button {
+    #tou {
       width: 50%;
       transition: transform 0.3s;
     }

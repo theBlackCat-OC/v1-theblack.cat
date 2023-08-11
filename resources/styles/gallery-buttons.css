@@ -71,24 +71,24 @@
 
 /* --- */
 
-  .brg-button {
-    background-image: url('https://cdn.theblack.cat/resources/thank-you-flaticons/fullbody.png');
+ #body-reference-gallery {
+    background-image: url('https://cdn.theblack.cat/resources/background/horizontal/vitruvian-man.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
   }
   
-  .brgskeb-button {
-    background-image: url('https://cdn.theblack.cat/resources/thank-you-flaticons/jpn.png');
+  #skeb-reference-gallery {
+    background-image: url('https://cdn.theblack.cat/resources/background/horizontal/brucelyon-bodyprop.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
   }
 
-  .gdrive-button {
+  #gdrive-gallery-folder{
     background-image: url('https://cdn.theblack.cat/resources/thank-you-flaticons/colordrive.svg');
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
   }
   
