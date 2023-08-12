@@ -40,7 +40,7 @@ footer {
 
 @media (max-width: 927px) {
     footer {
-        height: 20vh; /* Increase the height of the footer */
+        height: 16vh; /* Increase the height of the footer */
         max-width: 4vw;
         right:0;
         margin-left:84vw;

@@ -7,8 +7,12 @@
 }
 
 .section-title-long{
+    margin-top: 7vh;
+    margin-bottom: 3vh;
     margin-left: 35vw;
     margin-right: 35vw;
+    text-align: center;
+    padding: 1%;
 }
 
 .section-title-short{
