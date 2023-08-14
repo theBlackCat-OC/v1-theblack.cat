@@ -121,12 +121,21 @@
     font-size: 3em;
 }
 
+.three-em-header{
+    font-size: 3em;
+}
+
 @media (max-width: 800px) {
     .three-em{
         font-size: 22px;
     }
 }
 
+@media (max-width: 800px) {
+    .three-em-header{
+        font-size: 32px;
+    }
+}
 
 .hidden-and-nowrap{
     white-space: nowrap;
