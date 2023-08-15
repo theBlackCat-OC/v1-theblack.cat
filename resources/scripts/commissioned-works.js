@@ -125,7 +125,7 @@ function createVideoElement(videoSrc) {
 
 tags.forEach(tag => addTagToContainer(tag));
 
-addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/nikuyaking1.png', 'SafeForWork Suggestive Fullbody', 'Skeb commission by <a href="https://skeb.jp/@nikuyaking1" target="_blank">ニクヤキ</a>.');
+addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/nikuyaking1.png', 'NSFW Degen', 'Skeb commission by <a href="https://skeb.jp/@nikuyaking1" target="_blank">ニクヤキ</a>.');
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/korodraws/korodraws-aug2023-clothed.png', 'SafeForWork Suggestive Fullbody', 'Fullbody Character commission by <a href="https://korodraws.carrd.co/" target="_blank">Koro</a>.<br>Clothed version.');
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/korodraws/korodraws-aug2023-naked.png', 'NSFW Erotica', 'Fullbody Character commission by <a href="https://korodraws.carrd.co/" target="_blank">Koro</a>.<br>Naked version.');
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/korodraws/korodraws-aug2023-full.png', 'NSFW Erotica', 'Fullbody Character Study commission by <a href="https://korodraws.carrd.co/" target="_blank">Koro</a>.<br>Full version.');
@@ -133,7 +133,7 @@ addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/ych-jul20
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/ozzays041/ozzays041-v1.png', 'NSFW Degen', 'Fullbody commission from <a href="https://www.patreon.com/Ozzay041" target="_blank">MiFa</a>.<br><span class="latex-italic">Feeling it.</span>');
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/ozzays041/ozzays041-v2.png', 'NSFW Degen', 'Fullbody commission from <a href="https://www.patreon.com/Ozzay041" target="_blank">MiFa</a>.<br><span class="latex-italic-bold">Really</span><span class="latex-italic"> Feeling it.</span>');
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/ozzays041/ozzays041-v3.png', 'NSFW Degen', 'Fullbody commission from <a href="https://www.patreon.com/Ozzay041" target="_blank">MiFa</a>.<br><span class="latex-italic-bold">Cummin.</span>');
-addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/hamo19574270-fullbody.png', 'NSFW Degen', 'Skeb commission from <a href="https://skeb.jp/@hamo19574270" target="_blank">é±§</a>.');
+addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/hamo19574270-fullbody.png', 'NSFW Degen', 'Skeb commission from <a href="https://skeb.jp/@hamo19574270" target="_blank">鱧</a>.');
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/chaosringen-fullrender-bust.png', 'SafeForWork Suggestive Portrait', 'Full render portrait commission by <a href="https://linktr.ee/chaosringen" target="_blank">chaosringen</a>');
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/juurikun-fullbody-sketch.png', 'SafeForWork Fullbody', 'Sketchy fullbody artwork commission by <a href="https://www.instagram.com/juurikun/" target="_blank">juurikun</a><br>ðŸ™');
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/chaosringen-sketch.jpg', 'SafeForWork Suggestive Portrait', 'Sketch for a full render portrait commission by <a href="https://linktr.ee/chaosringen" target="_blank">chaosringen</a>');
