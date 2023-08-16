@@ -81,6 +81,18 @@
     padding-left: 1vw;
 }
 
+.margin-left-dot25vw{
+    margin-left: 0.25vw;
+}
+
+.margin-left-dot5vw{
+    margin-left: 0.5vw;
+}
+
+.margin-left-1vw{
+    margin-left: 1vw;
+}
+
 .margin-left-3vw{
     margin-left: 3vw;
 }

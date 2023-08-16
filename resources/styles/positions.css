@@ -118,6 +118,10 @@
     vertical-align: 0.4vh;
 }
 
+.vertical-align-0dot5vh{
+    vertical-align: -0.5vh;
+}
+
 .vertical-align-0dot6vh{
     vertical-align: -0.6vh;
 }
