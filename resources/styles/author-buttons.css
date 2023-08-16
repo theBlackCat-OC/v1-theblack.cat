@@ -123,13 +123,15 @@
 }
 
 /**/
-  /*#author-button-twitter{
+  /*
+  #author-button-twitter{
     background-image: url('https://cdn.theblack.cat/resources/background/horizontal/twitter-meteion.jpeg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  }*/
-
+  }
+  */
+  
   #author-button-git{
     background-image: url('https://cdn.theblack.cat/resources/icons/orange-git.svg');
   background-position: center;
@@ -143,14 +145,15 @@
   background-size: contain;
   background-repeat: no-repeat;
   }
-
+  
+  /*
   #author-button-contact{
     background-image: url('https://cdn.theblack.cat/resources/thank-you-flaticons/mail.png');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   }
-
+  */
   #author-button-blog{
     background-image: url('https://cdn.theblack.cat/resources/background/horizontal/freepik-capybara-student.jpg');
   background-position: center;
