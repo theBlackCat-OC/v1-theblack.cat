@@ -123,35 +123,35 @@
 }
 
 /**/
-  #author-button-1{
+  /*#author-button-twitter{
     background-image: url('https://cdn.theblack.cat/resources/background/horizontal/twitter-meteion.jpeg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  }
+  }*/
 
-  #author-button-2{
+  #author-button-git{
     background-image: url('https://cdn.theblack.cat/resources/icons/orange-git.svg');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   }
 
-  #author-button-3{
+  #author-button-ccat{
     background-image: url('https://cdn.theblack.cat/resources/icons/ccat.svg');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   }
 
-  #author-button-4{
+  #author-button-contact{
     background-image: url('https://cdn.theblack.cat/resources/thank-you-flaticons/mail.png');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   }
 
-  #author-button-5{
+  #author-button-blog{
     background-image: url('https://cdn.theblack.cat/resources/background/horizontal/freepik-capybara-student.jpg');
   background-position: center;
   background-size: cover;
