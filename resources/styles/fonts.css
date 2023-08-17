@@ -63,6 +63,11 @@
     src: url('../fonts/unisans-heavy.ttf') format('truetype'),
          url('https://cdn.theblack.cat/resources/fonts/unisans.ttf') format('truetype');
   }
+  @font-face {
+    font-family: 'hiragino-maru-gothic-pro';
+    src: url('../fonts/hiragino-maru-gothic-pro.otf') format('opentype'),
+         url('https://cdn.theblack.cat/resources/fonts/hiragino-maru-gothic-pro.otf') format('opentype');
+  }
 
   @font-face {
     font-family: 'FFXIV';

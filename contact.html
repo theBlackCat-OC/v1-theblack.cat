@@ -24,16 +24,13 @@
     <!-- ~~~~ Embellishment CSS ~~~~ -->
     <link rel="stylesheet" type="text/css" href="resources/styles/polkadot-background.css">
     <link rel="stylesheet" type="text/css" href="resources/styles/glassbox.css">
-    <!-- ~~~~ Specific CSS ~~~~ -->
+    <!-- ~~~~ Element CSS ~~~~ -->
     <link rel="stylesheet" type="text/css" href="resources/styles/sticky-header.css">
     <link rel="stylesheet" type="text/css" href="resources/styles/sticky-bubbles.css">
-    <link rel="stylesheet" type="text/css" href="resources/styles/linktree.css">
-    <link rel="stylesheet" type="text/css" href="resources/styles/back-button.css">
     <link rel="stylesheet" type="text/css" href="resources/styles/section-title.css">
-    <link rel="stylesheet" type="text/css" href="resources/styles/tbc-buttons.css">
-    <link rel="stylesheet" type="text/css" href="resources/styles/author-buttons.css">
-    <link rel="stylesheet" type="text/css" href="resources/styles/gallery-buttons.css">
     <link rel="stylesheet" type="text/css" href="resources/styles/sticky-footer.css">
+    <!-- ~~~~ Section CSS ~~~~ -->
+    <link rel="stylesheet" type="text/css" href="resources/styles/specific/specific-contact.css">
     <!-- ~~~~ Title ~~~~ --> 
     <title>Contact - "the Black Cat"</title>
     <!-- ~~~~ -->
@@ -58,31 +55,36 @@
     <span class="sanfrancisco">Found any bugs? Have any feedback?<br>Report them in the GitHub Repository Page by <a href="https://github.com/theBlackCat-OC/theblack.cat/issues" target="_blank">Opening an issue<img src="https://cdn.theblack.cat/resources/thank-you-flaticons/new-window.png" width="12" height="12" class="vertical-align-minus0dot4vh padding-left-point25percent img-inverter" title="Thank you Flaticons!"></a> and by using an appropiate label.</span>
   </div>  
   <!-- ~~~~ Captcha Widget ~~~~ -->
-    <div class="captcha-widget section-title glassbox-50 border-radius-16px margin-right-22-5vw margin-left-22-5vw padding-threevw description-text-black">
+    <div class="captcha-widget section-title glassbox-50 border-radius-16px margin-right-22-5vw margin-left-22-5vw padding-threevw description-text-black" style="display: none;">
       <span class="three-em productsans-bold">Verifying your browser, please hold...</span>
       <br><br>
       <div id="turnstile-widget" class="turnstile-widget"></div>
       <br>
     </div>
   <!-- ~~~~ Contact Content ~~~~ -->
-    <div class="captcha-box glassbox-50 border-radius-16px special-margin-smallbox padding-fivevw margin-top-20vh description-text-black" style="display: none;"><!--  -->
-      <img src="https://cdn.theblack.cat/resources/thank-you-flaticons/cat-talking.png" width="43" height="43" class="display-inlineblock margin-left-1vw margin-right-1vw site-map-icon img-inverter vertical-align-0dot6vh" title="Thank you Flaticons!"><span class="productsans-bold two-em">Feel free to contact me via:</span><br><br><br>
-      <span class="productsans-regular onepointfive-em">● An<img src="https://cdn.theblack.cat/resources/thank-you-flaticons/closed-mail.png" width="28" height="28" class="margin-left-dot25vw display-inlineblock img-inverter vertical-align-0dot5vh"> email at:</span><br>
+    <div class="captcha-box glassbox-50 border-radius-16px contact-smartbox padding-fivevw margin-top-20vh description-text-black" ><!--  -->
+      <div class="textalign-center">
+        <img src="https://cdn.theblack.cat/resources/thank-you-flaticons/cat-talking.png" width="43" height="43" class="display-inlineblock margin-left-1vw margin-right-1vw site-map-icon img-inverter icon-verticalalign-2vh" title="Thank you Flaticons!"><span class="productsans-bold two-em">Feel free to contact me:</span><br><br><br>
+      </div>
+      <span class="productsans-regular onepointfive-em">● Via<img src="https://cdn.theblack.cat/resources/thank-you-flaticons/closed-mail.png" class="contact-inline-icon img-inverter">email at:</span><br>
       <div class="margin-left-1vw margin-top-1vh textalign-center">
-        <a id="email-content" href="mailto:contact@theblack.cat"><span class="latex-regular three-em">contact@theblack.cat</span></a>
-        <img id="emailImage" src="https://cdn.theblack.cat/resources/thank-you-flaticons/copy.png" width="23" height="23" style="vertical-align: 5px;  cursor: pointer;" class="img-inverter" title="Click to Copy">
+        <a id="email-content" href="mailto:contact@theblack.cat"><span class="latex-regular two-em">contact@theblack.cat</span></a>
+        <img id="emailImage" src="https://cdn.theblack.cat/resources/thank-you-flaticons/copy.png" class=" cursor-pointer contact-copy-button img-inverter" title="Click to Copy">
       </div>
         <br>
-      <span class="productsans-regular onepointfive-em">● A DM on<img src="https://cdn.theblack.cat/resources/icons/discord.svg" width="28" height="28" class="margin-left-dot25vw display-inlineblock img-inverter vertical-align-0dot5vh"></span>&nbsp;<span class="unisans-heavy onepointfive-em">DISCORD</span><span class="productsans-regular onepointfive-em">:</span><br>
+      <span class="productsans-regular onepointfive-em">● A DM on<img src="https:/cdn.theblack.cat/resources/icons/discord.svg" class="contact-inline-icon img-inverter"></span><span class="unisans-heavy onepointfive-em">DISCORD</span><span class="productsans-regular onepointfive-em">:</span><br>
       <div class="margin-left-1vw margin-top-1vh textalign-center">
-        <span id="discord-content" class="cursor-default latex-regular three-em">di_theblackcat</span></a>
-        <img id="discordImage" src="https://cdn.theblack.cat/resources/thank-you-flaticons/copy.png" width="23" height="23" style="vertical-align: 5px; cursor: pointer;" class="img-inverter" title="Click to Copy">
+        <span id="discord-content" class="cursor-default latex-regular two-em">di_theblackcat</span></a>
+        <img id="discordImage" src="https://cdn.theblack.cat/resources/thank-you-flaticons/copy.png" class=" cursor-pointer contact-copy-button img-inverter" title="Click to Copy">
       </div>
         <br>
-      <span class="productsans-regular onepointfive-em">● A DM on<a href="https://twitter.com/di_theBlackCat" target="_blank"><img src="https://cdn.theblack.cat/resources/thank-you-flaticons/old-twitter.png" width="28" height="28" class="margin-left-dot25vw display-inlineblock img-inverter vertical-align-0dot5vh"> <span class="chirp">Twitter</span><img src="https://cdn.theblack.cat/resources/thank-you-flaticons/new-window.png" width="13" height="13" class="vertical-align-minus0dot4vh marginleft-dotfivepercent img-inverter" title="Thank you Flaticons!"></a></span>
-      <br><br>
-      <span class="productsans-regular onepointfive-em">● A DM on<a rel="me" href="https://misskey.io/@theblackcat" target="_blank"><img src="https://cdn.theblack.cat/resources/icons/misskey.png" width="28" height="28" class="margin-left-dot25vw display-inlineblock vertical-align-0dot5vh"> misskey.io<img src="https://cdn.theblack.cat/resources/thank-you-flaticons/new-window.png" width="13" height="13" class="vertical-align-minus0dot4vh marginleft-dotfivepercent img-inverter" title="Thank you Flaticons!"></a></span>
-      <br><br>
+        <span class="productsans-regular onepointfive-em">
+          ● A DM on<a href="https://twitter.com/di_theBlackCat" target="_blank"><img src="https://cdn.theblack.cat/resources/thank-you-flaticons/old-twitter.png" class="contact-inline-icon img-inverter"><span class="chirp">Twitter</span><img src="https://cdn.theblack.cat/resources/thank-you-flaticons/new-window.png" class="new-window-icon img-inverter" title="Thank you Flaticons!">
+          </a>
+        </span>
+      <br><br><br>
+      <span class="productsans-regular onepointfive-em">● A DM on<a rel="me" href="https://misskey.io/@theblackcat" target="_blank"><img src="https://cdn.theblack.cat/resources/icons/misskey.png" class="contact-inline-icon"><span class="hiragino-maru-gothic-pro">Misskey.io</span><img src="https://cdn.theblack.cat/resources/thank-you-flaticons/new-window.png" class="new-window-icon img-inverter" title="Thank you Flaticons!"></a></span>
+      <br><br><br>  
       <details>
         <summary class="cursor-pointer latex-regular">How to DM on the Fediverse <span class="details-alert">(click me!)</span></summary>
         <p>

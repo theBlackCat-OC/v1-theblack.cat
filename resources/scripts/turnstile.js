@@ -17,7 +17,7 @@
             });
           };
           function hideCaptchaAndShowContent() {
-            document.querySelector(".captcha-box").style.display = "block";
+            document.querySelector(".captcha-box").style.display = "";
             document.querySelector(".captcha-widget").style.display = "none";
           }
         } else {
@@ -33,13 +33,25 @@
             });
           };
           function hideCaptchaAndShowContent() {
-            document.querySelector(".captcha-box").style.display = "block";
+            document.querySelector(".captcha-box").style.display = "";
             document.querySelector(".captcha-widget").style.display = "none";
           }
         }
       } else {
         // Fallback for older browsers that do not support matchMedia
         console.log('matchMedia not supported, unable to determine dark mode.');
-        // You can either activate dark mode by default or show a message about unsupported feature
-        // Activate your preferred mode (dark/light) by default or display an error message here
+        window.onloadTurnstileCallback = function() {
+          turnstile.render('#turnstile-widget', {
+            sitekey: '0x4AAAAAAAHvIx2O_lyI4AvC',
+            theme: 'dark',
+            callback: function(token) {
+              console.log(`Challenge Success ${token}`);
+              hideCaptchaAndShowContent();
+            },
+          });
+        };
+        function hideCaptchaAndShowContent() {
+          document.querySelector(".captcha-box").style.display = "";
+          document.querySelector(".captcha-widget").style.display = "none";
+        }
       }

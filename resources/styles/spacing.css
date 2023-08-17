@@ -1,3 +1,7 @@
+.alignitems-center{
+    align-items: center;
+}
+
 .zindex-1{
     z-index: 1;
 }
@@ -107,19 +111,6 @@
 
 .margin-left-22-5vw{
     margin-left: 22.5vw;
-}
-
-.special-margin-smallbox{
-    margin-left: 34%;
-    width: 28%;
-}
-
-@media (max-width: 800px) {
-    .special-margin-smallbox{
-        margin-left: 5%;
-        margin-right: 5%;
-        width: 84%;
-    }
 }
 
 @media (max-width: 800px) {
