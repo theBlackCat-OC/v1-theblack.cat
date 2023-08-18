@@ -45,7 +45,7 @@ footer {
     }
 
     .contained-img {
-        max-width: 100%; /* Increase the max-height of the images */
+        max-width: 90%; /* Increase the max-height of the images */
         max-height: 5vh;
         margin-bottom: 2vh;
         margin-left:1vw;
