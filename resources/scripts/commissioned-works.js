@@ -69,44 +69,45 @@ function createTagElement(tag, imageCard, selected = false) {
   imageCard.appendChild(tagElement);
 }
 
-function generateTagsHTML(tags, isDescriptionTag = false) {
+function generateTagsHTML(tags) {
   return tags
     .split(' ')
-    .map(tag => `<div class="tag ${isDescriptionTag ? 'description-tag' : 'tag-selected'}">${tag}</div>`)
+    .map(tag => `<div class="tag">${tag}</div>`)
     .join('');
 }
+
+
 
 function addTagsToCard(imageCard, tags) {
   const imageInfo = imageCard.querySelector('.image-info');
   const tagsParagraph = document.createElement('p');
   tagsParagraph.classList.add('image-tags');
 
-  tagsParagraph.innerHTML = generateTagsHTML(tags, true);
+  tagsParagraph.innerHTML = generateTagsHTML(tags);
 
   imageInfo.appendChild(tagsParagraph);
 }
 
 function addImageToGallery(mediaSrc, tags, descriptionHTML) {
-    const imageCard = document.createElement('div');
-    imageCard.classList.add('image-card');
-    imageCard.dataset.tags = tags;
-  
-    const mediaElement = mediaSrc.includes('.mp4')
-      ? createVideoElement(mediaSrc)
-      : createImageElement(mediaSrc);
-  
-    const imageInfo = document.createElement('div');
-    imageInfo.classList.add('image-info');
-  
-    const descriptionParagraph = document.createElement('p');
-    descriptionParagraph.innerHTML = descriptionHTML;
-  
-    imageInfo.appendChild(descriptionParagraph);
-    imageCard.appendChild(mediaElement);
-    imageCard.appendChild(imageInfo);
-    gallery.appendChild(imageCard);
-  
-    addTagsToCard(imageCard, tags);
+  const imageCard = document.createElement('div');
+  imageCard.classList.add('image-card');
+  imageCard.dataset.tags = tags;
+
+  const mediaElement = mediaSrc.includes('.mp4')
+    ? createVideoElement(mediaSrc)
+    : createImageElement(mediaSrc);
+
+  const imageInfo = document.createElement('div');
+  imageInfo.classList.add('image-info');
+
+  // Create the description paragraph without tags
+  const descriptionParagraph = document.createElement('p');
+  descriptionParagraph.innerHTML = descriptionHTML;
+
+  imageInfo.appendChild(descriptionParagraph);
+  imageCard.appendChild(mediaElement);
+  imageCard.appendChild(imageInfo);
+  gallery.appendChild(imageCard);
 }
 
 function createImageElement(imageSrc) {
@@ -122,6 +123,43 @@ function createVideoElement(videoSrc) {
   videoElement.controls = true;
   return videoElement;
 }
+
+// Function to parse query parameters from the URL
+function getQueryParams() {
+  const queryParams = {};
+  const queryString = window.location.search.substring(1);
+  const params = queryString.split('&');
+  
+  for (const param of params) {
+    const [key, value] = param.split('=');
+    queryParams[key] = decodeURIComponent(value);
+  }
+  
+  return queryParams;
+}
+
+// Function to filter images based on the 'work' query parameter
+function filterImagesByTag(tag) {
+  const imageCards = document.querySelectorAll('.image-card');
+
+  for (const card of imageCards) {
+    const tagsText = card.dataset.tags.toLowerCase();
+
+    // Check if the tag matches the query parameter
+    if (tagsText.includes(tag)) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
+  }
+}
+
+// Load images based on the 'work' query parameter, if provided
+const queryParams = getQueryParams();
+if (queryParams.work) {
+  filterImagesByTag(queryParams.work.toLowerCase());
+}
+
 
 tags.forEach(tag => addTagToContainer(tag));
 
