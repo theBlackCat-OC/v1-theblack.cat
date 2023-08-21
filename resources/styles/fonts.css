@@ -25,8 +25,8 @@
   }
   @font-face {
     font-family: 'productsans-italic-bold';
-    src: url('../fonts/product-sans-italic-bold.ttf') format('truetype'),
-         url('https://cdn.theblack.cat/resources/fonts/product-sans-italic-bold.ttf') format('truetype');
+    src: url('../fonts/product-sans-bold-italic.ttf') format('truetype'),
+         url('https://cdn.theblack.cat/resources/fonts/product-sans-bold-italic.ttf') format('truetype');
   }
   @font-face {
     font-family: 'chirp';

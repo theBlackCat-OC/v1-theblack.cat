@@ -3,6 +3,8 @@ const imageUrls = [
     'https://cdn.theblack.cat/resources/background/horizontal/chaosringen-sketch-horizontal.jpg',
     'https://cdn.theblack.cat/resources/background/horizontal/chaosringen-color-horizontal.png',
     'https://cdn.theblack.cat/resources/background/horizontal/korodrawsaug2023-horizontal.jpeg',
+    'https://cdn.theblack.cat/resources/background/horizontal/romupand-aug2023-horizontal.png',
+    'https://cdn.theblack.cat/resources/background/horizontal/mijeh-aug2023-horizontal.jpeg',
     // Add more image URLs as needed
   ];
 
