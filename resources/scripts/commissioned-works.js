@@ -124,43 +124,6 @@ function createVideoElement(videoSrc) {
   return videoElement;
 }
 
-// Function to parse query parameters from the URL
-function getQueryParams() {
-  const queryParams = {};
-  const queryString = window.location.search.substring(1);
-  const params = queryString.split('&');
-  
-  for (const param of params) {
-    const [key, value] = param.split('=');
-    queryParams[key] = decodeURIComponent(value);
-  }
-  
-  return queryParams;
-}
-
-// Function to filter images based on the 'work' query parameter
-function filterImagesByTag(tag) {
-  const imageCards = document.querySelectorAll('.image-card');
-
-  for (const card of imageCards) {
-    const tagsText = card.dataset.tags.toLowerCase();
-
-    // Check if the tag matches the query parameter
-    if (tagsText.includes(tag)) {
-      card.style.display = 'block';
-    } else {
-      card.style.display = 'none';
-    }
-  }
-}
-
-// Load images based on the 'work' query parameter, if provided
-const queryParams = getQueryParams();
-if (queryParams.work) {
-  filterImagesByTag(queryParams.work.toLowerCase());
-}
-
-
 tags.forEach(tag => addTagToContainer(tag));
 
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/skeb/Mijeh/July2023/1547235-1.output.png', 'NSFW Pornographic', 'Skeb commission by <a href="https://skeb.jp/@mm_mijeh" target="_blank">Mijeh</a>.<br><span class="latex-italic">Peeking.</span>');
@@ -168,13 +131,13 @@ addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/skeb/Mije
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/skeb/Mijeh/July2023/1547235-7.output.png', 'NSFW Pornographic', 'Skeb commission by <a href="https://skeb.jp/@mm_mijeh" target="_blank">Mijeh</a>.<br><span class="latex-italic-bold">Caught.</span>');
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/skeb/Mijeh/July2023/1547235-8.output.png', 'NSFW Pornographic', 'Skeb commission by <a href="https://skeb.jp/@mm_mijeh" target="_blank">Mijeh</a>.<br><span class="latex-italic">Going.</span>');
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/skeb/Mijeh/July2023/1547235-11.output.png', 'NSFW Pornographic', 'Skeb commission by <a href="https://skeb.jp/@mm_mijeh" target="_blank">Mijeh</a>.<br><span class="latex-italic-bold">Gone.</span>');
-addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/romupand/aug-2023/romupand-aug2023-full.png', 'NSFW Erotica', 'Simple Reference Sheet commission by <a href="https://romucommss.carrd.co/" target="_blank">Romupand</a>.<br>Full Version.');
-addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/romupand/aug-2023/romupand-aug2023-clothed.png', 'SafeForWork Fullbody', 'Simple Reference Sheet commission by <a href="https://romucommss.carrd.co/" target="_blank">Romupand</a>.<br>Clothed Version.');
-addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/romupand/aug-2023/romupand-aug2023-nude.png', 'NSFW Erotica', 'Simple Reference Sheet commission by <a href="https://romucommss.carrd.co/" target="_blank">Romupand</a>.<br>Nude Version.');
+addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/romupand/aug-2023/romupand-aug2023-full.png', 'NSFW Erotica', 'Simple Reference Sheet commission by <a href="https://romucommss.carrd.co/" target="_blank">Romupand</a>.<br>Full Version');
+addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/romupand/aug-2023/romupand-aug2023-clothed.png', 'SafeForWork Fullbody', 'Simple Reference Sheet commission by <a href="https://romucommss.carrd.co/" target="_blank">Romupand</a>.<br>Clothed Version');
+addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/romupand/aug-2023/romupand-aug2023-nude.png', 'NSFW Erotica', 'Simple Reference Sheet commission by <a href="https://romucommss.carrd.co/" target="_blank">Romupand</a>.<br>Nude Version');
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/skeb/nikuyaking1/aug2023.png', 'NSFW Degen', 'Skeb commission by <a href="https://skeb.jp/@nikuyaking1" target="_blank">ニクヤキ</a>.');
-addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/korodraws/aug-2023/korodraws-aug2023-clothed.png', 'SafeForWork Suggestive Fullbody', 'Fullbody Character commission by <a href="https://korodraws.carrd.co/" target="_blank">Koro</a>.<br>Clothed version.');
-addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/korodraws/aug-2023/korodraws-aug2023-naked.png', 'NSFW Erotica', 'Fullbody Character commission by <a href="https://korodraws.carrd.co/" target="_blank">Koro</a>.<br>Naked version.');
-addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/korodraws/aug-2023/korodraws-aug2023-full.png', 'NSFW Erotica', 'Fullbody Character Study commission by <a href="https://korodraws.carrd.co/" target="_blank">Koro</a>.<br>Full version.');
+addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/korodraws/aug-2023/korodraws-aug2023-clothed.png', 'SafeForWork Suggestive Fullbody', 'Fullbody Character commission by <a href="https://korodraws.carrd.co/" target="_blank">Koro</a>.<br>Clothed version');
+addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/korodraws/aug-2023/korodraws-aug2023-naked.png', 'NSFW Erotica', 'Fullbody Character commission by <a href="https://korodraws.carrd.co/" target="_blank">Koro</a>.<br>Naked version');
+addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/korodraws/aug-2023/korodraws-aug2023-full.png', 'NSFW Erotica', 'Fullbody Character Study commission by <a href="https://korodraws.carrd.co/" target="_blank">Koro</a>.<br>Full version');
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/iaminsamity/ych-jul2023.png', 'NSFW Pornographic', 'YCH version 2A commission from <a href="https://iaminsamity.carrd.co/" target="_blank">SAMANTHA</a>.');
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/MiFa/fullbody-tentacle-rape/v1.png', 'NSFW Degen', 'Fullbody commission from <a href="https://www.patreon.com/Ozzay041" target="_blank">MiFa</a>.<br><span class="latex-italic">Feeling it.</span>');
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/MiFa/fullbody-tentacle-rape/v2.png', 'NSFW Degen', 'Fullbody commission from <a href="https://www.patreon.com/Ozzay041" target="_blank">MiFa</a>.<br><span class="latex-italic-bold">Really</span><span class="latex-italic"> Feeling it.</span>');
