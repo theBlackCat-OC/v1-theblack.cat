@@ -26,7 +26,7 @@
     <!-- ~~~~ Element CSS ~~~~ -->
     <link rel="stylesheet" type="text/css" href="resources/styles/sticky-header.css">
     <link rel="stylesheet" type="text/css" href="resources/styles/sticky-bubbles.css">
-    <link rel="stylesheet" type="text/css" href="resources/styles/section-title.css">
+    <link rel="stylesheet" type="text/css" href="resources/styles/specific/mobile-header-top.css">
     <link rel="stylesheet" type="text/css" href="resources/styles/sticky-footer.css">
     <!-- ~~~~ Section CSS ~~~~ -->
     <link rel="stylesheet" type="text/css" href="resources/styles/specific/specific-contact.css">
@@ -46,6 +46,11 @@
         <span class="productsans-bold three-em-header cursor-pointer description-text-black" id="contact-topBar">Contact Options</span>
     </div>  
   </header>
+  <!-- ~~~~ Mobile Header ~~~~ -->
+  <div class="section-title-2 section-title-long glassbox-25 border-radius-5px cursor-default" id="topBar-mobile" style="display: none;">
+    <img src="https://cdn.theblack.cat/resources/thank-you-flaticons/communicate.png" width="28" height="28" class="vertical-align-0dot4vh marginright-1percent img-inverter" title="Thank you Flaticons!">
+    <span class="productsans-bold three-em cursor-pointer description-text-black" id="tou-topBar-mobile">Contact Options</span></div>
+  <div>
   <!-- ~~~~ Bubble Container ~~~~ -->
   <div class="bubble-trigger cursor-help user-select-none">
     <img src="https://cdn.theblack.cat/resources/thank-you-flaticons/bug.png" width="28" height="28" class="img-inverter" title="Thank you Flaticons!">
@@ -54,14 +59,14 @@
     <span class="sanfrancisco">Found any bugs? Have any feedback?<br>Report them in the GitHub Repository Page by <a href="https://github.com/theBlackCat-OC/theblack.cat/issues" target="_blank">Opening an issue<img src="https://cdn.theblack.cat/resources/thank-you-flaticons/new-window.png" width="12" height="12" class="vertical-align-minus0dot4vh padding-left-point25percent img-inverter" title="Thank you Flaticons!"></a> and by using an appropiate label.</span>
   </div>  
   <!-- ~~~~ Captcha Widget ~~~~ -->
-    <div class="captcha-widget section-title glassbox-50 border-radius-16px margin-right-22-5vw margin-left-22-5vw padding-threevw description-text-black">
+    <div class="captcha-widget section-title glassbox-50 border-radius-16px margin-right-22-5vw margin-left-22-5vw padding-threevw description-text-black"  style="display: none;">
       <span class="three-em productsans-bold">Verifying your browser, please hold...</span>
       <br><br>
       <div id="turnstile-widget" class="turnstile-widget"></div>
       <br>
     </div>
   <!-- ~~~~ Contact Content ~~~~ -->
-    <div class="captcha-box glassbox-50 border-radius-16px contact-smartbox padding-fivevw margin-top-20vh description-text-black" style="display: none;"><!--  -->
+    <div class="captcha-box glassbox-50 border-radius-16px contact-smartbox padding-fivevw special-margin-top-2 description-text-black" ><!--  -->
       <div class="textalign-center">
         <img src="https://cdn.theblack.cat/resources/thank-you-flaticons/cat-talking.png" width="43" height="43" class="display-inlineblock margin-left-1vw margin-right-1vw site-map-icon img-inverter icon-verticalalign-2vh" title="Thank you Flaticons!"><span class="productsans-bold two-em">Feel free to contact me:</span><br><br><br>
       </div>
@@ -122,6 +127,29 @@
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback" async defer></script>
     <script>
       document.getElementById('contact-topBar').onclick = function() {    window.location.href = 'https://theblack.cat';};
+    </script>
+    <script>
+      document.getElementById('tou-topBar-mobile').onclick = function() {    window.location.href = 'https://theblack.cat';};
+    </script>
+    <script>
+      function toggleDivVisibility() {
+        const topBar = document.getElementById('topBar');
+        const topBarMobile = document.getElementById('topBar-mobile');
+        
+        if (window.innerWidth <= 550) {
+          topBar.style.display = 'none';
+          topBarMobile.style.display = '';
+        } else {
+          topBar.style.display = '';
+          topBarMobile.style.display = 'none';
+        }
+      }
+
+      // Initial call to set the initial state
+      toggleDivVisibility();
+
+      // Add an event listener to the window's resize event
+      window.addEventListener('resize', toggleDivVisibility);
     </script>
     <!-- ~~~~  ~~~~ -->
 </body>

@@ -27,7 +27,7 @@
     <link rel="stylesheet" type="text/css" href="resources/styles/sticky-bubbles.css">
     <link rel="stylesheet" type="text/css" href="resources/styles/linktree.css">
     <link rel="stylesheet" type="text/css" href="resources/styles/back-button.css">
-    <link rel="stylesheet" type="text/css" href="resources/styles/section-title.css">
+    <link rel="stylesheet" type="text/css" href="resources/styles/specific/mobile-header-top.css">
     <link rel="stylesheet" type="text/css" href="resources/styles/tbc-buttons.css">
     <link rel="stylesheet" type="text/css" href="resources/styles/author-buttons.css">
     <link rel="stylesheet" type="text/css" href="resources/styles/gallery-buttons.css">
@@ -41,8 +41,13 @@
           <span class="productsans-bold three-em-header cursor-pointer description-text-black" id="wcif-topBar">"the Black Cat" FFXIV&copy; WCIF</span>
       </div>  
     </header>
+    <!-- ~~~~ Mobile Header ~~~~ -->
+    <div class="section-title section-title-long glassbox-25 border-radius-5px cursor-default" id="topBar-mobile" style="display: none;">
+      <img src="https://cdn.theblack.cat/resources/thank-you-flaticons/wcif.png" width="28" height="28" class="vertical-align-0dot4vh marginright-1percent img-inverter" title="Thank you Flaticons!">
+      <span class="productsans-bold three-em cursor-pointer description-text-black" id="tou-topBar-mobile">"the Black Cat" FFXIV&copy; WCIF</span></div>
+    <div>
     <!-- ~~~~ WCIF Content ~~~~ -->
-  <div class="glassbox-50 padding-threevw border-radius-16px margin-top-10vh margin-bottom-2vh margin-left-22-5vw margin-right-22-5vw padding-threevw description-text-black">
+  <div class="glassbox-50 padding-threevw border-radius-16px special-margin-top margin-bottom-2vh margin-left-22-5vw margin-right-22-5vw padding-threevw description-text-black">
     <span class="productsans-bold three-em underline margin-bottom-2vh"><img src="https://cdn.theblack.cat/resources/thank-you-flaticons/wcif.png" width="50" height="50" class="vertical-align-0dot2vh img-inverter" title="Thank you Flaticons!">Body</span><br><br>
         <span class="productsans-regular two-em underline"><img src="https://cdn.theblack.cat/resources/thank-you-flaticons/hair.png" width="28" height="28" class="vertical-align-0dot2vh img-inverter" title="Thank you Flaticons!">&nbsp;Hair</span><br>
         <span class="spanspacer">&nbsp;</span>
@@ -128,10 +133,33 @@
     <script src="resources/scripts/new-polkadot.js"></script>
     <script src="https://cdn.theblack.cat/resources/scripts/totop.js"></script>
     <script src="resources/scripts/copy-code.js"></script>
-    <script src="resources/scripts/bubble-begone.js"></script>
     <script src="resources/scripts/background-header.js"></script>
     <script src="resources/scripts/hideGoToTopBTN.js"></script>
-    <script>document.getElementById('wcif-topBar').onclick = function() {  window.location.href = 'https://theblack.cat';};
+    <script>
+      document.getElementById('wcif-topBar').onclick = function() {  window.location.href = 'https://theblack.cat';};
+    </script>
+    <script>
+      document.getElementById('tou-topBar-mobile').onclick = function() {    window.location.href = 'https://theblack.cat';};
+    </script>
+    <script>
+      function toggleDivVisibility() {
+        const topBar = document.getElementById('topBar');
+        const topBarMobile = document.getElementById('topBar-mobile');
+        
+        if (window.innerWidth <= 550) {
+          topBar.style.display = 'none';
+          topBarMobile.style.display = '';
+        } else {
+          topBar.style.display = '';
+          topBarMobile.style.display = 'none';
+        }
+      }
+
+      // Initial call to set the initial state
+      toggleDivVisibility();
+
+      // Add an event listener to the window's resize event
+      window.addEventListener('resize', toggleDivVisibility);
     </script>
   <!-- ~~~~ -->
 </body>
