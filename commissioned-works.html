@@ -45,8 +45,15 @@
       <img src="https://cdn.theblack.cat/resources/thank-you-flaticons/art-gallery.png" width="28" height="28" class="vertical-align-0dot4vh marginright-1percent img-inverter" title="Thank you Flaticons!">
       <span class="latex-regular two-em description-text-black cursor-pointer" id="commworks-topBar">"the Black Cat"</span><span class="productsans-bold two-em description-text-black"> Commissioned Works Gallery</span></div>
     <div>
+  <!-- ~~~~ Captcha Widget ~~~~ -->
+  <div class="captcha-widget section-title glassbox-50 border-radius-16px margin-right-22-5vw margin-left-22-5vw padding-threevw description-text-black special-margin-top-2">
+    <span class="three-em productsans-bold">Verifying your browser, please hold...</span>
+    <br><br>
+    <div id="turnstile-widget" class="turnstile-widget"></div>
+    <br>
+  </div>
   <!-- ~~~~ Commissioned Works Gallery ~~~~ -->
-      <div class="gallery-container">
+      <div class="gallery-container captcha-box" style="display: none;">
         <div class="tag-container-parent">
           <div class="tag-container" id="tagContainer">
           </div>
@@ -88,6 +95,8 @@
         <script src="resources/scripts/bubble-gallery-begone.js"></script>
         <script src="resources/scripts/commissioned-works.js"></script>
         <script src="resources/scripts/hideGoToTopBTN.js"></script>
+        <script src="resources/scripts/turnstile-commworks.js"></script>
+        <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback" async defer></script>   
         <script>
           document.getElementById('commworks-topBar').onclick = function() {    window.location.href = 'https://theblack.cat';};
         </script>
