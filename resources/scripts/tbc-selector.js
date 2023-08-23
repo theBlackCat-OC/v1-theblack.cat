@@ -88,7 +88,7 @@ function toggleGalleryDetails() {
 }
 
 // Set up event listener for the "Galleries" show button
-const galleriesShowButton = document.getElementById('galleries-show-button');
+const galleriesShowButton = document.getElementById('galleries-show-back');
 galleriesShowButton.addEventListener('click', toggleGalleryDetails);
 
 function toggleTBCBack() {

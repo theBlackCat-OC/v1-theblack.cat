@@ -1,4 +1,4 @@
-document.getElementById('author-button-twitter').onclick = function() {
+document.getElementById('twitter-menu-button').onclick = function() {
     window.open('https://twitter.com/di_theBlackCat', '_blank');
   };
 
@@ -10,7 +10,7 @@ document.getElementById('author-button-twitter').onclick = function() {
     window.open('https://curiouscat.live/theBlackCat_OC', '_blank');
   };
 
-document.getElementById('author-button-contact').onclick = function() {
+document.getElementById('contact-menu-button').onclick = function() {
     window.location.href = 'contact';
 };
 

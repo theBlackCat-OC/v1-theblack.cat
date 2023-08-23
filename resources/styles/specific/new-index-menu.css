@@ -1,0 +1,74 @@
+.index-menu-container {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 1%;
+    margin-right: 3vw;
+    margin-bottom: 3vh;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(17.4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    -webkit-backdrop-filter: blur(9px);
+}
+
+.index-menu-item {
+    text-align: center;
+    padding: 20px;
+}
+
+.index-menu-icon {
+    width: 36px; /* Set a fixed width */
+    height: 36px; /* Set a fixed height */
+    margin-bottom: 10px;
+    transition: filter 0.3s ease; /* Add transition for filter change */
+}
+
+.index-menu-trigger {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 1%;
+    margin-right: 3vw;
+    margin-bottom: 3vh;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(17.4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    -webkit-backdrop-filter: blur(9px);
+    transition: transform 0.3s; 
+}
+
+.index-menu-trigger-icon{
+    width: 64px; /* Set a fixed width */
+    height: 64px; /* Set a fixed height */
+    transition: filter 0.3s ease; /* Add transition for filter change */
+}
+
+  .index-menu-trigger:hover {
+    transform: scale(1.06);
+    z-index: 1;
+  }
+  
+  .index-menu-trigger:not(:hover) {
+    transform: scale(1);
+  }
+
+@media (max-width: 800px) {
+    .index-menu-trigger {
+        padding: 3%;
+    }  
+    .index-menu-trigger-icon{
+        width: 40px; /* Set a fixed width */
+        height: 40px; /* Set a fixed height */
+        transition: filter 0.3s ease; /* Add transition for filter change */
+    }
+    .index-menu-icon {
+        width: 26px; /* Set a fixed width */
+        height: 26px; /* Set a fixed height */
+        margin-bottom: 10px;
+        transition: filter 0.3s ease; /* Add transition for filter change */
+    }
+}
