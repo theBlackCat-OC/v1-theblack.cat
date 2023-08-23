@@ -5,7 +5,7 @@ footer {
     width: 100%;
     margin-left: 80vw;
     margin-bottom: 5vh;
-    width: 15vw;
+    width: 10vw;
     z-index: 1;
     border-radius: 16px;
     padding: 0.5vh;
@@ -13,7 +13,6 @@ footer {
     justify-content: center;
     align-items: center;
     height: 5vh;
-    min-width: 15vw; /* Set the minimum width to 20vw */
     max-width: 20vw; /* Set the maximum width to 20vw */
     background: rgba(255, 255, 255, 0.05);
     border-radius: 16px;
@@ -49,7 +48,7 @@ footer {
 @media (max-width: 927px) {
     footer {
         height: 16vh; /* Increase the height of the footer */
-        max-width: 4vw;
+        max-width: 15vw;
         right:0;
         margin-left:80vw;
 

@@ -1,34 +1,20 @@
-.section-title{
-    margin-top: 1vh;
+.mobile-header{
+    position: fixed;
     margin-left: 10%;
     margin-right: 10%;
+    margin-bottom: 3vh;
     padding-top: 1%;
     padding-bottom: 1%;
     text-align: center;
-}
-
-.section-title-2{
-    margin-top: 8vh;
-    margin-left: 10%;
-    margin-right: 10%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    text-align: center;
+    top: 1vh;
 }
 
 .special-margin-top{
     margin-top: 10vh;
 }
 
-.special-margin-top-2{
-    margin-top: 10vh;
-}
-
 @media (max-width: 800px) {
     .special-margin-top{
-        margin-top: 4vh;
-    }
-    .special-margin-top-2{
-        margin-top: 10vh;
+        margin-top: 13vh;
     }
 }
