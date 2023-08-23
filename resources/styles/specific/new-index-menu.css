@@ -19,11 +19,16 @@
 }
 
 .index-menu-icon {
-    width: 36px; /* Set a fixed width */
-    height: 36px; /* Set a fixed height */
+    width: 36px;
+    height: 36px;
     margin-bottom: 10px;
-    transition: filter 0.3s ease; /* Add transition for filter change */
+    transition: brightness 0.3s ease;
 }
+
+.index-menu-icon:hover{
+    filter: brightness(0) saturate(100%) hue-rotate(190deg) !important;
+}
+
 
 .index-menu-trigger {
     position: fixed;
@@ -42,9 +47,9 @@
 }
 
 .index-menu-trigger-icon{
-    width: 64px; /* Set a fixed width */
-    height: 64px; /* Set a fixed height */
-    transition: filter 0.3s ease; /* Add transition for filter change */
+    width: 64px;
+    height: 64px;
+    transition: filter 0.3s ease;
 }
 
   .index-menu-trigger:hover {

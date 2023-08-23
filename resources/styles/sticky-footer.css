@@ -4,8 +4,10 @@ footer {
     left: 0;
     width: 100%;
     margin-left: 80vw;
+    margin-bottom: 5vh;
+    width: 15vw;
     z-index: 1;
-    border-radius: 16px 0 0 0;
+    border-radius: 16px;
     padding: 0.5vh;
     display: flex;
     justify-content: center;
@@ -13,6 +15,12 @@ footer {
     height: 5vh;
     min-width: 15vw; /* Set the minimum width to 20vw */
     max-width: 20vw; /* Set the maximum width to 20vw */
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(17.4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    -webkit-backdrop-filter: blur(9px);
 }
 
 .footer-display{
@@ -43,7 +51,8 @@ footer {
         height: 16vh; /* Increase the height of the footer */
         max-width: 4vw;
         right:0;
-        margin-left:84vw;
+        margin-left:80vw;
+
     }
 
     .contained-img {
