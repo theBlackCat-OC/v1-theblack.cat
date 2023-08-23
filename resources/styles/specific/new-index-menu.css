@@ -61,13 +61,13 @@
         padding: 3%;
     }  
     .index-menu-trigger-icon{
-        width: 40px; /* Set a fixed width */
-        height: 40px; /* Set a fixed height */
+        width: 32px; /* Set a fixed width */
+        height: 32px; /* Set a fixed height */
         transition: filter 0.3s ease; /* Add transition for filter change */
     }
     .index-menu-icon {
-        width: 26px; /* Set a fixed width */
-        height: 26px; /* Set a fixed height */
+        width: 22px; /* Set a fixed width */
+        height: 22px; /* Set a fixed height */
         margin-bottom: 10px;
         transition: filter 0.3s ease; /* Add transition for filter change */
     }
