@@ -1,9 +1,9 @@
 footer {
     position: fixed;
     bottom: 0;
-    left: 0;
+    right: 0;
     width: 100%;
-    margin-left: 80vw;
+    margin-right: 3vw;
     margin-bottom: 5vh;
     width: 10vw;
     z-index: 1;
@@ -13,7 +13,6 @@ footer {
     justify-content: center;
     align-items: center;
     height: 5vh;
-    max-width: 20vw; /* Set the maximum width to 20vw */
     background: rgba(255, 255, 255, 0.05);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);

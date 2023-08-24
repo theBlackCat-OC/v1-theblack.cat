@@ -64,7 +64,11 @@
 @media (max-width: 800px) {
     .index-menu-trigger {
         padding: 3%;
-    }  
+    }
+    .index-menu-item {
+        text-align: center;
+        padding:12px;
+    }
     .index-menu-trigger-icon{
         width: 32px; /* Set a fixed width */
         height: 32px; /* Set a fixed height */
