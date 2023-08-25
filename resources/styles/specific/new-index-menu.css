@@ -18,15 +18,15 @@
     padding: 20px;
 }
 
+.index-menu-item:hover{
+    background-color: rgb(24, 124, 255);
+}
+
 .index-menu-icon {
     width: 36px;
     height: 36px;
     margin-bottom: 10px;
     transition: brightness 0.3s ease;
-}
-
-.index-menu-icon:hover{
-    filter: brightness(0) saturate(100%) hue-rotate(190deg) !important;
 }
 
 

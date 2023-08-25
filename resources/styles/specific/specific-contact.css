@@ -14,8 +14,8 @@
 
 @media (max-width: 900px) {
     .contact-smartbox{
-        margin-left: 15%;
-        margin-right: 15%;
+        margin-left:5%;
+        margin-right: 5%;
     }
 }
 
@@ -122,8 +122,12 @@
     align-items: center;
 }
 
+.hovered{
+    background-color: rgb(24, 124, 255) !important;
+}
+
 .contact-options-buttons:hover{
-    background-color: rgb(24, 124, 255);
+    background-color: rgb(57, 140, 248);
 }
 
 @media (max-width: 700px) {
