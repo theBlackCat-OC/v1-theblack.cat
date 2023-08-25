@@ -1,5 +1,6 @@
 .index-menu-container {
     position: fixed;
+    height: auto;
     bottom: 0;
     right: 0;
     padding: 1%;

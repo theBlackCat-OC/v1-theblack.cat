@@ -37,18 +37,24 @@
     <!-- ~~~~ Styles ~~~~ -->
     <!-- ~~~~ Specific CSS ~~~~ -->
     <link rel="stylesheet" type="text/css" href="resources/styles/specific/floating-gototop-button.css">
+    <link rel="stylesheet" type="text/css" href="resources/styles/specific/mobile-header-top.css">
     <!-- ~~~~ Title ~~~~ -->
   <title>Site Map - "the Black Cat"</title>
 </head>
 <body class="loading-animation">
-  <!-- ~~~~ Header ~~~~ -->
-  <!-- ~~~~ Section Title ~~~~ -->
-  <div class="section-title-long glassbox-25 border-radius-5px cursor-default user-select-none">
-    <img src="https://cdn.theblack.cat/resources/thank-you-flaticons/site-map.png" width="28" height="28" class="vertical-align-0dot4vh marginright-1percent img-inverter" title="Thank you Flaticons!">
-    <span class="productsans-bold three-em cursor-pointer description-text-black" id="sitemap-topBar">Site Map</span></div>
-  <div>
+    <!-- ~~~~ Top Bar ~~~~ -->
+    <header class="sticky-top-bar" id="topBar">
+      <div class="user-select-none hidden-and-nowrap textalign-left">
+          <span class="productsans-bold three-em-header cursor-pointer description-text-black" id="wcif-topBar">Site Map</span>
+      </div>  
+    </header>
+    <!-- ~~~~ Mobile Header ~~~~ -->
+    <div class="glassbox-25 border-radius-5px cursor-default zindex-1 margin-left-25vw margin-right-25vw margin-top-2vh padding-threevw textalign-center margin-bottom-2vh" id="topBar-mobile" style="display: none;">
+      <img src="https://cdn.theblack.cat/resources/thank-you-flaticons/site-map.png" width="28" height="28" class="vertical-align-0dot4vh marginright-1percent img-inverter" title="Thank you Flaticons!">
+      <span class="productsans-bold three-em cursor-pointer description-text-black" id="tou-topBar-mobile">Site Map</span>
+    </div>
   <!-- ~~~~ Site Map Content ~~~~ -->
-    <div class="glassbox-50 margin-left-22-5vw margin-right-22-5vw margin-bottom-5vh padding-threevw border-radius-16px user-select-none">
+    <div class="glassbox-50 margin-left-22-5vw margin-right-22-5vw margin-bottom-5vh padding-threevw border-radius-16px user-select-none special-margin-top">
       <div class="margin-bottom-2vh"><a href="https://theblack.cat?link=tbc"><img src="https://cdn.theblack.cat/resources/thank-you-flaticons/fullbody.png" width="36" height="36" class="site-map-icon marginright-1percent img-inverter"><span class="productsans-bold three-em underline description-text-black">Character Links</a></span><br></div>
       <div class="margin-bottom-1vh"><img src="https://cdn.theblack.cat/resources/thank-you-flaticons/skeb-gallery.png" width="28" height="28" class="display-inlineblock padding-right-point5percent site-map-icon img-inverter" title="Thank you Flaticons!"><span class="two-em padding-right-point5percent description-text-black">●</span><a href="https://theblack.cat/?link=galleries"><span class="productsans-regular two-em">Body Reference Galleries</a></span><br></div>
       <div class="margin-bottom-1vh"><img src="https://cdn.theblack.cat/resources/thank-you-flaticons/eng.png" width="26" height="26" class="display-inlineblock padding-right-point5percent site-map-icon padding-left-1percent img-inverter" title="Thank you Flaticons!"><span class="onepointfive-em padding-right-point5percent description-text-black">●</span><a href="https://reference.theblack.cat/"><span class="productsans-light onepointfive-em">Body Reference Gallery, English Version</a></span><br></div>
@@ -76,10 +82,13 @@
       </div>  
     <!-- ~~~~ Footer ~~~~ -->
     <footer class="cursor-default">
-      <div class="textalign-center">
-        <a href="https://theblack.cat?link=tbc" title="Back to Original Character links"><div class="footer-display cursor-pointer"><img class="contained-img img-inverter" src="https://cdn.theblack.cat/resources/thank-you-flaticons/favicon.png"></div></a>
+        <a href="https://theblack.cat/" title="Home">
+          <div class="footer-display cursor-pointer">
+            <img class="contained-img img-inverter" src="https://cdn.theblack.cat/resources/thank-you-flaticons/hogar.png" title="Thank you Flaticons!">
+          </div>
+        </a>
       </div>
-    </footer>  
+    </footer> 
     <!-- ~~~~ Scripts ~~~~ -->
     <script src="resources/scripts/new-polkadot.js"></script>
     <script src="resources/scripts/totop.js"></script>
@@ -88,6 +97,29 @@
     <script src="resources/scripts/hideGoToTopBTN.js"></script>
     <script>
       document.getElementById('sitemap-topBar').onclick = function() {    window.location.href = 'https://theblack.cat';};
+    </script>
+    <script>
+      document.getElementById('tou-topBar-mobile').onclick = function() {    window.location.href = 'https://theblack.cat';};
+    </script>
+    <script>
+      function toggleDivVisibility() {
+        const topBar = document.getElementById('topBar');
+        const topBarMobile = document.getElementById('topBar-mobile');
+        
+        if (window.innerWidth <= 550) {
+          topBar.style.display = 'none';
+          topBarMobile.style.display = '';
+        } else {
+          topBar.style.display = '';
+          topBarMobile.style.display = 'none';
+        }
+      }
+
+      // Initial call to set the initial state
+      toggleDivVisibility();
+
+      // Add an event listener to the window's resize event
+      window.addEventListener('resize', toggleDivVisibility);
     </script>
     <!-- ~~~~  ~~~~ -->
 </body>

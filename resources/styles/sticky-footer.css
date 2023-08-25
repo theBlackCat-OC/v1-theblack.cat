@@ -2,7 +2,7 @@ footer {
     position: fixed;
     bottom: 0;
     right: 0;
-    width: 100%;
+    width: auto;
     margin-right: 3vw;
     margin-bottom: 5vh;
     width: 10vw;
@@ -46,11 +46,11 @@ footer {
 
 @media (max-width: 927px) {
     footer {
-        height: 16vh; /* Increase the height of the footer */
+        height: auto; /* Increase the height of the footer */
         max-width: 15vw;
         right:0;
         margin-left:80vw;
-
+        padding-top: 15px;
     }
 
     .contained-img {
