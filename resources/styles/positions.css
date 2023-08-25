@@ -1,6 +1,11 @@
 .display-flex{
     display: flex;
 }
+
+.alignitems-center{
+    align-items: center;
+}
+
 .flex-direction-column{
   flex-direction: column;
 }
@@ -11,6 +16,10 @@
 
 .justify-content-spacebetween{
     justify-content: space-between;
+}
+
+.justifycontent-center{
+    justify-content: center;
 }
 
 .bottom-0{

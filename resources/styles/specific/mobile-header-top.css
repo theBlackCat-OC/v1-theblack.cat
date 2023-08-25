@@ -13,8 +13,15 @@
     margin-top: 10vh;
 }
 
+.special-margin-top-contact{
+    margin-top: 10vh;
+}
+
 @media (max-width: 800px) {
     .special-margin-top{
         margin-top: 13vh;
+    }
+    .special-margin-top-contact{
+        margin-top: 9vh;
     }
 }

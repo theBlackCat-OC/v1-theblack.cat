@@ -32,12 +32,14 @@
     <link rel="stylesheet" type="text/css" href="resources/styles/specific/specific-contact.css">
     <!-- ~~~~ Title ~~~~ --> 
     <title>Contact - "the Black Cat"</title>
-    <!-- ~~~~ -->
+    <!-- ~~~~ Styles ~~~~ --> 
     <style>
       details[open] .details-alert {
         display: none;
       }
      </style>
+    <!-- ~~~~ Special Scripts ~~~~ --> 
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </head>
 <body class="loading-animation">
   <!-- ~~~~ Header ~~~~ -->
@@ -47,56 +49,77 @@
     </div>  
   </header>
     <!-- ~~~~ Mobile Header ~~~~ -->
-    <div class="glassbox-25 border-radius-5px cursor-default mobile-header zindex-1" id="topBar-mobile" style="display: none;">
-      <img src="https://cdn.theblack.cat/resources/thank-you-flaticons/woman.png" width="28" height="28" class="vertical-align-0dot4vh marginright-1percent img-inverter" title="Thank you Flaticons!">
-      <span class="productsans-bold three-em cursor-pointer description-text-black" id="tou-topBar-mobile">"the Black Cat" Terms of Use</span></div>
-    <div>
-  <!-- ~~~~ Captcha Widget ~~~~ -->
-    <div class="captcha-widget section-title glassbox-50 border-radius-16px margin-right-22-5vw margin-left-22-5vw padding-threevw description-text-black special-margin-top textalign-center">
-      <span class="three-em productsans-bold">Verifying your browser, please hold...</span>
-      <br><br>
-      <div id="turnstile-widget" class="turnstile-widget"></div>
-      <br>
+    <div class="glassbox-25 border-radius-5px cursor-default zindex-1 margin-left-25vw margin-right-25vw margin-top-2vh padding-threevw textalign-center" id="topBar-mobile" style="display: none;">
+      <img src="https://cdn.theblack.cat/resources/thank-you-flaticons/communicate.png" width="28" height="28" class="vertical-align-0dot4vh marginright-1percent img-inverter" title="Thank you Flaticons!">
+      <span class="productsans-bold three-em cursor-pointer description-text-black" id="tou-topBar-mobile">Contact Options</span>
     </div>
-  <!-- ~~~~ Contact Content ~~~~ -->
-    <div class="captcha-box glassbox-50 border-radius-16px contact-smartbox padding-fivevw special-margin-top description-text-black margin-bottom-2vh" style="display: none;"><!--  -->
+  <!-- ~~~~ Captcha Widget ~~~~ -->
+  <div class="captcha-widget section-title glassbox-50 border-radius-16px margin-right-22-5vw margin-left-22-5vw padding-threevw description-text-black special-margin-top-contact textalign-center">
+    <span class="three-em productsans-bold">Verifying your browser, please hold...</span>
+    <br><br>
+    <div id="turnstile-widget" class="turnstile-widget"></div>
+    <br>
+  </div>
+  <!-- ~~~~ Contact Box ~~~~ -->
+    <div class="captcha-box glassbox-50 border-radius-16px contact-smartbox padding-threevw description-text-black margin-bottom-2vh special-margin-top-contact" style="display: none;"><!--  -->
       <div class="textalign-center">
-        <img src="https://cdn.theblack.cat/resources/thank-you-flaticons/cat-talking.png" width="43" height="43" class="display-inlineblock margin-left-1vw margin-right-1vw site-map-icon img-inverter icon-verticalalign-2vh" title="Thank you Flaticons!"><span class="productsans-bold two-em">Feel free to contact me:</span><br><br><br>
+        <img src="https://cdn.theblack.cat/resources/thank-you-flaticons/communicate.png" width="43" height="43" class="display-inlineblock margin-left-1vw margin-right-1vw site-map-icon img-inverter icon-verticalalign-2vh" title="Thank you Flaticons!"><span class="productsans-bold two-em">Feel free to contact me via:</span><br><br><br>
       </div>
-      <span class="productsans-regular onepointfive-em">● Via<img src="https://cdn.theblack.cat/resources/thank-you-flaticons/closed-mail.png" class="contact-inline-icon img-inverter">email at:</span><br>
-      <div class="margin-left-1vw margin-top-1vh textalign-center">
-        <a id="email-content" href="mailto:contact@theblack.cat"><span class="latex-regular two-em">contact@theblack.cat</span></a>
-        <img id="emailImage" src="https://cdn.theblack.cat/resources/thank-you-flaticons/copy.png" class=" cursor-pointer contact-copy-button img-inverter" title="Click to Copy">
+        <!-- ~~~~ Contact Buttons ~~~~ -->
+      <div class="padding-fourpx display-flex justifycontent-center alignitems-center">
+        <div class="display-inlineblock border-radius-8px padding-fivepx cursor-pointer contact-options-buttons user-select-none" id="contact-email-button">
+          <img src="https://cdn.theblack.cat/resources/icons/protonmail.svg" class="contact-inline-icon" title="Thank you Flaticons!"><span class="productsans-bold description-text-black onepointfive-em">Email&nbsp;</span>
+        </div>&nbsp;
+        <div class="display-inlineblock border-radius-8px padding-fivepx cursor-pointer contact-options-buttons user-select-none" id="contact-twitter-button">
+          <img src="https://cdn.theblack.cat/resources/thank-you-flaticons/old-twitter.png" class="contact-inline-icon img-inverter" title="Thank you Flaticons!"><span class="chirp description-text-black onepointfive-em">Twitter&nbsp;</span>
+        </div>&nbsp;
+        <div class="display-inlineblock border-radius-8px padding-fivepx cursor-pointer contact-options-buttons user-select-none" id="contact-discord-button">
+          <img src="resources/icons/discord-black.svg" class="contact-inline-icon img-inverter" title="Thank you Flaticons!"><span class="unisans-heavy description-text-black onepointfive-em">DISCORD&nbsp;</span>
+        </div>&nbsp;
+        <div class="display-inlineblock border-radius-8px padding-fivepx cursor-pointer contact-options-buttons user-select-none" id="contact-misskey-button">
+          <img src="https://cdn.theblack.cat/resources/icons/misskey.png" class="contact-inline-icon"  title="Thank you Flaticons!"><span class="hiragino-maru-gothic-pro description-text-black onepoint25-em">Misskey.io&nbsp;</span>
+        </div>
       </div>
-        <br>
-      <span class="productsans-regular onepointfive-em">● A DM on<img src="resources/icons/discord-black.svg" class="contact-inline-icon img-inverter"></span><span class="unisans-heavy onepointfive-em">DISCORD</span><span class="productsans-regular onepointfive-em">:</span><br>
-      <div class="margin-left-1vw margin-top-1vh textalign-center">
-        <span id="discord-content" class="cursor-default latex-regular two-em">di_theblackcat</span></a>
-        <img id="discordImage" src="https://cdn.theblack.cat/resources/thank-you-flaticons/copy.png" class=" cursor-pointer contact-copy-button img-inverter" title="Click to Copy">
+        <!-- ~~~~ Contact Content ~~~~ -->
+      <div class="glassbox-10 contact-box-info padding-threevw border-radius-8px margin-top-2vh textalign-center">
+        <div id="contact-content-default">
+          <span class="pointeight-em productsans-regular">Click on any button to start</span>
+        </div>
+        <div id="contact-content-email" style="display: none;">
+          <a id="email-content" href="mailto:contact@theblack.cat"><span class="latex-regular two-em">contact@theblack.cat</span></a>
+          <img id="emailImage" src="https://cdn.theblack.cat/resources/thank-you-flaticons/copy.png" class=" cursor-pointer contact-copy-button img-inverter" title="Click to Copy">
+        </div>
+        <div id="contact-content-twitter" style="display: none;">
+          <a class="twitter-timeline" data-width="500" data-height="400" data-theme="dark" href="https://twitter.com/di_theBlackCat?ref_src=twsrc%5Etfw">
+            <span class="chirp description-text-black">Loading Twitter timeline, hold... If it doesn't work, click here.</span>
+          </a>
+        </div>
+        <div id="contact-content-discord" style="display: none;">
+          <span id="discord-content" class="cursor-default latex-regular two-em">di_theblackcat</span>
+          <img id="discordImage" src="https://cdn.theblack.cat/resources/thank-you-flaticons/copy.png" class=" cursor-pointer contact-copy-button img-inverter" title="Click to Copy">
+          <br>
+          <span class="sanfrancisco pointeight-em">server soon&trade;</span>
+        </div>
+          <div id="contact-content-misskey" style="display: none;"><span class="sanfrancisco pointeight-em">no misskey embed timeline oof</span>
+          <br>
+          <details>
+            <summary class="cursor-pointer latex-regular">How to DM on the Fediverse <span class="details-alert">(click me!)</span></summary>
+            <p>
+              <span class="productsans-light">● When creating a new post, click on the <img src="https://cdn.theblack.cat/resources/thank-you-flaticons/globe.png" width="19" height="19" class="vertical-align-0dot4vh img-inverter" title="Thank you Flaticons!"> icon and select "Direct" (so it becomes a <img src="https://cdn.theblack.cat/resources/thank-you-flaticons/closed-mail.png" width="19" height="19" class="vertical-align-0dot4vh img-inverter" title="Thank you Flaticons!">):
+                <br><br>
+                <div class="textalign-center"><img src="https://cdn.theblack.cat/resources/example/misskey-1.PNG" class="image-width-33vw border-radius-16px"></div>
+                <br><br>
+                <span class="productsans-light">● Then, in Recipient <img src="https://cdn.theblack.cat/resources/thank-you-flaticons/plus.png" width="19" height="19" class="vertical-align-0dot4vh" title="Thank you Flaticons!">, write an username and the host (that is, the fediverse instance. In this case, <span class="hiragino-maru-gothic-pro">Misskey.io</span>):
+                <br><br>
+                <div class="textalign-center"><img src="https://cdn.theblack.cat/resources/example/misskey-2.JPEG" class="image-width-33vw border-radius-16px">
+              </span>
+            </p>
+          </details>
+        </div>
       </div>
-        <br>
-        <span class="productsans-regular onepointfive-em">
-          ● A DM on<a href="https://twitter.com/di_theBlackCat" target="_blank"><img src="https://cdn.theblack.cat/resources/thank-you-flaticons/old-twitter.png" class="contact-inline-icon img-inverter"><span class="chirp">Twitter</span><img src="https://cdn.theblack.cat/resources/thank-you-flaticons/new-window.png" class="new-window-icon img-inverter" title="Thank you Flaticons!"></a>
-        </span>
-      <br><br><br>
-      <span class="productsans-regular onepointfive-em">● A DM on<a rel="me" href="https://misskey.io/@theblackcat" target="_blank"><img src="https://cdn.theblack.cat/resources/icons/misskey.png" class="contact-inline-icon"><span class="hiragino-maru-gothic-pro">Misskey.io</span><img src="https://cdn.theblack.cat/resources/thank-you-flaticons/new-window.png" class="new-window-icon img-inverter" title="Thank you Flaticons!"></a></span>
-      <br><br><br>  
-      <details>
-        <summary class="cursor-pointer latex-regular">How to DM on the Fediverse <span class="details-alert">(click me!)</span></summary>
-        <p>
-          <span class="productsans-light">● When creating a new post, click on the <img src="https://cdn.theblack.cat/resources/thank-you-flaticons/globe.png" width="19" height="19" class="vertical-align-0dot4vh img-inverter" title="Thank you Flaticons!"> icon and select "Direct" (so it becomes a <img src="https://cdn.theblack.cat/resources/thank-you-flaticons/closed-mail.png" width="19" height="19" class="vertical-align-0dot4vh img-inverter" title="Thank you Flaticons!">):
-            <br><br>
-            <div class="textalign-center"><img src="https://cdn.theblack.cat/resources/example/misskey-1.PNG" class="image-width-33vw border-radius-16px"></div>
-            <br><br>
-            <span class="productsans-light">● Then, in Recipient <img src="https://cdn.theblack.cat/resources/thank-you-flaticons/plus.png" width="19" height="19" class="vertical-align-0dot4vh" title="Thank you Flaticons!">, write an username and the host (that is, the fediverse instance. In this case, <span class="hiragino-maru-gothic-pro">Misskey.io</span>):
-            <br><br>
-            <div class="textalign-center"><img src="https://cdn.theblack.cat/resources/example/misskey-2.JPEG" class="image-width-33vw border-radius-16px">
-          </span>
-        </p>
-      </details>
-      <br>
-      <div class="glassbox-10 padding-fivepx border-radius-5px">
-      <span class="sanfrancisco">Found any bugs? Have any feedback?<br>Report them in the GitHub Repository Page by <a href="https://github.com/theBlackCat-OC/theblack.cat/issues" target="_blank">Opening an issue<img src="https://cdn.theblack.cat/resources/thank-you-flaticons/new-window.png" width="12" height="12" class="vertical-align-minus0dot4vh padding-left-point25percent img-inverter" title="Thank you Flaticons!"></a> and by using an appropiate label.</span>
+      <br><br>
+      <div class="glassbox-10 padding-onevw border-radius-5px margin-left-1vw margin-right-1vw margin-bottom-1vh">
+        <span class="sanfrancisco pointeight-em">Found any bugs? Have any feedback?<br><br>Report them in the GitHub Repository Page by <a href="https://github.com/theBlackCat-OC/theblack.cat/issues" target="_blank">Opening an issue<img src="https://cdn.theblack.cat/resources/thank-you-flaticons/new-window.png" width="12" height="12" class="vertical-align-minus0dot4vh padding-left-point25percent img-inverter" title="Thank you Flaticons!"></a> and by using an appropiate label.</span>
       </div>
     </div>
   <!-- ~~~~ GoToTop Button ~~~~ -->
@@ -117,8 +140,10 @@
     <script src="resources/scripts/new-polkadot.js"></script>
     <script src="resources/scripts/copy-string.js"></script>
     <script src="resources/scripts/link-query.js"></script>
-    <script src="resources/scripts/turnstile-contact.js"></script>
     <script src="resources/scripts/background-header.js"></script>
+    <script src="resources/scripts/contact/contact-links.js"></script>
+    <script src="resources/scripts/contact/contact-content.js"></script>
+    <script src="resources/scripts/turnstile-contact.js"></script>
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback" async defer></script>
     <script>
       document.getElementById('contact-topBar').onclick = function() {    window.location.href = 'https://theblack.cat';};
@@ -139,11 +164,7 @@
           topBarMobile.style.display = 'none';
         }
       }
-
-      // Initial call to set the initial state
       toggleDivVisibility();
-
-      // Add an event listener to the window's resize event
       window.addEventListener('resize', toggleDivVisibility);
     </script>
     <!-- ~~~~  ~~~~ -->

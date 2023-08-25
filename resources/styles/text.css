@@ -111,6 +111,16 @@
     }
 }
 
+.onepoint25-em{
+    font-size: 1.25em;
+}
+
+@media (max-width: 800px) {
+    .onepoint25-em{
+        font-size: 14.5px;
+    }
+}
+
 .two-em{
     font-size: 2em;
 }
