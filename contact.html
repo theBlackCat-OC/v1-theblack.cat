@@ -32,6 +32,7 @@
     <link rel="stylesheet" type="text/css" href="resources/styles/specific/specific-contact.css">
     <!-- ~~~~ Specific CSS ~~~~ -->
     <link rel="stylesheet" type="text/css" href="resources/styles/specific/floating-gototop-button.css">
+    <link rel="stylesheet" type="text/css" href="resources/styles/specific/new-index-menu.css">
     <!-- ~~~~ Title ~~~~ --> 
     <title>Contact - "the Black Cat"</title>
     <!-- ~~~~ Styles ~~~~ --> 
@@ -136,20 +137,28 @@
           <img class="floating-gototop-icon img-inverter" src="https://cdn.theblack.cat/resources/thank-you-flaticons/go-up.png" title="Thank you Flaticons!">
         </div>
       </div>
-    <!-- ~~~~ Footer ~~~~ -->
-    <footer class="cursor-default">
-      <div class="textalign-center">
-        <a href="https://theblack.cat" title="Back to Original Character links">
-          <div class="footer-display cursor-pointer">
-            <img class="contained-img img-inverter" src="https://cdn.theblack.cat/resources/thank-you-flaticons/back-button.png" title="Thank you Flaticons!">
-          </div>
-        </a>
-        <a href="https://theblack.cat/site-map" title="Site Map">
-          <div class="footer-display cursor-pointer">
-            <img class="contained-img img-inverter" src="https://cdn.theblack.cat/resources/thank-you-flaticons/site-map.png" title="Thank you Flaticons!">
-          </div>
-        </a>
-    </footer>  
+    <!-- ~~~~ Index Menu ~~~~ -->
+    <div class="index-menu-trigger textalign-center cursor-pointer padding-fivepx" id="index-menu-button">
+      <img src="https://cdn.theblack.cat/resources/thank-you-flaticons/dots.png" class="cursor-pointer index-menu-trigger-icon img-inverter">
+    </div>
+    <div class="index-menu-container" id="index-menu" style="display: none;">
+      <div class="index-menu-item cursor-pointer border-radius-16px" id="back-menu-button">
+          <div class=""><img class="index-menu-icon img-inverter" src="https://cdn.theblack.cat/resources/thank-you-flaticons/back-button.png"></div>
+          <div class="chirp description-text-black pointeight-em">Back</div>
+      </div>
+      <div class="index-menu-item cursor-pointer border-radius-16px" id="sitemap-menu-button">
+        <div class=""><img class="index-menu-icon img-inverter" src="https://cdn.theblack.cat/resources/thank-you-flaticons/site-map.png"></div>
+          <div class="productsans-bold description-text-black pointeight-em">Site Map</div>
+      </div>
+      <div class="index-menu-item cursor-pointer border-radius-16px" id="home-menu-button">
+        <div class=""><img class="index-menu-icon img-inverter" src="https://cdn.theblack.cat/resources/thank-you-flaticons/hogar.png"></div>
+        <div class="productsans-bold description-text-black pointeight-em">Home</div>
+      </div>
+      <div class="index-menu-item cursor-pointer border-radius-16px" id="index-menu-close-button">
+          <img class="index-menu-icon img-inverter" src="https://cdn.theblack.cat/resources/thank-you-flaticons/cancel.png">
+          <div class="productsans-bold description-text-black pointeight-em">Close</div>
+      </div>
+  </div>
 <!-- ~~~~ -->
     <!-- ~~~~ Scripts ~~~~ -->
     <script src="resources/scripts/new-polkadot.js"></script>
@@ -160,6 +169,9 @@
     <script src="resources/scripts/contact/contact-content.js"></script>
     <script src="resources/scripts/turnstile-contact.js"></script>
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback" async defer></script>
+    <script src="resources/scripts/index-menu.js"></script>
+    <script src="resources/scripts/index-button-animation.js"></script>
+    <script src="resources/scripts/pages/contact-menu-buttons.js"></script> 
     <script>
       document.getElementById('contact-topBar').onclick = function() {    window.location.href = 'https://theblack.cat';};
     </script>

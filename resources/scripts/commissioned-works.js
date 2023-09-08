@@ -2,15 +2,15 @@ const tagContainer = document.getElementById('tagContainer');
 const gallery = document.getElementById('gallery');
 
 const tags = [
-  { name: 'NSFW', backgroundColor: '#ad1a00' },
-  { name: 'Suggestive', backgroundColor: '#f5a92f' },
-  { name: 'Erotica', backgroundColor: '#f75a2a' },
-  { name: 'Pornographic', backgroundColor: '#f72a2a' },
-  { name: 'Degen', backgroundColor: '#b62af7' },
-  { name: 'SafeForWork', backgroundColor: '#2ac955' },
   { name: 'Fullbody', backgroundColor: '#f57dad' },
   { name: 'Halfbody', backgroundColor: '#2af791' },
   { name: 'Portrait', backgroundColor: '#2a83f7' },
+  { name: 'SafeForWork', backgroundColor: '#2ac955' },
+  { name: 'Suggestive', backgroundColor: '#f5a92f' },
+  { name: 'NSFW', backgroundColor: '#ad1a00' },
+  { name: 'Erotica', backgroundColor: '#f75a2a' },
+  { name: 'Pornographic', backgroundColor: '#f72a2a' },
+  { name: 'Degen', backgroundColor: '#b62af7' },
 ];
 
 function addTagToContainer(tag) {
