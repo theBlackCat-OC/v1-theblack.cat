@@ -115,7 +115,7 @@ function createVideoElement(videoSrc) {
 
 tags.forEach(tag => addTagToContainer(tag));
 
-addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/skeb/nezi_hs2/1546854-1.output.png', 'NSFW Degen', 'Skeb commission by <a href="https://skeb.jp/@nezi_hs2" target="_blank">ねじ</a>.<br><span class="latex-italic-bold">Newfound Adventure.</span>');
+addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/skeb/nezi_hs2/1546854-1.output.png', 'NSFW Pornographic', 'Skeb commission by <a href="https://skeb.jp/@nezi_hs2" target="_blank">ねじ</a>.<br><span class="latex-italic-bold">Newfound Adventure.</span>');
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/skeb/shrinesgate2/sept2023/1544972-1.mp4', 'NSFW Degen', 'Skeb commission by <a href="https://skeb.jp/@shrinesgate2" target="_blank">シュライン</a>.<br><span class="latex-italic-bold">Loli breeding.</span>');
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/skeb/mandragoragogo/mandragoragogo-1.png', 'NSFW Degen', 'Skeb commission by <a href="https://skeb.jp/@mandoragogo" target="_blank">マンドラ</a>.<br><span class="latex-italic">Give.</span>');
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/skeb/mandragoragogo/mandragoragogo-2.png', 'NSFW Degen', 'Skeb commission by <a href="https://skeb.jp/@mandoragogo" target="_blank">マンドラ</a>.<br><span class="latex-italic-bold">Mutual.</span>');
