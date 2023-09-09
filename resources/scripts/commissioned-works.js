@@ -153,36 +153,17 @@ addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/chaosring
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/juurikun/juurikun-sketchy-fullbody.png', 'SafeForWork Fullbody', 'Sketchy fullbody artwork commission by <a href="https://www.instagram.com/juurikun/" target="_blank">juurikun</a><br>🙏');
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/chaosringen/chaosringen-fullbody-sketch.jpg', 'SafeForWork Suggestive Portrait', 'Sketch for a full render portrait commission by <a href="https://linktr.ee/chaosringen" target="_blank">chaosringen</a>');
 
+document.querySelectorAll('.image-card img').forEach(img => {
+  img.addEventListener('click', function() {
+    const modal = document.querySelector('.modal');
+    const modalImg = document.querySelector('.modal img');
+    if(modal && modalImg) {
+      modal.style.display = 'block';
+      modalImg.src = this.src;
+    }
+  });
+});
 
-// //
-// // Get references to the modal and the zoomed image
-// const modal = document.getElementById('imageModal');
-// const zoomedImage = document.getElementById('zoomedImage');
-
-// // Get all image cards
-// const imageCards = document.querySelectorAll('.image-card');
-
-// // Attach click event listeners to image cards
-// imageCards.forEach(card => {
-//   const cardImage = card.querySelector('img');
-
-//   cardImage.addEventListener('click', () => {
-//     // Set the src attribute of the modal's image element
-//     zoomedImage.src = cardImage.src;
-//     // Display the modal
-//     modal.style.display = 'block';
-//   });
-// });
-
-// // Close the modal when the close button is clicked
-// const closeButton = document.querySelector('.close');
-// closeButton.addEventListener('click', () => {
-//   modal.style.display = 'none';
-// });
-
-// // Close the modal when the user clicks anywhere outside the modal
-// window.addEventListener('click', (event) => {
-//   if (event.target === modal) {
-//     modal.style.display = 'none';
-//   }
-// });
+document.querySelector('.modal').addEventListener('click', function() {
+  this.style.display = 'none';
+});
