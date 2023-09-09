@@ -21,8 +21,6 @@ function addTagToContainer(tag) {
 
   tagElement.addEventListener('click', function () {
     const isExclusiveTag = ['NSFW', 'Suggestive', 'Erotica', 'Pornographic', 'Degen', 'SafeForWork', 'Fullbody', 'Halfbody', 'Portrait'].includes(tag.name);
-    
-    // If the clicked tag is an exclusive tag, deselect all other tags in the same category.
     if (isExclusiveTag) {
       const exclusiveTags = ['NSFW', 'Suggestive', 'Erotica', 'Pornographic', 'Degen', 'SafeForWork', 'Fullbody', 'Halfbody', 'Portrait'];
       for (const exclusiveTag of exclusiveTags) {
@@ -32,11 +30,7 @@ function addTagToContainer(tag) {
         }
       }
     }
-
-    // Toggle the clicked tag's selection status.
     tagElement.classList.toggle('tag-selected');
-    
-    // Update the gallery based on the selected tags.
     updateGallery();
   });
 
@@ -49,7 +43,6 @@ function updateGallery() {
   const imageCards = document.querySelectorAll('.image-card');
 
   if (selectedTags.length === 0) {
-    // If no tags are selected, hide the gallery
     gallery.style.display = 'none';
   } else {
     gallery.style.display = 'flex';
@@ -76,8 +69,6 @@ function generateTagsHTML(tags) {
     .join('');
 }
 
-
-
 function addTagsToCard(imageCard, tags) {
   const imageInfo = imageCard.querySelector('.image-info');
   const tagsParagraph = document.createElement('p');
@@ -99,8 +90,6 @@ function addImageToGallery(mediaSrc, tags, descriptionHTML) {
 
   const imageInfo = document.createElement('div');
   imageInfo.classList.add('image-info');
-
-  // Create the description paragraph without tags
   const descriptionParagraph = document.createElement('p');
   descriptionParagraph.innerHTML = descriptionHTML;
 
@@ -126,7 +115,7 @@ function createVideoElement(videoSrc) {
 
 tags.forEach(tag => addTagToContainer(tag));
 
-
+addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/skeb/nezi_hs2/1546854-1.output.png', 'NSFW Degen', 'Skeb commission by <a href="https://skeb.jp/@nezi_hs2" target="_blank">ねじ</a>.<br><span class="latex-italic-bold">Newfound Adventure.</span>');
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/skeb/shrinesgate2/sept2023/1544972-1.mp4', 'NSFW Degen', 'Skeb commission by <a href="https://skeb.jp/@shrinesgate2" target="_blank">シュライン</a>.<br><span class="latex-italic-bold">Loli breeding.</span>');
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/skeb/mandragoragogo/mandragoragogo-1.png', 'NSFW Degen', 'Skeb commission by <a href="https://skeb.jp/@mandoragogo" target="_blank">マンドラ</a>.<br><span class="latex-italic">Give.</span>');
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/skeb/mandragoragogo/mandragoragogo-2.png', 'NSFW Degen', 'Skeb commission by <a href="https://skeb.jp/@mandoragogo" target="_blank">マンドラ</a>.<br><span class="latex-italic-bold">Mutual.</span>');
