@@ -66,10 +66,12 @@
   <!-- ~~~~ Contact Box ~~~~ -->
     <div class="captcha-box glassbox-50 border-radius-16px contact-smartbox padding-threevw description-text-black margin-bottom-2vh special-margin-top-contact" style="display: none;"><!--  -->
       <div class="textalign-center">
-        <img src="https://cdn.theblack.cat/resources/thank-you-flaticons/communicate.png" width="43" height="43" class="display-inlineblock margin-left-1vw margin-right-1vw site-map-icon img-inverter icon-verticalalign-2vh" title="Thank you Flaticons!"><span class="productsans-bold two-em">Feel free to contact me via:</span><br><br><br>
+        <img src="https://cdn.theblack.cat/resources/thank-you-flaticons/communicate.png" width="43" height="43" class="display-inlineblock margin-left-1vw margin-right-1vw site-map-icon img-inverter icon-verticalalign-2vh" title="Thank you Flaticons!"><span class="productsans-bold two-em">Feel free to contact me via:</span><br>
+        <span class="pointseven-em productsans-regular">scroll horizontally to reveal more options</span>
+        <br><br>
       </div>
         <!-- ~~~~ Contact Buttons ~~~~ -->
-      <div class="padding-fourpx display-flex justifycontent-center alignitems-center">
+      <div class="padding-fourpx display-flex overflow-x-auto white-space-nowrap">
         <div class="display-inlineblock border-radius-8px padding-fivepx cursor-pointer contact-options-buttons user-select-none" id="contact-email-button">
           <img src="https://cdn.theblack.cat/resources/icons/protonmail.svg" class="contact-inline-icon" title="Thank you Flaticons!"><span class="productsans-bold description-text-black onepointfive-em">Email&nbsp;</span>
         </div>&nbsp;
@@ -81,6 +83,9 @@
         </div>&nbsp;
         <div class="display-inlineblock border-radius-8px padding-fivepx cursor-pointer contact-options-buttons user-select-none" id="contact-misskey-button">
           <img src="https://cdn.theblack.cat/resources/icons/misskey.png" class="contact-inline-icon"  title="Thank you Flaticons!"><span class="hiragino-maru-gothic-pro description-text-black onepoint25-em">Misskey.io<img src="https://cdn.theblack.cat/resources/thank-you-flaticons/new-window.png" class="new-window-icon img-inverter" title="Thank you Flaticons!"></span>
+        </div>&nbsp;
+        <div class="display-inlineblock border-radius-8px padding-fivepx cursor-pointer contact-options-buttons user-select-none" id="contact-pixiv-button">
+          <img src="https://cdn.theblack.cat/resources/icons/pixiv.svg" class="contact-inline-icon"  title="Thank you Flaticons!"><span class="hiragino-maru-gothic-pro description-text-black onepoint25-em">Pixiv<img src="https://cdn.theblack.cat/resources/thank-you-flaticons/new-window.png" class="new-window-icon img-inverter" title="Thank you Flaticons!"></span>
         </div>
       </div>
         <!-- ~~~~ Contact Content ~~~~ -->
@@ -103,7 +108,8 @@
           <br>
           <span class="sanfrancisco pointeight-em">server soon&trade;</span>
         </div>
-          <div id="contact-content-misskey" style="display: none;"><span class="sanfrancisco pointeight-em">no misskey embed timeline oof</span>
+          <div id="contact-content-misskey" style="display: none;">
+            <span class="sanfrancisco pointeight-em">no misskey embed timeline yet oof. api tomfoolery at some point&trade;</span>
           <br>
           <details>
             <summary class="cursor-pointer latex-regular">How to DM on the Fediverse <span class="details-alert">(click me!)</span></summary>
@@ -118,6 +124,11 @@
               </span>
             </p>
           </details>
+        </div>
+        <div id="contact-content-pixiv" style="display: none;">
+          <span class="productsans-regular">never enough ways of contact me</span>
+          <br>
+          <span class="productsans-italic pointeight-em">for commission and artwork inquiries, please check my <a href="tou">ToU</a>.</span>
         </div>
       </div>
       <br><br>

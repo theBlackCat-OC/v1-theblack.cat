@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
     { button: document.getElementById('contact-email-button'), content: document.getElementById('contact-content-email') },
     { button: document.getElementById('contact-twitter-button'), content: document.getElementById('contact-content-twitter') },
     { button: document.getElementById('contact-discord-button'), content: document.getElementById('contact-content-discord') },
-    { button: document.getElementById('contact-misskey-button'), content: document.getElementById('contact-content-misskey') }
+    { button: document.getElementById('contact-misskey-button'), content: document.getElementById('contact-content-misskey') },
+    { button: document.getElementById('contact-pixiv-button'), content: document.getElementById('contact-content-pixiv') }
   ];
 
   const defaultContent = document.getElementById('contact-content-default');

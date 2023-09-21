@@ -22,6 +22,14 @@
     justify-content: center;
 }
 
+.overflow-x-auto{
+    overflow-x: auto;
+}
+
+.white-space-nowrap{
+    white-space: nowrap;
+}
+
 .bottom-0{
     bottom:0;
 }
