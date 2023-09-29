@@ -115,6 +115,7 @@ function createVideoElement(videoSrc) {
 
 tags.forEach(tag => addTagToContainer(tag));
 
+addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/gpose/Bushy♡/kugane-exposure-steam.jpg', 'NSFW Erotica', 'GPose commission by <a href="https://twitter.com/DRGExhibtionism" target="_blank">Bushy♡</a>.<br><span class="latex-italic">Steamy Aftermath.</span>');
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/skeb/iyo_yom/1582441-signed.png', 'Degen', 'Skeb commission by <a href="https://skeb.jp/@iyo_yom/" target="_blank">いよよむ</a>.<br><span class="latex-italic">Red light.</span>');
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/skeb/iyo_yom/1582441-tandem-lingerie.png', 'Degen', 'Skeb commission by <a href="https://skeb.jp/@iyo_yom/" target="_blank">いよよむ</a>.<br><span class="latex-italic">Play time.</span>');
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/skeb/iyo_yom/1582441-tandem-nolingerie.png', 'Degen', 'Skeb commission by <a href="https://skeb.jp/@iyo_yom/" target="_blank">いよよむ</a>.<br><span class="latex-italic-bold">Play time.</span>');
