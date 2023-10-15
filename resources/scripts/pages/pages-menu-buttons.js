@@ -1,5 +1,5 @@
 document.getElementById('back-menu-button').onclick = function() {
-  window.location.href = 'https://theblack.cat?link=tbc';
+  window.location.href = 'https://theblack.cat';
 };
 
 document.getElementById('sitemap-menu-button').onclick = function() {

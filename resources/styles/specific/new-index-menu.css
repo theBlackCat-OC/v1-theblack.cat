@@ -3,7 +3,7 @@
     height: auto;
     bottom: 0;
     right: 0;
-    padding: 1%;
+    padding: 0.5%;
     margin-right: 3vw;
     margin-bottom: 3vh;
     background: rgba(255, 255, 255, 0.1);
@@ -25,7 +25,6 @@
 .index-menu-icon {
     width: 36px;
     height: 36px;
-    margin-bottom: 10px;
     transition: brightness 0.3s ease;
 }
 
@@ -76,7 +75,6 @@
     .index-menu-icon {
         width: 22px; /* Set a fixed width */
         height: 22px; /* Set a fixed height */
-        margin-bottom: 10px;
         transition: filter 0.3s ease; /* Add transition for filter change */
     }
 }
