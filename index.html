@@ -68,7 +68,7 @@
       </div></div>
     </header>
     <!-- ~~~~ Linktree ~~~~ -->
-    <div class="linktree-container user-select-none" id="linktree-container">
+    <div class="linktree-container user-select-none" id="linktree-container" style="display: none;">
       <div class="linktree-button linktree-button-left glassbox-25 border-radius-13px cursor-pointer pfp-chaosringen-sketch-background" onclick="toggleTBCDetails()" id="tbc" title="Original Character Links">
         <div class="description-background-black description-text-white productsans-bold onepointfive-em textalign-center"><span>Original Character Links</span></div>
       </div>
@@ -76,61 +76,12 @@
         <div class="description-background-black description-text-white productsans-bold onepointfive-em textalign-center"><span>Author Links</span></div>
       </div>
     </div>
-    <!-- ~~~~ Author Title ~~~~ -->
-     <div class="section-title section-title-long glassbox-25 border-radius-5px cursor-default user-select-none" id="author-show-title" style="display: none;">
-      <span class="productsans-bold user-select-none two-em description-text-black"><img class="display-inlineblock back-button-icon margin-right-dot8vw" src="https://cdn.theblack.cat/resources/thank-you-flaticons/kitty-laptop.png" title="Thank you Flaticons!">Author Links</span>
-    </div>  
-    <!-- ~~~~ Author Links
-    <div class="author-container user-select-none margin-top-8vh" id="author-show-container" style="display: none;">
-      <div class="author-row-1">
-        <div class="author-button author-button-left author-button-top glassbox-25 border-radius-13px cursor-pointer" id="author-button-1" title="Twitter, never X">
-          <div class="description-background-black textalign-center">
-            <span class="description-text-white productsans-bold onepointfive-em"><s class="chirp">Twitter</s>&nbsp;𝕏</span></div>
-        </div>
-        <div class="author-button author-button-middle glassbox-25 border-radius-13px cursor-pointer" id="author-button-2" title="GitHub Profile">
-          <div class="description-background-black textalign-center">
-            <span class="description-text-white productsans-bold onepointfive-em">GitHub Profile</span></div>
-        </div>
-        <div class="author-button author-button-right author-button-bottom glassbox-25 border-radius-13px cursor-pointer" id="author-button-3" title="CuriousCat Profile">
-          <div class="description-background-black description-text-white productsans-bold onepointfive-em textalign-center"><span>CuriousCat</span></div>
-        </div>
-      </div>
-      <div class="author-row-2">
-        <div class="author-button author-button-left author-button-bottom glassbox-25 border-radius-13px cursor-pointer" id="author-button-4" title="Contact Options">
-          <div class="description-background-black description-text-white productsans-bold onepointfive-em textalign-center"><span>Contact Options</span></div>
-        </div>
-        <div class="author-button author-button-right author-button-bottom glassbox-25 border-radius-13px cursor-pointer" id="author-button-5" title="Blog">
-          <div class="description-background-black description-text-white productsans-bold onepointfive-em textalign-center"><span>Blog</span></div>
-        </div>
-      </div>
-    </div> -->
-    <div class="galleries-container user-select-none" style="display:none;" id="author-show-container">
-      <div class="galleries-button galleries-button-left glassbox-25 border-radius-13px cursor-pointer" id="author-button-git" title="GitHub Profile">
-        <div class="description-background-black description-text-white productsans-bold onepointfive-em textalign-center">
-          <span>GitHub Profile</span>
-        </div>
-      </div>
-      <div class="galleries-button glassbox-25 border-radius-13px cursor-pointer" id="author-button-ccat" title="CuriousCat Profile">
-        <div class="description-background-black description-text-white productsans-bold onepointfive-em textalign-center">
-          <span class="">CuriousCat Profile</span>
-        </div>
-      </div>
-      <div class="galleries-button galleries-button-right glassbox-25 border-radius-13px cursor-pointer" id="author-button-blog" title="Blog">
-        <div class="description-background-black description-text-white productsans-bold onepointfive-em textalign-center">
-          <span class=""><s>Blog</s> Thoughts Board</span>
-        </div>
-      </div>
-    </div>
-      <!-- ~~~~ Author Back Button ~~~~ -->
-      <div class="author-back-button glassbox-25 border-radius-5px cursor-pointer user-select-none" id="author-show-back" style="display: none;" title="Back">
-        <span class="productsans-bold user-select-none two-em description-text-black"><img class="display-inlineblock margin-right-dot8vw img-inverter back-button-icon" src="https://cdn.theblack.cat/resources/thank-you-flaticons/back-button.png" title="Thank you Flaticons!">Back</span>
-      </div> 
     <!-- ~~~~ tBC Char Links ~~~~ -->
-    <div class="section-title section-title-long glassbox-25 border-radius-5px cursor-default" style="display:none;" id="tbc-show-title">
+    <div class="section-title section-title-long glassbox-25 border-radius-5px cursor-default" id="tbc-show-title">
       <span class="productsans-bold user-select-none two-em description-text-black"><img class="display-inlineblock back-button-icon margin-right-dot8vw img-inverter" src="https://cdn.theblack.cat/resources/thank-you-flaticons/originalidad.png" title="Thank you Flaticons!">Original Character Links</span>
     </div>
     <!-- ~~~~  ~~~~ -->
-    <div class="tbc-container user-select-none" style="display:none;" id="tbc-show-container">
+    <div class="tbc-container user-select-none" id="tbc-show-container">
       <div class="tbc-row">
         <div class="tbc-button tbc-button-left tbc-button-top glassbox-25 border-radius-13px cursor-pointer display-flex flex-direction-column justify-content-spacebetween" onclick="toggleGalleryDetails()" id="galleries" title="Body Reference Galleries">
           <div class="description-background-black textalign-center margin-top-0">
@@ -158,10 +109,10 @@
         </div>
       </div>
     </div>
-      <!-- ~~~~ tBC Back Button ~~~~ -->
+      <!-- ~~~~ tBC Back Button ~~~~ 
       <div class="back-button back-button-short glassbox-25 border-radius-5px cursor-pointer display-flex flex-direction-column justify-content-spacebetween" style="display:none;" id="tbc-show-back" title="Back to Start">
         <span class="productsans-bold user-select-none two-em description-text-black"><img class="display-inlineblock margin-right-dot8vw back-button-icon img-inverter" src="https://cdn.theblack.cat/resources/thank-you-flaticons/back-button.png" title="Thank you Flaticons!">Back to Start</span>
-      </div>
+      </div>-->
     <!-- ~~~~ Galleries ~~~~ -->
     <div class="section-title section-title-long glassbox-25 border-radius-5px cursor-default user-select-none display-flex flex-direction-column justify-content-spacebetween" style="display:none;" id="galleries-show-title">
       <span class="productsans-bold user-select-none two-em description-text-black"><img class="display-inlineblock back-button-icon margin-right-dot8vw img-inverter" src="https://cdn.theblack.cat/resources/thank-you-flaticons/reference.png" title="Thank you Flaticons!">Body Reference Galleries&nbsp;</span>
@@ -188,11 +139,37 @@
       <div class="back-button back-button-short glassbox-25 border-radius-5px cursor-pointer back-button-font" style="display:none;" id="galleries-show-back" title="Back to OC Links">
         <span class="productsans-bold user-select-none two-em description-text-black"><img class="display-inlineblock back-button-icon margin-right-dot8vw img-inverter" src="https://cdn.theblack.cat/resources/thank-you-flaticons/back-button.png" title="Thank you Flaticons!">Back to OC Links</span>
       </div>
-    <!-- ~~~~ Index Menu ~~~~ -->
+    <!-- ~~~~ Author Title ~~~~ -->
+     <div class="section-title section-title-long glassbox-25 border-radius-5px cursor-default user-select-none" id="author-show-title">
+      <span class="productsans-bold user-select-none two-em description-text-black"><img class="display-inlineblock back-button-icon margin-right-dot8vw" src="https://cdn.theblack.cat/resources/thank-you-flaticons/kitty-laptop.png" title="Thank you Flaticons!">Misc Links</span>
+    </div>  
+    <!-- ~~~~ Author Links ~~~~ -->
+    <div class="galleries-container user-select-none" id="author-show-container">
+      <div class="galleries-button galleries-button-left glassbox-25 border-radius-13px cursor-pointer" id="author-button-git" title="GitHub Profile">
+        <div class="description-background-black description-text-white productsans-bold onepointfive-em textalign-center">
+          <span>GitHub Profile</span>
+        </div>
+      </div>
+      <div class="galleries-button glassbox-25 border-radius-13px cursor-pointer" id="author-button-ccat" title="CuriousCat Profile">
+        <div class="description-background-black description-text-white productsans-bold onepointfive-em textalign-center">
+          <span class="">CuriousCat Profile</span>
+        </div>
+      </div>
+      <div class="galleries-button galleries-button-right glassbox-25 border-radius-13px cursor-pointer" id="author-button-blog" title="Blog">
+        <div class="description-background-black description-text-white productsans-bold onepointfive-em textalign-center">
+          <span class=""><s>Blog</s> <s>Thoughts Board</s> Discord Server</span>
+        </div>
+      </div>
+    </div>
+      <!-- ~~~~ Author Back Button ~~~~ -->
+      <div class="author-back-button glassbox-25 border-radius-5px cursor-pointer user-select-none" id="author-show-back" style="display: none;" title="Back">
+        <span class="productsans-bold user-select-none two-em description-text-black"><img class="display-inlineblock margin-right-dot8vw img-inverter back-button-icon" src="https://cdn.theblack.cat/resources/thank-you-flaticons/back-button.png" title="Thank you Flaticons!">Back</span>
+      </div> 
+    <!-- ~~~~ Index Menu ~~~~ 
       <div class="index-menu-trigger textalign-center cursor-pointer padding-fivepx" id="index-menu-button">
         <img src="https://cdn.theblack.cat/resources/thank-you-flaticons/dots.png" class="cursor-pointer index-menu-trigger-icon img-inverter">
-      </div>
-      <div class="index-menu-container" id="index-menu" style="display: none;">
+      </div> -->
+      <div class="index-menu-container" id="index-menu">
         <div class="index-menu-item cursor-pointer border-radius-16px" id="twitter-menu-button">
             <div class=""><img class="index-menu-icon img-inverter" src="https://cdn.theblack.cat/resources/thank-you-flaticons/old-twitter.png"></div>
             <div class="chirp description-text-black pointeight-em  ">Twitter</div>
@@ -204,10 +181,6 @@
         <div class="index-menu-item cursor-pointer border-radius-16px" id="site-map">
           <div class=""><img class="index-menu-icon img-inverter" src="https://cdn.theblack.cat/resources/thank-you-flaticons/site-map.png"></div>
           <div class="productsans-bold description-text-black pointeight-em">Site Map</div>
-        </div>
-        <div class="index-menu-item cursor-pointer border-radius-16px" id="index-menu-close-button">
-            <img class="index-menu-icon img-inverter" src="https://cdn.theblack.cat/resources/thank-you-flaticons/cancel.png">
-            <div class="productsans-bold description-text-black pointeight-em">Close</div>
         </div>
     </div>
     <!-- ~~~~ Fediverse Verification ~~~~ -->
