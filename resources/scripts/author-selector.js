@@ -20,9 +20,9 @@ function toggleAuthorDetails() {
   // Attach click event to the back button
   authorShowBackDiv.addEventListener('click', function() {
     // Revert the display changes when the back button is clicked
-    authorShowTitleDiv.style.display = 'none';
-    authorShowContainerDiv.style.display = 'none';
-    authorShowBackDiv.style.display = 'none';
+    authorShowTitleDiv.style.display = '';
+    authorShowContainerDiv.style.display = '';
+    authorShowBackDiv.style.display = '';
     linktreeContainerDiv.style.display = '';
     tbcDiv.style.display = '';
     authorDivContainer.style.display = '';
