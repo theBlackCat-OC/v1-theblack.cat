@@ -115,8 +115,8 @@ function createVideoElement(videoSrc) {
 
 tags.forEach(tag => addTagToContainer(tag));
 
-addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/gpose/zel/giveaway-chained2.png', 'Degen', 'GPose commission by <a href="https://twitter.com/ZelErohcir" target="_blank">Zel</a>.<br><span class="latex-italic">Turns out...</span>');
-addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/gpose/zel/giveaway-chained.png', 'Degen', 'GPose commission by <a href="https://twitter.com/ZelErohcir" target="_blank">Zel</a>.<br><span class="latex-italic">Not unchainable.</span>');
+addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/gpose/zel/giveaway-chained2.png', 'Degen', 'GPose giveaway by <a href="https://twitter.com/ZelErohcir" target="_blank">Zel</a>.<br><span class="latex-italic">Turns out...</span>');
+addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/gpose/zel/giveaway-chained.png', 'Degen', 'GPose giveaway by <a href="https://twitter.com/ZelErohcir" target="_blank">Zel</a>.<br><span class="latex-italic">Not unchainable.</span>');
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/gpose/achisa/oct2023/achisa-1.png', 'Degen', 'GPose commission by <a href="https://ko-fi.com/chihaya72" target="_blank">Achisa</a>.<br><span class="latex-italic">Dominance.</span>');
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/gpose/achisa/oct2023/achisa-2.png', 'Degen', 'GPose commission by <a href="https://ko-fi.com/chihaya72" target="_blank">Achisa</a>.<br><span class="latex-italic">Plaything.</span>');
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/gpose/achisa/oct2023/achisa-3.png', 'Degen', 'GPose commission by <a href="https://ko-fi.com/chihaya72" target="_blank">Achisa</a>.<br><span class="latex-italic">Reward.</span>');
