@@ -68,6 +68,11 @@
     src: url('../fonts/hiragino-maru-gothic-pro.otf') format('opentype'),
          url('https://cdn.theblack.cat/resources/fonts/hiragino-maru-gothic-pro.otf') format('opentype');
   }
+  @font-face {
+    font-family: 'gilroy-bold';
+    src: url('../fonts/gilroy-bold.otf') format('opentype'),
+  }
+
 
   @font-face {
     font-family: 'FFXIV';

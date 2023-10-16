@@ -4,7 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
     { button: document.getElementById('contact-twitter-button'), content: document.getElementById('contact-content-twitter') },
     { button: document.getElementById('contact-discord-button'), content: document.getElementById('contact-content-discord') },
     { button: document.getElementById('contact-misskey-button'), content: document.getElementById('contact-content-misskey') },
-    { button: document.getElementById('contact-pixiv-button'), content: document.getElementById('contact-content-pixiv') }
+    { button: document.getElementById('contact-pixiv-button'), content: document.getElementById('contact-content-pixiv') },
+    { button: document.getElementById('contact-aethy-button'), content: document.getElementById('contact-content-aethy') }
   ];
 
   const defaultContent = document.getElementById('contact-content-default');
