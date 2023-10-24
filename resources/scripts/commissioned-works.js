@@ -115,6 +115,7 @@ function createVideoElement(videoSrc) {
 
 tags.forEach(tag => addTagToContainer(tag));
 
+addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/ayaben/oct2023/ayaben-fullbody.png', 'SafeForWork Fullbody', 'Fullbody sketch commission by <a href="https://ayaben.carrd.co" target="_blank">ayaben</a>.<br><span class="latex-italic">Unending curves.</span>');
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/kaydenlockes/buchukisu_1.jpg', 'NSFW Erotica', 'GPose giveaway by <a href="https://linktr.ee/kaydenlockes" target="_blank">Zel</a>.<br><span class="latex-italic">Enticing.</span>');
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/kaydenlockes/Buchukisu_2.jpg', 'NSFW Erotica', 'GPose giveaway by <a href="https://linktr.ee/kaydenlockes" target="_blank">Zel</a>.<br><span class="latex-italic">Sloppy.</span>');
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/gpose/zel/giveaway-chained2.png', 'Degen', 'GPose giveaway by <a href="https://twitter.com/ZelErohcir" target="_blank">Zel</a>.<br><span class="latex-italic">Turns out...</span>');
