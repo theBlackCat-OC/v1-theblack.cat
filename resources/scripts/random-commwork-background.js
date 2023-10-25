@@ -5,6 +5,8 @@ const imageUrls = [
     'https://cdn.theblack.cat/resources/background/horizontal/korodrawsaug2023-horizontal.jpeg',
     'https://cdn.theblack.cat/resources/background/horizontal/romupand-aug2023-horizontal.png',
     'https://cdn.theblack.cat/resources/background/horizontal/mijeh-aug2023-horizontal.jpeg',
+    'https://cdn.theblack.cat/resources/background/horizontal/ayaben-oct2023-bw.png',
+    'https://cdn.theblack.cat/resources/background/horizontal/ayaben-oct2023-fullcolor.jpeg',
     // Add more image URLs as needed
   ];
 
