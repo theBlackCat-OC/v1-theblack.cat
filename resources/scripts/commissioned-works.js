@@ -115,11 +115,12 @@ function createVideoElement(videoSrc) {
 
 tags.forEach(tag => addTagToContainer(tag));
 
+addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/skeb/kcc/kcc-bimbo-portrait.png', 'SafeForWork Portrait', 'Portrait skeb commission by <a href="https://skeb.jp/@kacico_l2" target="_blank">知らない✘✘</a>.<br><span class="latex-italic">Coy bimbo.</span>');
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/ayaben/oct2023/ayaben-fullbody.png', 'SafeForWork Fullbody', 'Fullbody sketch commission by <a href="https://ayaben.carrd.co" target="_blank">ayaben</a>.<br><span class="latex-italic">Unending curves.</span>');
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/kaydenlockes/buchukisu_1.jpg', 'NSFW Erotica', 'GPose giveaway by <a href="https://linktr.ee/kaydenlockes" target="_blank">Zel</a>.<br><span class="latex-italic">Enticing.</span>');
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/kaydenlockes/Buchukisu_2.jpg', 'NSFW Erotica', 'GPose giveaway by <a href="https://linktr.ee/kaydenlockes" target="_blank">Zel</a>.<br><span class="latex-italic">Sloppy.</span>');
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/gpose/zel/giveaway-chained2.png', 'Degen', 'GPose giveaway by <a href="https://twitter.com/ZelErohcir" target="_blank">Zel</a>.<br><span class="latex-italic">Turns out...</span>');
-addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/gpose/zel/giveaway-chained.png', 'Degen', 'GPose giveaway by <a href="https://twitter.com/ZelErohcir" target="_blank">Zel</a>.<br><span class="latex-italic">Not unchainable.</span>');
+addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/gpose/zel/giveaway-chained.png', 'Degen', 'GPose giveaway by <a href="https://twitter.com/ZelErohcir" target="_blank">Zel</a>.<br><span class="latex-italic">Not unlockable.</span>');
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/gpose/achisa/oct2023/achisa-1.png', 'Degen', 'GPose commission by <a href="https://ko-fi.com/chihaya72" target="_blank">Achisa</a>.<br><span class="latex-italic">Dominance.</span>');
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/gpose/achisa/oct2023/achisa-2.png', 'Degen', 'GPose commission by <a href="https://ko-fi.com/chihaya72" target="_blank">Achisa</a>.<br><span class="latex-italic">Plaything.</span>');
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/gpose/achisa/oct2023/achisa-3.png', 'Degen', 'GPose commission by <a href="https://ko-fi.com/chihaya72" target="_blank">Achisa</a>.<br><span class="latex-italic">Reward.</span>');
