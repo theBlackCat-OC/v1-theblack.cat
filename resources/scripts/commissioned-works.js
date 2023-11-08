@@ -115,6 +115,7 @@ function createVideoElement(videoSrc) {
 
 tags.forEach(tag => addTagToContainer(tag));
 
+
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/skeb/kcc/kcc-bimbo-portrait.png', 'SafeForWork Portrait', 'Portrait skeb commission by <a href="https://skeb.jp/@kacico_l2" target="_blank">知らない✘✘</a>.<br><span class="latex-italic">Coy bimbo.</span>');
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/ayaben/oct2023/ayaben-fullbody.png', 'SafeForWork Fullbody', 'Fullbody sketch commission by <a href="https://ayaben.carrd.co" target="_blank">ayaben</a>.<br><span class="latex-italic">Unending curves.</span>');
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/kaydenlockes/buchukisu_1.jpg', 'NSFW Erotica', 'GPose giveaway by <a href="https://linktr.ee/kaydenlockes" target="_blank">Zel</a>.<br><span class="latex-italic">Enticing.</span>');
@@ -124,7 +125,8 @@ addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/gpose/zel
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/gpose/achisa/oct2023/achisa-1.png', 'Degen', 'GPose commission by <a href="https://ko-fi.com/chihaya72" target="_blank">Achisa</a>.<br><span class="latex-italic">Dominance.</span>');
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/gpose/achisa/oct2023/achisa-2.png', 'Degen', 'GPose commission by <a href="https://ko-fi.com/chihaya72" target="_blank">Achisa</a>.<br><span class="latex-italic">Plaything.</span>');
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/gpose/achisa/oct2023/achisa-3.png', 'Degen', 'GPose commission by <a href="https://ko-fi.com/chihaya72" target="_blank">Achisa</a>.<br><span class="latex-italic">Reward.</span>');
-addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/gpose/hairyhyur/garlean-twins-intermission.png', 'Degen', 'GPose commission by <a href="https://baraag.net/@hairyhyur" target="_blank">Bushy♡Hyur</a>.<br><span class="latex-italic">Intermission.</span>');
+addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/gpose/hairyhyur/garlean-twins-deepdive-steamy.png', 'SafeForWork Portrait', 'Portrait skeb commission by <a href="https://skeb.jp/@kacico_l2" target="_blank">知らない✘✘</a>.<br><span class="latex-italic">Coy bimbo.</span>');
+addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/gpose/hairyhyur/garlean-twins-intermission-steamy.png', 'Degen', 'GPose commission by <a href="https://baraag.net/@hairyhyur" target="_blank">Bushy♡Hyur</a>.<br><span class="latex-italic">Intermission.</span>');
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/gpose/hairyhyur/kugane-exposure-steam.png', 'NSFW Pornographic', 'GPose commission by <a href="https://twitter.com/BushiestGarlic" target="_blank">Bushy♡Hyur</a>.<br><span class="latex-italic">Steamy Aftermath.</span>');
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/skeb/iyo_yom/1582441-signed.png', 'Degen', 'Skeb commission by <a href="https://skeb.jp/@iyo_yom/" target="_blank">いよよむ</a>.<br><span class="latex-italic">Red light.</span>');
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/skeb/iyo_yom/1582441-tandem-lingerie.png', 'Degen', 'Skeb commission by <a href="https://skeb.jp/@iyo_yom/" target="_blank">いよよむ</a>.<br><span class="latex-italic">Play time.</span>');
