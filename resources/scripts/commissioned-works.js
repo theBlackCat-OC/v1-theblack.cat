@@ -115,8 +115,8 @@ function createVideoElement(videoSrc) {
 
 tags.forEach(tag => addTagToContainer(tag));
 
-
-addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/skeb/kcc/kcc-bimbo-portrait.png', 'SafeForWork Portrait', 'Portrait skeb commission by <a href="https://skeb.jp/@kacico_l2" target="_blank">知らない✘✘</a>.<br><span class="latex-italic">Coy bimbo.</span>');
+addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/skeb/utsuro-atomo/1668549-1.png', 'Degen', 'Skeb commission by <a href="https://skeb.jp/@utsuro_atomo" target="_blank">ウツロ</a>.<br><span class="latex-italic">Drill and breed session.</span>');
+addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/skeb/kcc/kcc-bimbo-portrait.png', 'SafeForWork Portrait', 'Skeb commission by <a href="https://skeb.jp/@kacico_l2" target="_blank">知らない✘✘</a>.<br><span class="latex-italic">Coy bimbo.</span>');
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/ayaben/oct2023/ayaben-fullbody.png', 'SafeForWork Fullbody', 'Fullbody sketch commission by <a href="https://ayaben.carrd.co" target="_blank">ayaben</a>.<br><span class="latex-italic">Unending curves.</span>');
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/kaydenlockes/buchukisu_1.jpg', 'NSFW Erotica', 'GPose giveaway by <a href="https://linktr.ee/kaydenlockes" target="_blank">Zel</a>.<br><span class="latex-italic">Enticing.</span>');
 addImageToGallery('https://cdn.theblack.cat/gallery/commissioned-works/kaydenlockes/Buchukisu_2.jpg', 'NSFW Erotica', 'GPose giveaway by <a href="https://linktr.ee/kaydenlockes" target="_blank">Zel</a>.<br><span class="latex-italic">Sloppy.</span>');
